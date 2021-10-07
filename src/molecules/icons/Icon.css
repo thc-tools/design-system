@@ -1,0 +1,5 @@
+.thc-c-icon__path {
+    --thc-text-color: var(--thc-icon-color, --thc-text-color);
+
+    transition: color var(--thc-animationDuration--S);
+}

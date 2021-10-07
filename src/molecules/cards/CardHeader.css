@@ -1,0 +1,15 @@
+.thc-c-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: var(--thc-card-spacing);
+}
+
+.thc-c-card__header > [class*="thc-c-card__"] {
+    margin: 0;
+}
+
+.thc-c-card__header > [class*="thc-c-card__"]:not(:last-child) {
+    margin-right: var(--thc-card-spacing);
+}

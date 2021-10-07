@@ -1,0 +1,12 @@
+:root {
+    --thc-button-container-spacing: var(--thc-spacing--S);
+}
+
+.thc-c-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.thc-c-button-container > .thc-c-button + .thc-c-button {
+    margin-left: var(--thc-button-container-spacing);
+}

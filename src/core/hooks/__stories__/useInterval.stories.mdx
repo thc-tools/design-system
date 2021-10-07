@@ -1,0 +1,29 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Hooks/useInterval" />
+
+## useInterval
+
+```js
+import { useInterval } from "@thc-tools/design-system/core/hooks";
+```
+
+This hook is to help declaratively set an interval.
+
+```js
+function useInterval(callback, delay = false) => void;
+```
+
+-   callback `func`: The callback to be called by the interval
+-   delay `number|boolean: The interval value, or true for default interval or false to deactivate
+
+Example:
+
+```js
+// Will alert bonjour every 100ms
+useInterval(() => alert("bonjour"), 100);
+// Will alert bonjour every DEFAULT_INTERVAL
+useInterval(() => alert("bonjour"), true);
+// Will do nothing
+useInterval(() => alert("bonjour"), false);
+```

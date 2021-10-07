@@ -1,0 +1,31 @@
+:root {
+    --thc-tab-min-width: 110px;
+    --thc-tab-max-width: 260px;
+    --thc-tab-min-height: 50px;
+}
+
+.thc-c-tab {
+    --thc-button-border-radius: 0;
+
+    min-width: var(--thc-tab-min-width);
+    max-width: var(--thc-tab-max-width);
+    min-height: var(--thc-tab-min-height);
+
+    position: relative;
+
+    flex-shrink: 0;
+
+    padding: var(--thc-spacing--XS) var(--thc-spacing--S);
+    box-sizing: border-box;
+
+    overflow: hidden;
+    white-space: normal;
+    text-align: center;
+}
+
+.thc-c-tab__wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

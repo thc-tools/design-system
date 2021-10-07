@@ -1,0 +1,15 @@
+.thc-c-breadcrumb-bar {
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.thc-theme--light .thc-c-breadcrumb-bar__separator {
+    --thc-icon-color: var(--thc-color--black-20);
+}
+
+.thc-theme--dark .thc-c-breadcrumb-bar__separator {
+    --thc-icon-color: var(--thc-color--white-20);
+}

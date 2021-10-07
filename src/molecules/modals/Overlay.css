@@ -1,0 +1,19 @@
+.thc-c-overlay {
+    --thc-overlay-color: var(--thc-color--black-50);
+
+    z-index: var(--thc-zIndex--neg);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: var(--thc-overlay-color);
+
+    transition: background-color var(--thc-animationDuration--M);
+}
+
+.thc-c-overlay--invisible {
+    --thc-overlay-color: transparent;
+}

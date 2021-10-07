@@ -1,0 +1,94 @@
+import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Quarks/Border" />
+
+# Borders
+
+## Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.
+
+### Borders
+
+Border in thc have three defined quarks:
+
+-   `--thc-borderSolid--S`
+-   `--thc-borderSolid--L`
+-   `--thc-borderDashed--S`
+
+They can be used with radius and color quarks.
+
+By default the border will use the `--thc-textColor--secondary` for its color.
+
+#### Examples
+
+<Canvas>
+    <Story name="--thc-borderSolid--S">
+        <div>--thc-borderSolid--S</div>
+        <div style={{ border: "var(--thc-borderSolid--S)", width: "200px", height: "30px" }} />
+    </Story>
+    <Story name="--thc-borderSolid--L">
+        <div>--thc-borderSolid--L</div>
+        <div style={{ border: "var(--thc-borderSolid--L)", width: "200px", height: "30px" }} />
+    </Story>
+    <Story name="--thc-borderDashed--S">
+        <div>--thc-borderDashed--S</div>
+        <div style={{ border: "var(--thc-borderDashed--S)", width: "200px", height: "30px" }} />
+    </Story>
+</Canvas>
+
+### Radius
+
+Radius in thc have four defined quarks:
+
+-   `--thc-radius--XS`: 3px
+-   `--thc-radius--S`: 5px
+-   `--thc-radius--M`: 10px
+-   `--thc-radius--L`: 100px
+
+#### Examples
+
+<Canvas>
+    <Story name="--thc-radius--XS">
+        <div>--thc-radius--XS</div>
+        <div
+            style={{
+                border: "var(--thc-borderSolid--S)",
+                borderRadius: "var(--thc-radius--XS)",
+                width: "70px",
+                height: "70px",
+            }}
+        />
+    </Story>
+    <Story name="--thc-radius--S">
+        <div>--thc-radius--S</div>
+        <div
+            style={{
+                border: "var(--thc-borderSolid--S)",
+                borderRadius: "var(--thc-radius--S)",
+                width: "70px",
+                height: "70px",
+            }}
+        />
+    </Story>
+    <Story name="--thc-radius--M">
+        <div>--thc-radius--M</div>
+        <div
+            style={{
+                border: "var(--thc-borderSolid--S)",
+                borderRadius: "var(--thc-radius--M)",
+                width: "70px",
+                height: "70px",
+            }}
+        />
+    </Story>
+    <Story name="--thc-radius--L">
+        <div>--thc-radius--L</div>
+        <div
+            style={{
+                border: "var(--thc-borderSolid--S)",
+                borderRadius: "var(--thc-radius--L)",
+                width: "170px",
+                height: "70px",
+            }}
+        />
+    </Story>
+</Canvas>

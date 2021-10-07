@@ -1,0 +1,36 @@
+:root {
+    --thc-fontFamily--montserrat: Montserrat;
+    --thc-fontFamily--muli: Muli;
+}
+
+:root {
+    --thc-fontSize--S: 10px;
+    --thc-fontSize--M: 12px;
+    --thc-fontSize--L: 14px;
+    --thc-fontSize--XL: 24px;
+}
+
+:root {
+    --thc-fontWeight--regular: 400;
+    --thc-fontWeight--extrabold: 800;
+}
+
+:root {
+    --thc-lineHeight--S: 12px;
+    --thc-lineHeight--M: 15px;
+    --thc-lineHeight--L: 23px;
+    --thc-lineHeight--XL: 29px;
+}
+
+.thc-theme--light {
+    --thc-textColor--primary: var(--thc-color--black-100);
+    --thc-textColor--accent: var(--thc-color--blue-100);
+    --thc-textColor--secondary: var(--thc-color--black-40);
+}
+
+.thc-theme--dark,
+.thc-theme--color {
+    --thc-textColor--primary: var(--thc-color--white-100);
+    --thc-textColor--accent: var(--thc-color--white-100);
+    --thc-textColor--secondary: var(--thc-color--white-40);
+}

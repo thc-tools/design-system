@@ -1,0 +1,30 @@
+.thc-c-layout {
+    height: 100vh;
+    width: 100vw;
+
+    min-width: var(--thc-layout-minWidth);
+    min-height: var(--thc-layout-minHeight);
+
+    display: grid;
+    grid-template-columns: var(--thc-menu-width) 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "menu header"
+        "menu page";
+
+    background-color: var(--thc-layout-background-color);
+}
+
+.thc-c-layout__menu {
+    grid-area: menu;
+}
+
+.thc-c-layout__header {
+    grid-area: header;
+}
+
+.thc-c-layout__page {
+    grid-area: page;
+
+    overflow: auto;
+}

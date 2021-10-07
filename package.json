@@ -1,0 +1,113 @@
+{
+    "name": "@thc-tools/design-system",
+    "version": "1.0.0",
+    "description": "DesignSystem for thc-tools's React apps",
+    "main": ".",
+    "module": ".",
+    "scripts": {
+        "build": "npm run build:clean && npm run build:js && npm run build:assets && npm run build:copy-package",
+        "build:clean": "rm -rf dist",
+        "build:assets": "npm run build:assets:css && npm run build:assets:icons && npm run build:assets:match-structure && npm run build:assets:copy",
+        "build:assets:css": "rm -f ./src/quarks.colors.css && node ./scripts/opacity-generator.js > ./src/quarks.colors.css",
+        "build:assets:icons": "rm -f ./src/molecules/icons/icons.json && node ./scripts/icon-aggregator.js",
+        "build:assets:match-structure": "cd src/ && find . -name '*.css' -o -name '*.json' | xargs -I FOO dirname FOO | xargs -I FOO mkdir -p ../dist/FOO",
+        "build:assets:copy": "cd src/ && find . -name '*.css' -o -name '*.json' | xargs -I FOO cp FOO ../dist/FOO",
+        "build:js": "npx babel src --out-dir dist",
+        "build:copy-package": "cp LICENSE dist && cp package.json dist && cp package-lock.json dist && cp README.md dist",
+        "pub": "cd dist && npm publish",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint --fix src",
+        "lint:ci": "eslint src",
+        "storybook": "start-storybook -p 6006 -s public",
+        "build-storybook": "build-storybook"
+    },
+    "repository": "git://github.com/thc-tools/design-system.git",
+    "keywords": [
+        "design-system"
+    ],
+    "author": "web-team",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/thc-tools/design-system/issues"
+    },
+    "homepage": "https://github.com/thc-tools/design-system#readme",
+    "dependencies": {
+        "@popperjs/core": "2.5.4",
+        "classnames": "2.2.6",
+        "dom-helpers": "5.2.0",
+        "formik": "2.1.5",
+        "lodash": "4.17.20",
+        "moment": "2.29.1",
+        "prop-types": "15.7.2",
+        "qs": "6.9.4",
+        "react-beautiful-dnd": "13.1.0",
+        "react-dates": "21.8.0",
+        "react-popper": "2.2.4",
+        "react-resize-aware": "3.1.0",
+        "react-router-dom": "5.2.0",
+        "react-toastify": "6.2.0",
+        "react-transition-group": "4.4.1",
+        "react-use-clipboard": "1.0.7",
+        "react-virtualized": "9.22.3",
+        "use-debounce": "6.0.1",
+        "yup": "0.32.9"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.13.10",
+        "@babel/core": "7.13.10",
+        "@babel/plugin-proposal-nullish-coalescing-operator": "7.12.1",
+        "@babel/plugin-proposal-object-rest-spread": "7.12.1",
+        "@babel/plugin-proposal-optional-chaining": "7.12.1",
+        "@babel/plugin-syntax-dynamic-import": "7.8.3",
+        "@babel/plugin-transform-react-constant-elements": "7.12.1",
+        "@babel/plugin-transform-react-inline-elements": "7.12.1",
+        "@babel/plugin-transform-runtime": "7.12.1",
+        "@babel/preset-env": "7.12.1",
+        "@babel/preset-react": "7.12.5",
+        "@babel/runtime-corejs3": "7.12.5",
+        "@storybook/addon-actions": "6.3.10",
+        "@storybook/addon-essentials": "6.3.10",
+        "@storybook/addon-links": "6.3.10",
+        "@storybook/node-logger": "6.3.10",
+        "@storybook/react": "6.3.10",
+        "@testing-library/react-hooks": "3.7.0",
+        "babel-eslint": "10.1.0",
+        "babel-loader": "8.2.2",
+        "babel-plugin-lodash": "3.3.4",
+        "chroma-js": "2.1.0",
+        "core-js": "3.7.0",
+        "enzyme": "3.11.0",
+        "enzyme-adapter-react-16": "1.15.5",
+        "eslint": "6.8.0",
+        "eslint-config-airbnb": "18.2.1",
+        "eslint-config-prettier": "6.15.0",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-jsx-a11y": "6.4.1",
+        "eslint-plugin-react": "7.21.5",
+        "eslint-plugin-react-hooks": "4.2.0",
+        "react": "16.14.0",
+        "react-dom": "16.14.0",
+        "react-test-renderer": "16.14.0",
+        "regenerator-runtime": "0.13.7",
+        "svg-parser": "2.0.4"
+    },
+    "peerDependencies": {
+        "react": ">=16.14.0",
+        "react-dom": ">=16.14.0"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "engines": {
+        "node": ">=10.23.0"
+    }
+}

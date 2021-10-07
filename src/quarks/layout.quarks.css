@@ -1,0 +1,26 @@
+:root {
+    --thc-layout-minWidth: 1280px;
+    --thc-layout-minHeight: 768px;
+
+    --thc-layout-v-padding: var(--thc-spacing--L);
+    --thc-layout-h-padding: var(--thc-spacing--M);
+}
+
+.thc-theme--light {
+    --thc-layout-background-color: #f5f5f5;
+}
+
+.thc-theme--dark {
+    --thc-layout-background-color: var(--thc-color--black-100);
+}
+
+@media (max-width: 1440px) {
+    :root {
+        --thc-layout-v-padding: var(--thc-spacing--M);
+        --thc-layout-h-padding: var(--thc-spacing--S);
+    }
+}
+
+body {
+    min-width: var(--thc-layout-minWidth);
+}

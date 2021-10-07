@@ -1,0 +1,16 @@
+:root {
+    --thc-card-spacing: var(--thc-spacing--M);
+    --thc-card-spacing--condensed: var(--thc-spacing--S);
+}
+
+.thc-c-card {
+    box-sizing: border-box;
+}
+
+.thc-c-card--elevated {
+    box-shadow: var(--thc-actionable-box-shadow), var(--thc-paper-shadow);
+}
+
+.thc-c-card--condensed {
+    --thc-card-spacing: var(--thc-card-spacing--condensed);
+}

@@ -1,0 +1,18 @@
+.thc-c-card__title-title {
+    display: flex;
+    align-items: center;
+}
+
+.thc-c-card__title {
+    margin: var(--thc-card-spacing);
+}
+
+.thc-c-card__title-helper {
+    --thc-icon-color: var(--thc-textColor--secondary);
+
+    margin-left: var(--thc-spacing--S);
+}
+
+.thc-c-card__title-subtitle {
+    --thc-text-color: var(--thc-textColor--secondary);
+}

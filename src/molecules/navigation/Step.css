@@ -1,0 +1,38 @@
+:root {
+    --thc-step-icon-size: 20px;
+}
+
+.thc-c-step {
+    --thc-step-text-color: var(--thc-textColor--secondary);
+    --thc-step-text-color--active: var(--thc-textColor--primary);
+    --thc-step-text-color--completed: var(--thc-textColor--primary);
+
+    --thc-step-icon-color: var(--thc-textColor--secondary);
+    --thc-step-icon-color--active: var(--thc-color--skyblue-100);
+    --thc-step-icon-color--completed: var(--thc-color--skyblue-100);
+
+    --thc-text-color: var(--thc-step-text-color);
+    --thc-icon-color: var(--thc-step-icon-color);
+
+    flex: 1;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thc-c-step--active {
+    --thc-step-text-color: var(--thc-step-text-color--active);
+    --thc-step-icon-color: var(--thc-step-icon-color--active);
+}
+
+.thc-c-step--completed {
+    --thc-step-text-color: var(--thc-step-text-color--completed);
+    --thc-step-icon-color: var(--thc-step-icon-color--completed);
+}
+
+.thc-c-step__label {
+    margin-bottom: var(--thc-spacing--XS);
+}

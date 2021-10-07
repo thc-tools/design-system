@@ -1,0 +1,86 @@
+:root {
+    --thc-text-fontFamily: var(--thc-fontFamily--muli);
+    --thc-text-fontSize: var(--thc-fontSize--M);
+    --thc-text-lineHeight: var(--thc-lineHeight--M);
+    --thc-text-fontWeight: var(--thc-fontWeight--regular);
+    --thc-text-transform: inherit;
+
+    /* --thc-text-fontFamily: var(--thc-fontFamily--muli);
+    --thc-text-fontSize: 14px;
+    --thc-text-lineHeight: 23px;
+    --thc-text-fontWeight: var(--thc-fontWeight--regular);
+    --thc-text-transform: inherit; */
+}
+
+/* Variables are resolved when copied. We need to explicitly give light & dark */
+.thc-theme--light,
+.thc-theme--dark,
+.thc-theme--color {
+    --thc-text-color: var(--thc-textColor--primary);
+    --thc-placeholder-color: var(--thc-textColor--secondary);
+}
+
+[class*="thc-theme--"] *,
+.thc-u-text--normal {
+    color: var(--thc-text-color);
+    font-family: var(--thc-text-fontFamily);
+    font-size: var(--thc-text-fontSize);
+    line-height: var(--thc-text-lineHeight);
+    font-weight: var(--thc-text-fontWeight);
+    text-transform: var(--thc-text-transform);
+}
+
+.thc-u-text--title {
+    --thc-text-fontFamily: var(--thc-fontFamily--montserrat);
+    --thc-text-fontSize: var(--thc-fontSize--XL);
+    --thc-text-lineHeight: var(--thc-lineHeight--XL);
+}
+
+.thc-u-text--subtitle,
+.thc-u-text--subtitle-bold {
+    --thc-text-fontFamily: var(--thc-fontFamily--montserrat);
+    --thc-text-fontSize: var(--thc-fontSize--L);
+    --thc-text-lineHeight: var(--thc-lineHeight--L);
+}
+
+.thc-u-text--subtitle-bold {
+    --thc-text-fontWeight: var(--thc-fontWeight--extrabold);
+}
+
+.thc-u-text--label,
+.thc-u-text--label-bold {
+    --thc-text-transform: uppercase;
+}
+
+.thc-u-text--label-bold {
+    --thc-text-fontWeight: var(--thc-fontWeight--extrabold);
+}
+
+.thc-u-text--subnormal {
+    --thc-text-fontSize: var(--thc-fontSize--S);
+    --thc-text-lineHeight: var(--thc-lineHeight--S);
+}
+
+.thc-u-text--bold {
+    --thc-text-fontWeight: var(--thc-fontWeight--extrabold);
+}
+
+.thc-u-text--secondary {
+    --thc-text-color: var(--thc-textColor--secondary);
+}
+
+.thc-u-text--accent {
+    --thc-text-color: var(--thc-textColor--accent);
+}
+
+.thc-u-text--skyblue {
+    --thc-text-color: var(--thc-color--skyblue-100);
+}
+
+.thc-u-text--capitalize {
+    --thc-text-transform: capitalize;
+}
+
+.thc-u-text--uppercase {
+    --thc-text-transform: uppercase;
+}

@@ -1,0 +1,5 @@
+:root {
+    --thc-shadow--transparent: 0 0 0 0 transparent;
+    --thc-shadow--regular: 0px 10px 25px 0 var(--thc-color--black-20);
+    --thc-shadow--inset: inset 0px 5px 25px 0 var(--thc-color--black-20);
+}

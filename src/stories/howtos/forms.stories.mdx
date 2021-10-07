@@ -1,0 +1,350 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+import debugPanel from "./forms/debug-panel.png";
+import fieldAnatomy from "./forms/field-anatomy.png";
+
+<Meta title="Design System/How To(s)/Forms" />
+
+# How To - Forms
+
+## Glossary
+
+<dl>
+    <dt>Form</dt>
+    <dd>
+        A form allows a user to enter data that is sent to a server for processing. It is handled via the{" "}
+        <a href="https://formik.org/docs/overview">Formik library</a>.
+    </dd>
+    <dt>Field</dt>
+    <dd>
+        A field is a moving part of a form dedicated to a value (leaf). It handles the display of three parts: label,
+        input & errors. It also is the connection between a raw input & Formik.
+    </dd>
+    <dt>Input</dt>
+    <dd>An input is the basic element of a field it display the HTML input and handles: value, events and styles.</dd>
+</dl>
+
+## Basics
+
+### 1) Formik
+
+You first need to create a formik instance with the [useFormik](https://formik.org/docs/api/useFormik) hook:
+
+```js
+// Libs
+import { useFomik } from "formik";
+
+const formik = useFormik({
+    initialValues: {
+        firstName: "",
+        lastName: "",
+        email: "",
+    },
+    onSubmit: (values) => {
+        alert(JSON.stringify(values, null, 2));
+    },
+});
+```
+
+You then need to use the [Form](/?path=/docs/design-system-organisms-form--primary) component from the design-system.
+The component only expects a formik instance:
+
+### 2) Form
+
+```jsx
+// Components
+import { Form } from "@thc-tools/organisms/forms";
+
+function MyForm() {
+    const formik = useFormik(/* config */);
+
+    return <Form formik={formik} />;
+}
+```
+
+**Note:** a `debug` prop is available, if used it will dump you the content of formik: values, errors & touched properties.
+
+<img src={debugPanel} alt="Debug panel" width="800" />
+
+### 3) Field
+
+So that your user can interact with the form you will now nedd to add Fields to it:
+
+```jsx
+// Components
+import { Field } from "@thc-tools/organisms/forms";
+
+<Field label="First name" name="firstName" />;
+```
+
+The minimum props you need to give to the field is the `name` prop. It is how the field know which value from formik it should handle.
+
+Here are the other common props you can give to your field:
+
+| Name           | Type                                                                                                                                              | Description                                                         |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| className      | `string`                                                                                                                                          | Addtional className.                                                |
+| FieldComponent | Component type                                                                                                                                    | Component to use in field (always wins if used).                    |
+| fieldType      | One of available `FIELD_TYPES`: `AUTOCOMPLETE`, `CHECKBOX`, `MULTI_AUTOCOMPLETE`, `MULTI_SELECT`, `RADIO`, `SELECT`, `TEXT`, `SWITCH`             | Type of field (if type cannot be guessed).                          |
+| label          | `string`                                                                                                                                          | Label for field.                                                    |
+| labelResolver  | ({ value: string \| number })) => Promise<string\> \| ({ values: (string \| number)[] }) => Promise<{ label: string, value: string \| number }[]> | Function to resolve a label (see Autocomplete & MultiAutocomplete). |
+| multiple       | `bool`                                                                                                                                            | If multiple values.                                                 |
+| name           | `string`                                                                                                                                          | Value to handle from Formik.                                        |
+| options        | { label: string, value: string \| number }[]                                                                                                      | Options for Select/MultiSelect fields.                              |
+| querySearcher  | func (promise)                                                                                                                                    | Function to search given a filter.                                  |
+
+The Field will try to guess to type of input you want to use based on the props you give it.
+This behavior can be by-passed by giving either a `fieldType` or a `FieldComponent`.
+Every other props will be given to your Field component.
+
+Explanation on how the field guesses the `fieldType` depending on your props (with that priority):
+
+| FieldType          | labelResolver | multiple | options | querySearcher |
+| ------------------ | ------------- | -------- | ------- | ------------- |
+| MULTI_AUTOCOMPLETE | x             | x        |         | x             |
+| AUTOCOMPLETE       | x             |          |         | x             |
+| MULTI_SELECT       |               | x        | x       |               |
+| SELECT             |               |          | x       |               |
+| TEXT               |               |          |         |               |
+
+### 4) Actions
+
+When the user dis finish answering your form, it is time to submit it !
+
+You can put a `FormActions` to that end and use the `Button` component:
+
+```jsx
+// Components
+import { Button, BUTTON_TYPES } from "@thc-tools/molecules/buttons";
+import { FormActions } from "@thc-tools/organisms/forms";
+
+<FormActions>
+    <Button type={BUTTON_TYPES.SECONDARY} onClick={onCancel}>
+        {translateDesignSystem("actions.cancel")}
+    </Button>
+    <Button submit type={BUTTON_TYPES.PRIMARY}>
+        {translateDesignSystem("actions.create")}
+    </Button>
+</FormActions>;
+```
+
+You need to put the `submit` prop on the button you want to submit your form.
+
+### 5) Form validation
+
+An extra **important** step is to configure validation to your form.
+
+You can have a look at the Formik & Yup documentations:
+
+-   https://formik.org/docs/guides/validation
+-   https://github.com/jquense/yup
+
+### TL;DR
+
+Complete example: 🥳
+
+```jsx
+// Libs
+import React from "react";
+import { useFomik } from "formik";
+import * as Yup from "yup";
+
+// Utils
+import { useTranslation } from "@thc-tools/core";
+
+// Components
+import { Button, BUTTON_TYPES } from "@thc-tools/molecules/buttons";
+import { Form, FormActions } from "@thc-tools/organisms/forms";
+
+const AccountSchema = Yup.object().shape({
+    firstName: Yup.string().required("Required"),
+    lastName: Yup.string(),
+    email: Yup.string().email().required("Required"),
+});
+
+function Form({ onCancel }) {
+    const { translateDesignSystem } = useTranslation();
+
+    const formik = useFormik({
+        initialValues: {
+            firstName: "",
+            lastName: "",
+            email: "",
+        },
+        validationSchema: AccountSchema,
+        onSubmit: (values) => {
+            alert(JSON.stringify(values, null, 2));
+        },
+    });
+
+    return (
+        <Form formik={formik}>
+            <Field label="First name" name="firstName" />
+            <Field label="Last name" name="lastName" />
+            <Field label="Email" name="email" />
+            <FormActions>
+                <Button type={BUTTON_TYPES.SECONDARY} onClick={onCancel}>
+                    {translateDesignSystem("actions.cancel")}
+                </Button>
+                <Button submit type={BUTTON_TYPES.PRIMARY}>
+                    {translateDesignSystem("actions.create")}
+                </Button>
+            </FormActions>
+        </Form>
+    );
+}
+```
+
+## Advanced
+
+### Custom field
+
+You can build a custom field if you need.
+You have two main possibilities for that **(1st is favored)**:
+
+1.  Leveraging the FieldHoc to transform an Input like component into a Field.
+2.  Making your own Field entirely (maybe a doc later on, otherwise look at the file `packages/design-system/src/molecules/inputs/Field.js` for some inspiration).
+
+### Using FieldHoc
+
+The Field is constructed with three parts:
+
+<div style={{ display: "flex", justifyContent: "space-around", alignItem: "center" }}>
+    <ol>
+        <li>Label: label of input with optional `required` marker.</li>
+        <li>Input: need to respect the contract described below.</li>
+        <li>HelperText: text under input that can have several statuses (ie. colors).</li>
+    </ol>
+    <div>
+        <img src={fieldAnatomy} alt="Field anatomy" maxWidth="500" />
+    </div>
+</div>
+
+The basic contract you need to respect woth your Input is the following:
+
+-   hasError: `boolean` -> handle if your input is in error.
+-   id: `number | string` -> unique identifier.
+-   name: `string` -> your name in the form.
+-   onChange: `(event: ReactSyntheticEvent) => void` -> your change handler.
+-   value: `any` -> current value.
+
+You can then wrap your input like component using the FieldHoc:
+
+```jsx
+// Libs
+import React from "react";
+import classnames from "classnames";
+
+// Utils
+import { FieldHoc } from "@thc-tools/molecules/inputs";
+
+function InputLike({ hasError = false, id, name, onChange, value }) {
+    const className = classnames({ "thc-u-status--error": hasError });
+
+    return <input className={className} id={id} name={name} onChange={onChange} type="text" value={value} />;
+}
+
+export const InputLikeField = FieldHoc(InputLike, "InputLike");
+```
+
+⚠️ **Warning:** be carefull about the origin of the event when implementing custom inputs. You can help yourself
+of the util method `patchFormEventValue` and see examples of its usage in `packages/design-system/src/molecules/inputs/Select.js`.
+See [Inputs](?path=/docs/design-system-how-to-s-construct-a-component--page#inputs) for more information.
+
+### Autocompletes
+
+Autocompletes needs two special props to work :
+
+1. `labelResolver`: It is used to transform an value into label. As there is no options compared to a Select,
+   the Autocomplete needs a call to the server to resolve it dynamically.
+2. `querySearcher`: It is used to execute the search and display the options to the user.
+
+The `labelResolver` has two signatures depending if your are using the Autocomplete or the MultiAutocomplete component:
+
+-   Autocomplete: `({ value: string | number })) => Promise<string>`
+-   MultiAutocomplete: `({ values: (string | number)[] }) => Promise<{ label: string, value: string | number }[]>`
+
+The `querySearcher` always has the same signature:
+
+-   `({ filter: string }) => Promise<{ label: string, value: string | number }[]>`
+
+⚠️ **Warning:** you need to make sure that your `querySearcher` method is debounced for performance reasons
+
+### Arrays
+
+Formik comes with helper functions to handle array pattern within your form.
+
+I strongly suggest that you read the Formik documentation about that topic:
+
+-   https://formik.org/docs/guides/arrays
+-   https://formik.org/docs/api/fieldarray
+
+You will 1st need to import a special component from Formik called `FieldArray`:
+
+```js
+import { FieldArray } from "formik";
+```
+
+When used it will give you access to helpers that manipulate (add/remove/etc) that array node in the form.
+
+See the following example :
+
+```jsx
+// Libs
+import React from "react";
+import { useFomik, FieldArray } from "formik";
+
+// Utils
+import { useTranslation } from "@thc-tools/core";
+
+// Components
+import { Button, BUTTON_TYPES } from "@thc-tools/molecules/buttons";
+import { Form, FormActions } from "@thc-tools/organisms/forms";
+
+const DEFAULT_EMPTY_ADDRESS = { street: "", city: ""}
+
+function Form({ onCancel }) {
+    const { translateDesignSystem } = useTranslation();
+
+    const formik = useFormik({
+        initialValues: {
+            fullName: "",
+            adresses: [DEFAULT_EMPTY_ADDRESS}],
+        },
+        onSubmit: (values) => {
+            alert(JSON.stringify(values, null, 2));
+        },
+    });
+
+    return (
+        <Form formik={formik}>
+            <Field label="Full name" name="fullName" />
+            <FieldArray name="adresses">
+                {(arrayHelpers) => (
+                    <>
+                        {formik.values.addresses.map((_, i) => (
+                            <div className="thc-o-flex">
+                                <Field label={`Adress ${i + 1}`} name={`adresses[${i}]`} />
+                                <Button onClick={() => arrayHelpers.remove(i)}>
+                                    remove this address
+                                </Button>
+                            </div>
+                        ))}
+                        <Button onClick={() => arrayHelpers.push(DEFAULT_EMPTY_ADDRESS)}>
+                            Add a new address
+                        </Button>
+                    </>
+                )}
+            </FieldArray>
+            <FormActions>
+                <Button onClick={onCancel} type={BUTTON_TYPES.SECONDARY}>
+                    {translateDesignSystem("actions.cancel")}
+                </Button>
+                <Button submit type={BUTTON_TYPES.PRIMARY}>
+                    {translateDesignSystem("actions.create")}
+                </Button>
+            </FormActions>
+        </Form>
+    );
+}
+```

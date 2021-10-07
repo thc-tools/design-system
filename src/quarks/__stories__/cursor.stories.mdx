@@ -1,0 +1,46 @@
+import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Quarks/Cursor" />
+
+# Cursor
+
+## TODO
+
+Cursor in thc have four defined quarks:
+
+-   `--thc-cursor--pointer`: is used when an element have a click interaction
+-   `--thc-cursor--notAllowed`: is used when an element is disabled
+-   `--thc-cursor--text`: if the element is editable
+-   `--thc-cursor--default`: to reset to the default cursor if nested in another
+
+### Examples
+
+<Canvas>
+    <Story name="--thc-cursor--pointer">
+        <div>--thc-cursor--pointer</div>
+        <div
+            style={{ border: "1px solid black", cursor: "var(--thc-cursor--pointer)", width: "70px", height: "70px" }}
+        />
+    </Story>
+    <Story name="--thc-cursor--notAllowed">
+        <div>--thc-cursor--notAllowed</div>
+        <div
+            style={{
+                border: "1px solid black",
+                cursor: "var(--thc-cursor--notAllowed)",
+                width: "70px",
+                height: "70px",
+            }}
+        />
+    </Story>
+    <Story name="--thc-cursor--text">
+        <div>--thc-cursor--text</div>
+        <div style={{ border: "1px solid black", cursor: "var(--thc-cursor--text)", width: "70px", height: "70px" }} />
+    </Story>
+    <Story name="--thc-cursor--default">
+        <div>--thc-cursor--default</div>
+        <div
+            style={{ border: "1px solid black", cursor: "var(--thc-cursor--default)", width: "70px", height: "70px" }}
+        />
+    </Story>
+</Canvas>

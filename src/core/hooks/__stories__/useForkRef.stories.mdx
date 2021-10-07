@@ -1,0 +1,28 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Hooks/useForkRef" />
+
+## useForkRef
+
+```js
+import { useForkRef } from "@thc-tools/design-system/core/hooks";
+```
+
+This hook is to help synch multiple refs into one component.
+
+```js
+function useForkRef(refA, refB) => ref;
+```
+
+-   refA `React.ref`: 1st ref
+-   refB `React.ref`: 2nd ref
+-   returns `React.ref`: A virtual ref that is spread to refA and refB
+
+```jsx
+const Input = React.forwardRef(function Input({ name }, ref) {
+    const inputRef = useRef(null);
+    const forkedRef = useForkRef(ref, inputRef);
+
+    return <input name={name} ref={forkedRef} />;
+}
+```

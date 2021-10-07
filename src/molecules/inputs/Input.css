@@ -1,0 +1,152 @@
+:root {
+    --thc-input-min-width: 300px;
+}
+
+.thc-theme--light {
+    --thc-input-border-color: var(--thc-color--black-10);
+    --thc-input-border-color--hover: var(--thc-color--blue-40);
+    --thc-input-border-color--focus: var(--thc-color--blue-100);
+    --thc-input-border-color--disabled: var(--thc-color--black-10);
+
+    --thc-input-background-color: var(--thc-color--white-100);
+    --thc-input-background-color--hover: var(--thc-color--white-100);
+    --thc-input-background-color--focus: var(--thc-color--white-100);
+    --thc-input-background-color--disabled: var(--thc-color--black-10);
+}
+
+.thc-theme--dark {
+    --thc-input-border-color: var(--thc-color--white-20);
+    --thc-input-border-color--hover: var(--thc-color--white-50);
+    --thc-input-border-color--focus: var(--thc-color--white-100);
+    --thc-input-border-color--disabled: var(--thc-color--white-20);
+
+    --thc-input-background-color: var(--thc-color--black-100);
+    --thc-input-background-color--hover: var(--thc-color--black-100);
+    --thc-input-background-color--focus: var(--thc-color--black-100);
+    --thc-input-background-color--disabled: var(--thc-color--white-10);
+}
+
+.thc-c-input--error {
+    --thc-input-border-color: var(--thc-color--red-20);
+    --thc-input-border-color--hover: var(--thc-color--red-50);
+    --thc-input-border-color--focus: var(--thc-color--red-100);
+
+    --thc-input-background-color: var(--thc-color--red-10);
+    --thc-input-background-color--hover: var(--thc-color--red-10);
+    --thc-input-background-color--focus: var(--thc-color--red-10);
+}
+
+.thc-c-input__container {
+    --thc-input-cursor: var(--thc-cursor--text);
+    --thc-input-cursor--disabled: var(--thc-cursor--default);
+
+    --thc-input-border: var(--thc-borderSolid--S);
+    --thc-input-border-radius: var(--thc-radius--M);
+
+    --thc-input-text-color--disabled: var(--thc-textColor--secondary);
+
+    --thc-input-padding: var(--thc-spacing--S);
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: var(--thc-input-padding);
+    min-width: var(--thc-input-min-width);
+
+    cursor: var(--thc-input-cursor);
+
+    border: var(--thc-input-border);
+    border-color: var(--thc-input-border-color);
+    border-radius: var(--thc-input-border-radius);
+    background-color: var(--thc-input-background-color);
+
+    transition: border-color var(--thc-animationDuration--S), background-color var(--thc-animationDuration--S);
+}
+
+.thc-c-input--full-width {
+    width: 100%;
+}
+
+.thc-c-input__container[disabled] {
+    --thc-text-color: var(--thc-input-text-color--disabled);
+
+    --thc-input-border-color: var(--thc-input-border-color--disabled);
+    --thc-input-background-color: var(--thc-input-background-color--disabled);
+
+    --thc-input-cursor: var(--thc-input-cursor--disabled);
+}
+
+.thc-c-input__container:not([disabled]):hover {
+    --thc-input-border-color: var(--thc-input-border-color--hover);
+    --thc-input-background-color: var(--thc-input-background-color--hover);
+}
+
+.thc-c-input__container.thc-c-input--focus:not([disabled]) {
+    --thc-input-border-color: var(--thc-input-border-color--focus);
+    --thc-input-background-color: var(--thc-input-background-color--focus);
+}
+
+.thc-c-input__number-buttons {
+    display: flex;
+    flex-direction: column;
+
+    --thc-icon-color: var(--thc-textColor--primary);
+}
+
+.thc-c-input__number-buttons .thc-c-icon {
+    outline: none;
+}
+
+.thc-c-input__min-max {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    --thc-text-color: var(--thc-textColor--secondary);
+}
+
+.thc-c-input__input {
+    box-sizing: content-box;
+    display: block;
+
+    padding: 0;
+    margin: 0;
+
+    border: 0;
+    background: none;
+
+    min-width: 0; /* Make the item shrink with firefox */
+    width: 100%; /* IE11 issue */
+}
+
+.thc-c-input__input::placeholder {
+    color: var(--thc-placeholder-color);
+
+    font-family: var(--thc-text-fontFamily);
+    font-size: var(--thc-text-fontSize);
+    line-height: var(--thc-text-lineHeight);
+    font-weight: var(--thc-text-fontWeight);
+    text-transform: var(--thc-text-transform);
+}
+
+.thc-c-input__input:focus {
+    outline: 0;
+}
+
+.thc-c-input__input[disabled] {
+    pointer-events: none;
+}
+
+.thc-c-input__input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.thc-c-input__input[type="number"]::-webkit-inner-spin-button,
+.thc-c-input__input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}

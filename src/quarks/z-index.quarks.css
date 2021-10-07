@@ -1,0 +1,9 @@
+:root {
+    --thc-zIndex--neg: -1;
+    --thc-zIndex--1: 1000; /* Everything else */
+    --thc-zIndex--2: 2000; /* Banner */
+    --thc-zIndex--3: 3000; /* Drawer */
+    --thc-zIndex--4: 4000; /* Tooltips */
+    --thc-zIndex--5: 5000; /* Toasts */
+    --thc-zIndex--6: 6000; /* Popups */
+}

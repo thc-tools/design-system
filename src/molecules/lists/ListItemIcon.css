@@ -1,0 +1,23 @@
+.thc-theme--light,
+.thc-theme--dark {
+    --thc-list-item-icon-color: var(--thc-textColor--secondary);
+}
+
+.thc-c-list-item-icon {
+    --thc-icon-color: var(--thc-list-item-icon-color);
+
+    display: inline-flex;
+    flex-shrink: 0;
+}
+
+.thc-c-list-item-icon--hover {
+    --thc-icon-color: transparent;
+}
+
+.thc-c-list-item:hover .thc-c-list-item-icon--hover {
+    --thc-icon-color: var(--thc-list-item-icon-color);
+}
+
+.thc-c-list-item-icon--accent {
+    --thc-icon-color: var(--thc-textColor--accent);
+}

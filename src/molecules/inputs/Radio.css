@@ -1,0 +1,138 @@
+.thc-theme--light {
+    --thc-radio-primary-color: var(--thc-color--black-40);
+    --thc-radio-secondary-color: transparent;
+
+    --thc-radio-primary-color--hover: var(--thc-color--black-20);
+    --thc-radio-secondary-color--hover: transparent;
+
+    --thc-radio-primary-color--disabled: var(--thc-color--black-20);
+    --thc-radio-secondary-color--disabled: var(--thc-color--black-10);
+}
+
+.thc-c-radio--checked:not([disabled]) {
+    --thc-radio-primary-color: var(--thc-color--skyblue-100);
+    --thc-radio-primary-color--hover: var(--thc-color--skyblue-80);
+}
+
+.thc-c-radio--error:not([disabled]) {
+    --thc-radio-primary-color: var(--thc-color--red-60);
+    --thc-radio-primary-color--hover: var(--thc-color--red-40);
+}
+
+.thc-c-radio--error.thc-c-radio--checked:not([disabled]) {
+    --thc-radio-primary-color: var(--thc-color--red-100);
+    --thc-radio-primary-color--hover: var(--thc-color--red-80);
+}
+
+.thc-theme--dark {
+    --thc-radio-primary-color: var(--thc-color--white-20);
+    --thc-radio-secondary-color: transparent;
+
+    --thc-radio-primary-color--hover: var(--thc-color--white-40);
+    --thc-radio-secondary-color--hover: transparent;
+
+    --thc-radio-primary-color--disabled: var(--thc-color--white-10);
+    --thc-radio-secondary-color--disabled: var(--thc-color--white-20);
+}
+
+.thc-theme--dark .thc-c-radio--checked:not([disabled]) {
+    --thc-radio-primary-color: var(--thc-color--skyblue-80);
+    --thc-radio-primary-color--hover: var(--thc-color--skyblue-100);
+}
+
+.thc-theme--dark .thc-c-radio--error:not([disabled]) {
+    --thc-radio-primary-color: var(--thc-color--red-40);
+    --thc-radio-primary-color--hover: var(--thc-color--red-60);
+}
+
+.thc-theme--dark .thc-c-radio--error.thc-c-radio--checked:not([disabled]) {
+    --thc-radio-primary-color: var(--thc-color--red-80);
+    --thc-radio-primary-color--hover: var(--thc-color--red-100);
+}
+
+.thc-c-radio {
+    --thc-radio-cursor: var(--thc-cursor--pointer);
+    --thc-radio-cursor--disabled: var(--thc-cursor--default);
+
+    --thc-radio-border-radius: var(--thc-radius--M);
+
+    position: relative;
+    width: fit-content;
+    z-index: 0;
+
+    width: 17px;
+    height: 17px;
+
+    cursor: var(--thc-radio-cursor);
+}
+
+.thc-c-radio {
+    --thc-radio-border-color: var(--thc-radio-primary-color);
+    --thc-radio-background-color: var(--thc-radio-secondary-color);
+}
+
+.thc-c-radio:hover:not([disabled]) {
+    --thc-radio-primary-color: var(--thc-radio-primary-color--hover);
+    --thc-radio-secondary-color: var(--thc-radio-secondary-color--hover);
+}
+
+.thc-c-radio--checked:not([disabled]) {
+    --thc-radio-border-color: var(--thc-radio-primary-color);
+    --thc-radio-background-color: var(--thc-radio-primary-color);
+}
+
+.thc-c-radio--checked:hover:not([disabled]) {
+    --thc-radio-border-color: var(--thc-radio-primary-color--hover);
+    --thc-radio-background-color: var(--thc-radio-primary-color--hover);
+}
+
+.thc-c-radio[disabled] {
+    --thc-radio-border-color: var(--thc-radio-primary-color--disabled);
+
+    --thc-radio-cursor: var(--thc-radio-cursor--checked);
+}
+
+.thc-c-radio--checked[disabled] {
+    --thc-radio-border-color: var(--thc-radio-primary-color--disabled);
+    --thc-radio-background-color: var(--thc-radio-secondary-color--disabled);
+
+    --thc-radio-cursor: var(--thc-radio-cursor--checked);
+}
+
+.thc-c-radio__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    border: 2px solid;
+    border-radius: var(--thc-radio-border-radius);
+
+    border-color: var(--thc-radio-border-color);
+    background-color: transparent;
+
+    width: 100%;
+    height: 100%;
+}
+
+.thc-c-radio__input {
+    cursor: inherit;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.thc-c-radio__thumb {
+    width: 9px;
+    height: 9px;
+    border-color: var(--thc-radio-border-color);
+    border-radius: var(--thc-radio-border-radius);
+    background-color: var(--thc-radio-background-color);
+}

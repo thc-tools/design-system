@@ -1,0 +1,115 @@
+:root {
+    --thc-grid-gap: var(--thc-spacing--L);
+}
+
+@media (max-width: 1440px) {
+    :root {
+        --thc-grid-gap: var(--thc-spacing--M);
+    }
+}
+
+.thc-o-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--thc-grid-gap);
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid--full-height {
+    grid-template-rows: 100%;
+}
+
+.thc-o-grid > .thc-o-cols-6-left {
+    grid-column: 1 / 7;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-6-right {
+    grid-column: 7 / 13;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-10 {
+    grid-column: 2 / 12;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-8 {
+    grid-column: 3 / 11;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-6 {
+    grid-column: 4 / 10;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-4 {
+    grid-column: 5 / 9;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-3-9-left {
+    grid-column: 1 / 4;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-3-9-right {
+    grid-column: 4 / 13;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-9-3-left {
+    grid-column: 1 / 10;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-9-3-right {
+    grid-column: 10 / 13;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-4-4-4-left {
+    grid-column: 1 / 5;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-4-4-4-center {
+    grid-column: 5 / 9;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-4-4-4-right {
+    grid-column: 9 / 13;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-4-8-left {
+    grid-column: 1 / 5;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid > .thc-o-cols-4-8-right {
+    grid-column: 5 / 13;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid .thc-o-cols-3-3-3-3-left {
+    grid-column: 1 / 4;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid .thc-o-cols-3-3-3-3-center-left {
+    grid-column: 4 / 7;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid .thc-o-cols-3-3-3-3-center-right {
+    grid-column: 7 / 10;
+    min-width: 0; /* For Firefox */
+}
+
+.thc-o-grid .thc-o-cols-3-3-3-3-right {
+    grid-column: 10 / 13;
+    min-width: 0; /* For Firefox */
+}

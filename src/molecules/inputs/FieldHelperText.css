@@ -1,0 +1,19 @@
+.thc-c-field-helper-text {
+    --thc-text-color: var(--thc-color--blue-100);
+}
+
+.thc-c-field-helper-text--error:not([disabled]) {
+    --thc-text-color: var(--thc-status-color--error);
+}
+
+.thc-c-field-helper-text--success:not([disabled]) {
+    --thc-text-color: var(--thc-status-color--success);
+}
+
+.thc-c-field-helper-text--warning:not([disabled]) {
+    --thc-text-color: var(--thc-status-color--warning);
+}
+
+.thc-c-field-helper-text[disabled] {
+    --thc-text-color: var(--thc-textColor--secondary);
+}

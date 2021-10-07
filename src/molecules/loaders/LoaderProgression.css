@@ -1,0 +1,35 @@
+:root {
+    --thc-loader-progression-background-color: var(--thc-colorDataviz--grey-50);
+    --thc-loader-progression-background-color--accent: var(--thc-color--green-100);
+    --thc-loader-progression-background-color--accent-error: var(--thc-color--red-100);
+    --thc-loader-progression-background-color--accent-warning: var(--thc-color--orange-100);
+
+    --thc-loader-progression-border-radius: var(--thc-radius--S);
+
+    --thc-loader-progression-height: 10px;
+}
+
+.thc-c-loader-progression {
+    height: var(--thc-loader-progression-height);
+    width: 100%;
+
+    border-radius: var(--thc-loader-progression-border-radius);
+    background: var(--thc-loader-progression-background-color);
+}
+
+.thc-c-loader-progression--error {
+    --thc-loader-progression-background-color--accent: var(--thc-loader-progression-background-color--accent-error);
+}
+
+.thc-c-loader-progression--warning {
+    --thc-loader-progression-background-color--accent: var(--thc-loader-progression-background-color--accent-warning);
+}
+
+.thc-c-loader-progression__progress-bar {
+    height: 100%;
+
+    transition: width var(--thc-animationDuration--S);
+
+    border-radius: var(--thc-loader-progression-border-radius);
+    background-color: var(--thc-loader-progression-background-color--accent);
+}

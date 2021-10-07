@@ -1,0 +1,15 @@
+:root {
+    --thc-toast-container-width: 400px;
+}
+
+.thc-c-toast-container .Toastify__toast-container--bottom-left {
+    left: calc(var(--thc-menu-width) + 1em);
+}
+
+.thc-c-toast-container .Toastify__toast:last-child {
+    margin-bottom: 0;
+}
+
+.thc-c-toast-container .Toastify__toast-container {
+    width: var(--thc-toast-container-width);
+}

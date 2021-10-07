@@ -1,0 +1,27 @@
+import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Quarks/Shadow" />
+
+# Shadow
+
+## TODO
+
+Shadows in thc have one defined quarks:
+
+-   `--thc-shadow--regular`:
+
+### Examples
+
+<Canvas>
+    <Story name="--thc-shadow--regular">
+        <div>---thc-shadow--regular</div>
+        <div
+            style={{
+                border: "1px solid black",
+                width: "70px",
+                height: "70px",
+                boxShadow: "var(--thc-shadow--regular)",
+            }}
+        />
+    </Story>
+</Canvas>

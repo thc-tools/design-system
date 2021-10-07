@@ -1,0 +1,40 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Formatters/Dates" />
+
+# Date Formatters
+
+```js
+import { yourLovelyCraftedFormatter } from "@thc-tools/design-system/core/formatters";
+```
+
+The following formats are used:
+
+-   `FORMAT_DATE`: `DD/MM/yyyy`
+-   `FORMAT_TIME`: `HH:mm`
+
+Which gave three formatters:
+
+## formatDate
+
+Format only the date
+
+```js
+function formatDate(date) // -> 13/04/2021
+```
+
+## formatTime
+
+Format only the time
+
+```js
+function formatTime(date) // -> 14:41
+```
+
+## formatDateTime
+
+Fomat both date and time
+
+```js
+function formatDateTime(date) // -> 13/04/2021, 14:41
+```

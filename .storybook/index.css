@@ -1,0 +1,54 @@
+@import "../src/index.css";
+
+/*fonts*/
+/* WARNING: cannot use some CSS variables here to defined the fonts face */
+
+/* import font for Muli Regular, Bold and Extra-Bold */
+/* WARNING: we don't use Italic and Italic-Bold so we don't import them now */
+@font-face {
+    font-family: "Muli";
+    src: url("./fonts/Muli/Muli-Regular.ttf") format("truetype");
+
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: "Muli";
+    src: url("./fonts/Muli/Muli-Bold.ttf") format("truetype");
+
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Muli";
+    src: url("./fonts/Muli/Muli-ExtraBold.ttf") format("truetype");
+
+    font-weight: 800;
+}
+
+/* import font for Montserrat Regular, Bold and Extra-Bold */
+/* WARNING: we don't use Italic and Italic-Bold so we don't import them now */
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+
+    font-weight: 800;
+}

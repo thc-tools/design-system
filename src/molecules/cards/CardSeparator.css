@@ -1,0 +1,20 @@
+.thc-theme--light {
+    --thc-card-separator-color: var(--thc-color--black-20);
+}
+
+.thc-theme--dark {
+    --thc-card-separator-color: var(--thc-color--white-20);
+}
+
+.thc-c-card__separator {
+    margin: var(--thc-card-spacing);
+
+    box-sizing: border-box;
+
+    border-bottom: var(--thc-borderSolid--S);
+    border-color: var(--thc-card-separator-color);
+}
+
+.thc-c-card__separator--full-width {
+    margin: var(--thc-card-spacing) 0;
+}

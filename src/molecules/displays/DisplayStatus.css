@@ -1,0 +1,24 @@
+.thc-c-display-status {
+    display: flex;
+    align-items: center;
+}
+
+.thc-c-display-status--draft {
+    --thc-icon-color: var(--thc-color--orange-100);
+}
+
+.thc-c-display-status--inProgress {
+    --thc-icon-color: var(--thc-textColor--secondary);
+}
+
+.thc-c-display-status--paused {
+    --thc-icon-color: var(--thc-textColor--primary);
+}
+
+.thc-c-display-status--done {
+    --thc-icon-color: var(--thc-color--green-100);
+}
+
+.thc-c-display-status--failed {
+    --thc-icon-color: var(--thc-color--red-100);
+}

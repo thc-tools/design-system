@@ -1,0 +1,22 @@
+:root {
+    --thc-paper-shadow: var(--thc-shadow--transparent);
+    --thc-paper-shadow--shadow: var(--thc-shadow--regular);
+}
+
+.thc-theme--light {
+    --thc-paper-background-color: var(--thc-color--white-100);
+}
+
+.thc-theme--dark {
+    --thc-paper-background-color: var(--thc-color--black-100);
+}
+
+.thc-o-paper {
+    background-color: var(--thc-paper-background-color);
+    overflow: auto;
+    box-shadow: var(--thc-paper-shadow);
+}
+
+.thc-o-paper--shadow {
+    --thc-paper-shadow: var(--thc-paper-shadow--shadow);
+}

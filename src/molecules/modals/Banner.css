@@ -1,0 +1,18 @@
+.thc-c-banner__paper {
+    --thc-text-color: var(--thc-color--white-100);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--thc-spacing--S) var(--thc-spacing--M);
+
+    box-sizing: border-box;
+    min-height: 60px;
+
+    z-index: var(--thc-zIndex--2);
+}
+
+.thc-c-banner__paper > .thc-c-banner__child:not(:last-child) {
+    margin-right: var(--thc-spacing--S);
+}

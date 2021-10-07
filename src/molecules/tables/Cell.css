@@ -1,0 +1,41 @@
+:root {
+    --thc-cell-height: 30px;
+    --thc-cell-min-width: 150px;
+}
+
+.thc-theme--light,
+.thc-theme--dark {
+    --thc-cell-background-color: var(--thc-paper-background-color);
+}
+
+.thc-theme--light {
+    --thc-cell-background-color--hover: var(--thc-color--black-10);
+}
+
+.thc-theme--dark {
+    --thc-cell-background-color--hover: var(--thc-color--white-10);
+}
+
+.thc-c-cell {
+    box-sizing: border-box;
+    height: var(--thc-cell-height);
+    min-width: var(--thc-cell-min-width);
+    width: fit-content;
+    padding: 0 var(--thc-spacing--S);
+    border-bottom: var(--thc-borderSolid--S);
+    border-right: var(--thc-borderSolid--S);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: var(--thc-cell-background-color);
+}
+
+.thc-c-cell--hover {
+    --thc-cell-background-color: var(--thc-cell-background-color--hover);
+}

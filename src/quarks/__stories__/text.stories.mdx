@@ -1,0 +1,137 @@
+import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Quarks/Text" />
+
+# Text
+
+## TODO
+
+### Font families
+
+-   `--thc-fontFamily--montserrat`: Montserrat
+-   `--thc-fontFamily--muli`: Muli
+
+#### Examples
+
+<Canvas>
+    <Story name="--thc-fontFamily--montserrat">
+        <h5>Montserrat</h5>
+        <div style={{ fontFamily: "var(--thc-fontFamily--montserrat)" }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis suscipit dignissim lectus, sed fringilla quam
+            sodales sed. Praesent diam neque, pulvinar at ultrices consectetur, tristique at justo. Suspendisse id
+            pulvinar augue. Vivamus sed augue ut elit volutpat euismod. Praesent vulputate at mi sed mattis. Maecenas
+            rutrum eu diam et tempor. Nullam nec dui pharetra lorem varius tempus. Nunc eget turpis sollicitudin diam
+            condimentum malesuada ac a urna. Quisque hendrerit laoreet nunc sed iaculis. Proin bibendum auctor mauris ut
+            lacinia. Aenean risus risus, rhoncus at ligula in, blandit commodo dolor. Pellentesque aliquam accumsan
+            lorem nec vulputate. Nam laoreet vestibulum justo, at rutrum mauris hendrerit nec.
+        </div>
+    </Story>
+    <Story name="--thc-fontFamily--muli">
+        <h5>Muli</h5>
+        <div style={{ fontFamily: "var(--thc-fontFamily--muli)" }}>
+            Morbi eu mauris feugiat quam commodo finibus nec et neque. Fusce pharetra mauris in urna bibendum, a aliquet
+            neque hendrerit. Nam nec felis ultrices, laoreet massa volutpat, fermentum ligula. Mauris justo lectus,
+            finibus eget molestie nec, laoreet eget lacus. Nam aliquam est vitae tellus volutpat, ac tempor arcu
+            vehicula. Phasellus quis turpis sit amet purus tempus ultricies. Fusce ultricies tortor sit amet neque
+            malesuada congue. Etiam faucibus ante ac lacus ornare rutrum. Pellentesque quis nisl id ipsum consequat
+            faucibus. Pellentesque porttitor diam ac cursus semper. Aenean aliquet quis urna vitae tincidunt. Duis
+            euismod neque augue, quis lacinia nisl accumsan vitae. Aenean magna libero, fermentum non scelerisque vitae,
+            dapibus non ipsum. Duis facilisis lorem risus, et lacinia lacus consectetur ut. Nam vulputate diam eget elit
+            pulvinar ornare. Praesent elit lorem, fermentum et mollis quis, fermentum quis risus.
+        </div>
+    </Story>
+</Canvas>
+
+### Font sizes
+
+-   `--thc-fontSize--S`: 10px
+-   `--thc-fontSize--M`: 12px
+-   `--thc-fontSize--L`: 14px
+-   `--thc-fontSize--XL`: 24px
+
+#### Examples
+
+<Canvas>
+    <Story name="--thc-fontSize--S">
+        <div style={{ fontSize: "var(--thc-fontSize--S)" }}>--thc-fontSize--S</div>
+    </Story>
+    <Story name="--thc-fontSize--M">
+        <div style={{ fontSize: "var(--thc-fontSize--M)" }}>--thc-fontSize--M</div>
+    </Story>
+    <Story name="--thc-fontSize--L">
+        <div style={{ fontSize: "var(--thc-fontSize--L)" }}>--thc-fontSize--L</div>
+    </Story>
+    <Story name="--thc-fontSize--XL">
+        <div style={{ fontSize: "var(--thc-fontSize--XL)" }}>--thc-fontSize--XL</div>
+    </Story>
+</Canvas>
+
+### Font weights
+
+-   `--thc-fontWeight--regular`: 400
+-   `--thc-fontWeight--extrabold`: 800
+
+#### Examples
+
+<Canvas>
+    <Story name="--thc-fontWeight--regular">
+        <div style={{ fontWeight: "--thc-fontWeight--regular)" }}>--thc-fontWeight--regular</div>
+    </Story>
+    <Story name="--thc-fontWeight--extrabold">
+        <div style={{ fontWeight: "var(--thc-fontWeight--extrabold)" }}>--thc-fontWeight--extrabold</div>
+    </Story>
+</Canvas>
+
+### Line heights
+
+-   `--thc-lineHeight--S`: 12px
+-   `--thc-lineHeight--M`: 15px
+-   `--thc-lineHeight--L`: 23px
+-   `--thc-lineHeight--XL`: 29px
+
+#### Examples
+
+<Canvas>
+    <Story name="--thc-lineHeight--S">
+        <div style={{ lineHeight: "var(--thc-lineHeight--S)", border: "var(--thc-borderSolid--S)" }}>
+            --thc-lineHeight--S
+        </div>
+    </Story>
+    <Story name="--thc-lineHeight--M">
+        <div style={{ lineHeight: "var(--thc-lineHeight--M)", border: "var(--thc-borderSolid--S)" }}>
+            --thc-lineHeight--M
+        </div>
+    </Story>
+    <Story name="--thc-lineHeight--L">
+        <div style={{ lineHeight: "var(--thc-lineHeight--L)", border: "var(--thc-borderSolid--S)" }}>
+            --thc-lineHeight--L
+        </div>
+    </Story>
+    <Story name="--thc-lineHeight--XL">
+        <div style={{ lineHeight: "var(--thc-lineHeight--XL)", border: "var(--thc-borderSolid--S)" }}>
+            --thc-lineHeight--XL
+        </div>
+    </Story>
+</Canvas>
+
+### Colors
+
+THC have three text colors defined:
+
+-   `--thc-textColor--primary`
+-   `--thc-textColor--accent`
+-   `--thc-textColor--secondary`
+
+#### Examples
+
+<Canvas>
+    <Story name="--thc-textColor--primary">
+        <div style={{ color: "var(--thc-textColor--primary)" }}>--thc-textColor--primary</div>
+    </Story>
+    <Story name="--thc-textColor--accent">
+        <div style={{ color: "var(--thc-textColor--accent)" }}>--thc-textColor--accent</div>
+    </Story>
+    <Story name="--thc-textColor--secondary">
+        <div style={{ color: "var(--thc-textColor--secondary)" }}>--thc-textColor--secondary</div>
+    </Story>
+</Canvas>

@@ -1,0 +1,37 @@
+:root {
+    --thc-header-cell-height: 50px;
+    --thc-header-cell-min-width: var(--thc-cell-min-width);
+}
+
+.thc-theme--light,
+.thc-theme--dark {
+    --thc-header-cell-box-shadow--hover: var(--thc-color--skyblue-80);
+    --thc-header-cell-box-shadow--active: var(--thc-color--skyblue-100);
+}
+
+.thc-c-header-cell {
+    box-sizing: border-box;
+    height: var(--thc-header-cell-height);
+    min-width: var(--thc-header-cell-min-width);
+    width: fit-content;
+    padding: 0 var(--thc-spacing--S);
+    border-bottom: var(--thc-borderSolid--S);
+    border-right: var(--thc-borderSolid--S);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--thc-paper-background-color);
+
+    --thc-icon-color: var(--thc-textColor--secondary);
+
+    --thc-actionable-box-shadow-color--hover: var(--thc-header-cell-box-shadow--hover);
+    --thc-actionable-box-shadow-color--active: var(--thc-header-cell-box-shadow--active);
+}
+
+.thc-c-header-cell__content {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

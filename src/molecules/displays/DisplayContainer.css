@@ -1,0 +1,51 @@
+:root {
+    --thc-display-container-h-spacing: var(--thc-spacing--S);
+    --thc-display-container-v-spacing: var(--thc-spacing--M);
+}
+
+.thc-c-display-container {
+    display: flex;
+}
+
+/* Row */
+
+.thc-c-display-container--row {
+    --thc-display-container-v-spacing: var(--thc-spacing--S);
+}
+
+/* Column  */
+
+.thc-c-display-container--column {
+    --thc-display-container-v-spacing: var(--thc-spacing--M);
+}
+
+/* Horizontal */
+
+.thc-c-display-container--horizontal {
+    flex-direction: row;
+}
+
+.thc-c-display-container--horizontal > .thc-c-display,
+.thc-c-display-container--horizontal > .thc-c-display-resource,
+.thc-c-display-container--horizontal > .thc-c-display-container {
+    flex: 1;
+    align-items: stretch;
+}
+
+.thc-c-display-container--horizontal > .thc-c-display:not(:last-child),
+.thc-c-display-container--horizontal > .thc-c-display-resource:not(:last-child),
+.thc-c-display-container--horizontal > .thc-c-display-container:not(:last-child) {
+    margin-right: var(--thc-display-container-h-spacing);
+}
+
+/* Vertical */
+
+.thc-c-display-container--vertical {
+    flex-direction: column;
+}
+
+.thc-c-display-container--vertical > .thc-c-display:not(:last-child),
+.thc-c-display-container--vertical > .thc-c-display-resource:not(:last-child),
+.thc-c-display-container--vertical > .thc-c-display-container:not(:last-child) {
+    margin-bottom: var(--thc-display-container-v-spacing);
+}

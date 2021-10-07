@@ -1,0 +1,83 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Hooks/useQueryString" />
+
+## useQueryString
+
+```js
+import { useQueryString } from "@thc-tools/design-system/core/hooks";
+```
+
+This hook is to help manage state in URL via the query strings.
+It works accross multiple components at the same time (bi-directional).
+
+```js
+function useQueryString(qsKey, initialValue) => [value, onSetValue]
+```
+
+-   qsKey `string|string[]`: The query string to handle
+-   initialValue: `string|{ [key: string]: string }`: Initial values for query string
+-   returns:
+    -   value `string|string|{ [key: string]: string }`: The current value(s) from the query string
+    -   onServalue `func`: Function to manipulate the query string value
+
+You can use it with two modes, one param from the query string or multiple.
+
+⚠️ **Warning:** If you have multiple params to handle, always use the multiple variant and multiple times the simple variant.
+
+### Simple variant
+
+Example:
+
+```js
+// Simple
+const [userId, setValue] = useQueryString("user-id");
+```
+
+The 1st variable will directly be your query string value or default value
+
+```js
+// / or /?user-id=
+const [userId, setValue] = useQueryString("user-id"); // userId = undefined
+const [userId, setValue] = useQueryString("user-id", "abc"); // userId = "abc"
+
+// /?user-id=123
+const [userId, setValue] = useQueryString("user-id"); // userId = "123"
+const [userId, setValue] = useQueryString("user-id", "abc"); // userId = "123"
+
+setValue("123");
+```
+
+### Complex variant
+
+Example:
+
+```js
+// Complex
+const [{ "user-id": userId, "user-active": userActive }, setValues] = useQueryString(["user-id", "user-active"], {
+    "user-active": false,
+});
+```
+
+The 1st variable will be a map of all tracked query string params, with query string param name as key and value as value.
+
+```js
+// / or /?user-id=&user-active=
+const [{ "user-id": userId, "user-active": userActive }, setValues] = useQueryString(["user-id", "user-active"]); // userId = undefined; userActive = undefined
+const [{ "user-id": userId, "user-active": userActive }, setValues] = useQueryString(["user-id", "user-active"], {
+    "user-id": "123",
+    "user-active": false,
+}); // userId = "123"; userActive = false
+
+// / or /?user-id=456&user-active=true
+const [{ "user-id": userId, "user-active": userActive }, setValues] = useQueryString(["user-id", "user-active"]); // userId = "456"; userActive = true
+const [{ "user-id": userId, "user-active": userActive }, setValues] = useQueryString(["user-id", "user-active"], {
+    "user-id": "123",
+    "user-active": false,
+}); // userId = "456"; userActive = true
+
+setValues({
+    "user-id": "abc",
+    "user-active": true,
+});
+```

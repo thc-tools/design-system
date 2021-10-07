@@ -1,0 +1,14 @@
+.thc-c-step-connector {
+    flex: 1 1 auto;
+
+    position: absolute;
+    bottom: calc(var(--thc-iconSize--M) / 2);
+    left: calc(-50% + var(--thc-iconSize--M));
+    right: calc(50% + var(--thc-iconSize--M));
+}
+
+.thc-c-step-connector__line {
+    display: block;
+
+    border-top: var(--thc-borderSolid--S);
+}

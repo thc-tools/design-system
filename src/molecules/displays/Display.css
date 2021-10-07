@@ -1,0 +1,48 @@
+.thc-c-display {
+    display: flex;
+
+    outline: none;
+
+    --thc-icon-color: var(--thc-textColor--secondary);
+}
+
+.thc-c-display.thc-o-actionable {
+    padding: var(--thc-spacing--XS) 2px;
+}
+
+.thc-c-display--vertical {
+    flex-direction: column;
+}
+
+.thc-c-display--horizontal {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.thc-c-display--horizontal .thc-c-display__label-container {
+    margin-right: var(--thc-spacing--XS);
+}
+
+.thc-c-display--vertical .thc-c-display__value {
+    margin-top: var(--thc-spacing--XS);
+}
+
+.thc-c-display__label-container {
+    display: flex;
+    align-items: center;
+}
+
+.thc-c-display__label {
+    --thc-text-color: var(--thc-textColor--secondary);
+}
+
+.thc-c-display__helper-text {
+    --thc-icon-color: var(--thc-textColor--secondary);
+
+    margin-left: var(--thc-spacing--XS);
+}
+
+.thc-c-display--horizontal .thc-c-display__value {
+    display: flex;
+    align-items: center;
+}

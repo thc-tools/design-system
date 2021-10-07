@@ -1,0 +1,19 @@
+.thc-c-tabs {
+    overflow-y: auto;
+
+    display: flex;
+
+    border-bottom: var(--thc-borderSolid--S);
+}
+
+.thc-c-tabs__container {
+    position: relative;
+
+    display: inline-block;
+    flex: 1 1 auto;
+    white-space: nowrap;
+}
+
+.thc-c-tabs__list-container {
+    display: flex;
+}

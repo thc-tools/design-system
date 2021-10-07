@@ -1,0 +1,141 @@
+:root {
+    --thc-fontFamily--montserrat: Montserrat;
+    --thc-fontFamily--muli: Muli;
+}
+
+:root {
+    --thc-fontSize--S: 10px;
+    --thc-fontSize--M: 12px;
+    --thc-fontSize--L: 14px;
+    --thc-fontSize--XL: 24px;
+}
+
+:root {
+    --thc-fontWeight--light: 100;
+    --thc-fontWeight--regular: 400;
+    --thc-fontWeight--medium: 600;
+    --thc-fontWeight--extrabold: 800;
+}
+
+:root {
+    --thc-lineHeight--S: 12px;
+    --thc-lineHeight--M: 15px;
+    --thc-lineHeight--L: 23px;
+    --thc-lineHeight--XL: 29px;
+}
+
+.thc-u-typography--headline-1 {
+    font-family: var(--thc-fontFamily--montserrat);
+    font-weight: var(--thc-fontWeight--light);
+    font-size: 80px;
+    line-height: 129px;
+    letter-spacing: -1.5px;
+    text-transform: none;
+}
+
+.thc-u-typography--headline-2 {
+    font-family: var(--thc-fontFamily--montserrat);
+    font-weight: var(--thc-fontWeight--light);
+    font-size: 50px;
+    line-height: 80px;
+    letter-spacing: -0.5px;
+    text-transform: none;
+}
+
+.thc-u-typography--headline-3 {
+    font-family: var(--thc-fontFamily--montserrat);
+    font-weight: var(--thc-fontWeight--regular);
+    font-size: 39px;
+    line-height: 63px;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+.thc-u-typography--headline-4 {
+    font-family: var(--thc-fontFamily--montserrat);
+    font-weight: var(--thc-fontWeight--regular);
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: 0.25px;
+    text-transform: none;
+}
+
+.thc-u-typography--headline-5 {
+    font-family: var(--thc-fontFamily--montserrat);
+    font-weight: var(--thc-fontWeight--regular);
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+.thc-u-typography--headline-6 {
+    font-family: var(--thc-fontFamily--montserrat);
+    font-weight: var(--thc-fontWeight--medium);
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.15px;
+    text-transform: none;
+}
+
+.thc-u-typography--subtitle-1 {
+    font-family: var(--thc-fontFamily--montserrat);
+    font-weight: var(--thc-fontWeight--regular);
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.15px;
+    text-transform: none;
+}
+
+.thc-u-typography--subtitle-2 {
+    font-family: var(--thc-fontFamily--montserrat);
+    font-weight: var(--thc-fontWeight--medium);
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+}
+
+.thc-u-typography--body-1 {
+    font-family: var(--thc-fontFamily--muli);
+    font-weight: var(--thc-fontWeight--regular);
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    text-transform: none;
+}
+
+.thc-u-typography--body-2 {
+    font-family: var(--thc-fontFamily--muli);
+    font-weight: var(--thc-fontWeight--regular);
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-transform: none;
+}
+
+.thc-u-typography--button {
+    font-family: var(--thc-fontFamily--muli);
+    font-weight: var(--thc-fontWeight--medium);
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
+
+.thc-u-typography--caption {
+    font-family: var(--thc-fontFamily--muli);
+    font-weight: var(--thc-fontWeight--regular);
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    text-transform: none;
+}
+
+.thc-u-typography--overline {
+    font-family: var(--thc-fontFamily--muli);
+    font-weight: var(--thc-fontWeight--regular);
+    font-size: 8px;
+    line-height: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}

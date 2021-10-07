@@ -1,0 +1,45 @@
+:root {
+    --thc-bubble-value-size: 70px;
+    --thc-bubble-value-radius: var(--thc-radius--L);
+
+    --thc-bubble-value-color-gradient: linear-gradient(198.78deg, #57dafe 8.37%, #4dbfff 91.63%);
+}
+
+.thc-theme--light .thc-c-bubble-value--primary {
+    --thc-bubble-value-text-color: var(--thc-color--white-100);
+    --thc-bubble-value-background-image: var(--thc-bubble-value-color-gradient);
+    --thc-bubble-value-border-color: var(--thc-color--white-40);
+}
+
+.thc-theme--dark .thc-c-bubble-value--primary {
+    --thc-bubble-value-text-color: var(--thc-color--white-100);
+    --thc-bubble-value-background-image: var(--thc-bubble-value-color-gradient);
+    --thc-bubble-value-border-color: var(--thc-color--black-40);
+}
+
+.thc-theme--light .thc-c-bubble-value--secondary {
+    --thc-bubble-value-text-color: var(--thc-textColor--secondary);
+    --thc-bubble-value-border-color: var(--thc-color--black-10);
+}
+
+.thc-theme--dark .thc-c-bubble-value--secondary {
+    --thc-bubble-value-text-color: var(--thc-textColor--secondary);
+    --thc-bubble-value-border-color: var(--thc-color--white-10);
+}
+
+.thc-c-bubble-value {
+    --thc-text-color: var(--thc-bubble-value-text-color);
+
+    height: var(--thc-bubble-value-size);
+    width: var(--thc-bubble-value-size);
+
+    background-image: var(--thc-bubble-value-background-image);
+
+    border-radius: var(--thc-bubble-value-radius);
+    border: 2px solid var(--thc-bubble-value-border-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

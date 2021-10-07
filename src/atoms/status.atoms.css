@@ -1,0 +1,28 @@
+:root {
+    --thc-status-color--error: var(--thc-color--red-100);
+    --thc-status-color--info: var(--thc-color--blue-100);
+    --thc-status-color--success: var(--thc-color--green-100);
+    --thc-status-color--warning: var(--thc-color--orange-100);
+}
+
+.thc-u-status--error {
+    --thc-status-color: var(--thc-status-color--error);
+}
+
+.thc-u-status--info {
+    --thc-status-color: var(--thc-status-color--info);
+}
+
+.thc-u-status--success {
+    --thc-status-color: var(--thc-status-color--success);
+}
+
+.thc-u-status--warning {
+    --thc-status-color: var(--thc-status-color--warning);
+}
+
+[class*="thc-u-status--"] {
+    --thc-border-color: var(--thc-status-color);
+    --thc-text-color: var(--thc-status-color);
+    --thc-icon-color: var(--thc-status-color);
+}

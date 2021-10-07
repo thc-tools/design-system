@@ -1,0 +1,51 @@
+:root {
+    --thc-icon-wrapper-spacing--vertical: var(--thc-spacing--S);
+    --thc-icon-wrapper-spacing--horizontal: var(--thc-spacing--XS);
+}
+
+.thc-c-icon-wrapper {
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+}
+
+.thc-c-icon-wrapper__icon {
+    flex-shrink: 0;
+}
+
+.thc-c-icon-wrapper--full-width {
+    width: 100%;
+}
+
+.thc-c-icon-wrapper--top {
+    flex-direction: column-reverse;
+}
+
+.thc-c-icon-wrapper--top .thc-c-icon-wrapper__icon {
+    margin-bottom: var(--thc-icon-wrapper-spacing--vertical);
+}
+
+.thc-c-icon-wrapper--right {
+    flex-direction: row;
+}
+
+.thc-c-icon-wrapper--right .thc-c-icon-wrapper__icon {
+    margin-left: var(--thc-icon-wrapper-spacing--horizontal);
+}
+
+.thc-c-icon-wrapper--bottom {
+    flex-direction: column;
+}
+
+.thc-c-icon-wrapper--bottom .thc-c-icon-wrapper__icon {
+    margin-top: var(--thc-icon-wrapper-spacing--vertical);
+}
+
+.thc-c-icon-wrapper--left {
+    flex-direction: row-reverse;
+}
+
+.thc-c-icon-wrapper--left .thc-c-icon-wrapper__icon {
+    margin-right: var(--thc-icon-wrapper-spacing--horizontal);
+}

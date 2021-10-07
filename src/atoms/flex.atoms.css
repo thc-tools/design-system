@@ -1,0 +1,88 @@
+/* Container */
+
+.thc-o-flex {
+    display: flex;
+    align-items: center;
+}
+
+.thc-o-flex--column {
+    flex-direction: column;
+}
+
+.thc-o-flex--space-between {
+    justify-content: space-between;
+}
+
+.thc-o-flex--space-around {
+    justify-content: space-around;
+}
+
+.thc-o-flex--center {
+    justify-content: center;
+}
+
+.thc-o-flex--align-start {
+    align-items: flex-start;
+}
+
+.thc-o-flex--align-end {
+    align-items: flex-end;
+}
+
+.thc-o-flex--justify-end {
+    justify-content: flex-end;
+}
+
+.thc-o-flex--spaced:not(.thc-o-flex--column) > * + * {
+    margin-left: var(--thc-spacing--S);
+}
+
+.thc-o-flex--spaced.thc-o-flex--column > * + * {
+    margin-top: var(--thc-spacing--S);
+}
+
+/* Items */
+
+.thc-o-flex-item--1 {
+    flex: 1 !important;
+}
+
+.thc-o-flex-item--2 {
+    flex: 2 !important;
+}
+
+.thc-o-flex-item--3 {
+    flex: 3 !important;
+}
+
+.thc-o-flex-item--4 {
+    flex: 4 !important;
+}
+
+.thc-o-flex-item--5 {
+    flex: 5 !important;
+}
+
+.thc-o-flex-item--6 {
+    flex: 6 !important;
+}
+
+.thc-o-flex-item--7 {
+    flex: 7 !important;
+}
+
+.thc-o-flex-item--8 {
+    flex: 8 !important;
+}
+
+.thc-o-flex-item--9 {
+    flex: 9 !important;
+}
+
+.thc-o-flex-item--10 {
+    flex: 10 !important;
+}
+
+.thc-o-flex-item--stretch {
+    align-self: stretch;
+}

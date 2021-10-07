@@ -1,0 +1,7 @@
+:root {
+    --thc-form-spacing: var(--thc-spacing--M);
+}
+
+.thc-c-form {
+    margin: var(--thc-form-spacing) 0;
+}

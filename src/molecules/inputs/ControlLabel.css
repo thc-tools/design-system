@@ -1,0 +1,46 @@
+.thc-c-control-label {
+    --thc-control-label-cursor: var(--thc-cursor--pointer);
+    --thc-control-label-cursor--disabled: var(--thc-cursor--default);
+
+    display: inline-flex;
+    align-items: center;
+
+    cursor: var(--thc-control-label-cursor);
+}
+
+.thc-c-control-label[disabled] {
+    --thc-control-label-cursor: var(--thc-control-label-cursor--disabled);
+    --thc-text-color: var(--thc-textColor--secondary);
+}
+
+.thc-c-control-label--top {
+    flex-direction: column-reverse;
+}
+
+.thc-c-control-label--top .thc-c-control-label__label {
+    margin-bottom: var(--thc-spacing--XS);
+}
+
+.thc-c-control-label--right {
+    flex-direction: row;
+}
+
+.thc-c-control-label--right .thc-c-control-label__label {
+    margin-left: var(--thc-spacing--S);
+}
+
+.thc-c-control-label--bottom {
+    flex-direction: column;
+}
+
+.thc-c-control-label--bottom .thc-c-control-label__label {
+    margin-top: var(--thc-spacing--XS);
+}
+
+.thc-c-control-label--left {
+    flex-direction: row-reverse;
+}
+
+.thc-c-control-label--left .thc-c-control-label__label {
+    margin-right: var(--thc-spacing--S);
+}

@@ -1,0 +1,20 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Hooks/useWidth" />
+
+## useWidth
+
+```js
+import { useWidth } from "@thc-tools/design-system/core/hooks";
+```
+
+This hook is to help detect max available width and give it to a children
+
+```js
+function useWidth(defaultWidth) => { width, div };
+```
+
+-   defaultWidth `number`: Width to use before measure is done
+-   return:
+    -   width `number`: Width measured or defaultWidth
+    -   div `React.ref`: Ref to give to a DOM component for measure

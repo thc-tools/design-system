@@ -1,0 +1,88 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Atoms/Actionable" />
+
+# Actionable
+
+## TO RESUME
+
+Actionable is an atom composed only with CSS, it exposes the following behaviors:
+
+-   hover
+-   active
+-   disabled
+
+The CSS object leverages `:hover`, `:active` and `[disabled]` pseudo selectors.
+
+It will handle a different strategy to the lighter/darker effect.
+
+Apply the following CSS selector to your component to add actionable behaviors to it:
+
+-   `thc-o-actionable`
+
+<Canvas>
+    <Story name="Actionable">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "10px 30px" }}>
+            <h2>Standard</h2>
+            <h2>Standard (disabled)</h2>
+            <h2>Colored</h2>
+            <h2>Colored (disabled)</h2>
+            <div
+                className="thc-o-actionable"
+                style={{
+                    width: "120px",
+                    height: "120px",
+                    border: "var(--thc-borderSolid--S)",
+                    borderRadius: "5px",
+                    padding: "5px",
+                }}
+            >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut augue rutrum, imperdiet nisi sed,
+                dictum orci.
+            </div>
+            <div
+                className="thc-o-actionable"
+                disabled
+                style={{
+                    width: "120px",
+                    height: "120px",
+                    border: "var(--thc-borderSolid--S)",
+                    borderRadius: "5px",
+                    padding: "5px",
+                }}
+            >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut augue rutrum, imperdiet nisi sed,
+                dictum orci.
+            </div>
+            <div
+                className="thc-o-actionable thc-theme--color"
+                style={{
+                    width: "120px",
+                    height: "120px",
+                    border: "var(--thc-borderSolid--S)",
+                    borderRadius: "5px",
+                    padding: "5px",
+                    backgroundColor: "#34ddf3",
+                }}
+            >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut augue rutrum, imperdiet nisi sed,
+                dictum orci.
+            </div>
+            <div
+                className="thc-o-actionable thc-theme--color"
+                disabled
+                style={{
+                    width: "120px",
+                    height: "120px",
+                    border: "var(--thc-borderSolid--S)",
+                    borderRadius: "5px",
+                    padding: "5px",
+                    backgroundColor: "#34ddf3",
+                }}
+            >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut augue rutrum, imperdiet nisi sed,
+                dictum orci.
+            </div>
+        </div>
+    </Story>
+</Canvas>

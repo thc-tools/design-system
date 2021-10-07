@@ -1,0 +1,19 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Hooks/useResizeAware" />
+
+## useResizeAware
+
+```js
+import { useResizeAware } from "@thc-tools/design-system/core/hooks";
+```
+
+This hook is to help detect current size of an element
+
+```js
+function useResizeAware() => [resizeListener, sizes];
+```
+
+-   return `array`:
+    -   resizeListener `node`: node to put in the element we want size information from
+    -   sizes `{ heigt: number, width: number }`: Current sizes of element

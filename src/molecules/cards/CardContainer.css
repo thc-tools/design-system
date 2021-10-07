@@ -1,0 +1,51 @@
+:root {
+    --thc-card-container-spacing: var(--thc-spacing--M);
+    --thc-card-container-spacing--condensed: var(--thc-spacing--S);
+}
+
+.thc-c-card-container {
+    display: flex;
+}
+
+.thc-c-card-container--condensed {
+    --thc-card-container-spacing: var(--thc-card-container-spacing--condensed);
+}
+
+.thc-c-card-container--full-height {
+    height: 100%;
+}
+
+.thc-c-card-container--full-width {
+    width: 100%;
+}
+
+/* Horizontal */
+
+.thc-c-card-container--horizontal {
+    flex-direction: row;
+}
+
+.thc-c-card-container--horizontal > .thc-c-card,
+.thc-c-card-container--horizontal > .thc-c-card-container {
+    flex: 1;
+}
+
+.thc-c-card-container--horizontal > .thc-c-card + .thc-c-card,
+.thc-c-card-container--horizontal > .thc-c-card + .thc-c-card-container,
+.thc-c-card-container--horizontal > .thc-c-card-container + .thc-c-card-container,
+.thc-c-card-container--horizontal > .thc-c-card-container + .thc-c-card {
+    margin-left: var(--thc-card-container-spacing);
+}
+
+/* Vertical */
+
+.thc-c-card-container--vertical {
+    flex-direction: column;
+}
+
+.thc-c-card-container--vertical > .thc-c-card + .thc-c-card,
+.thc-c-card-container--vertical > .thc-c-card + .thc-c-card-container,
+.thc-c-card-container--vertical > .thc-c-card-container + .thc-c-card-container,
+.thc-c-card-container--vertical > .thc-c-card-container + .thc-c-card {
+    margin-top: var(--thc-card-container-spacing);
+}

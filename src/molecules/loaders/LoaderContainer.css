@@ -1,0 +1,16 @@
+.thc-c-loader-container {
+    display: flex;
+    align-items: center;
+
+    margin: var(--thc-spacing--S) 0;
+}
+
+.thc-c-loader-container .thc-c-loader-progression,
+.thc-c-loader-container .thc-c-loader-spinner {
+    flex: 1;
+}
+
+.thc-c-loader-container .thc-c-loader-progression:not(:last-child),
+.thc-c-loader-container .thc-c-loader-spinner:not(:last-child) {
+    margin-right: var(--thc-spacing--S);
+}

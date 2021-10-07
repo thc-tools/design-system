@@ -1,0 +1,19 @@
+.thc-c-input-adornment {
+    --thc-input-adornment--spacing: var(--thc-spacing--S);
+
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.thc-c-input-adornment:not(:last-child) {
+    margin-right: var(--thc-input-adornment--spacing);
+}
+
+.thc-c-input:not([disabled]) .thc-c-input-adornment {
+    --thc-text-color: var(--thc-textColor--accent);
+}
+
+.thc-c-input--error.thc-c-input:not([disabled]) .thc-c-input-adornment {
+    --thc-text-color: var(--thc-status-color--error);
+}

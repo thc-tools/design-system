@@ -1,0 +1,300 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/How To(s)/Construct a component" />
+
+# How To - Construct a component
+
+## Rules
+
+### Module
+
+-   Use **ES6** and `import`/`export` syntax.
+-   All exports must be named (**no** default !).
+-   Components are to be written as functions.
+-   One component per module is the default.
+
+### Package
+
+You will need to find a package to host your new component.
+Then you can create two files a js and a css with the name of your component.
+And export/import it from the indexes of that package.
+
+### Composition
+
+Using the `children` property is the idiomatic way to do composition.
+Often child use the same pattern, for example displaying an icon next to a label.
+In this case, we provide explicit properties to simplify implementation.
+For example, Display takes an `icon` property in addition to `children`;
+this way the icon is placed properly depending on the type of Display.
+
+When composing children you can helper to following util functions :
+
+-   wrapLabel: will wrap labels in a span if needed, useful for spacing & :last-child pseudo-selectors.
+-   alterElement: complex overrides of childs (special consideration for classNames).
+
+### Props
+
+-   All props must be spread from the component function declaration.
+-   Props given to a component which are not explicitly documentend, are spread back to the root element using `...otherProps`.
+-   Default props are to be defined using es6 default syntax (rather than component's defaultProps); eg: `function Input({ disabled = false }) { ... }`.
+-   Props **must** ordered alphabetically.
+
+📣 **Note:** For complex default properties, eg: `array`, `function` or `object`. It must declared next to the component.
+Otherwise it will be seen as a new prop value at each render.
+
+```diff
+- function Input({ timeout = { easing: 0, duration: 100 } })
++ const defaultTimeout = { easing: 0, duration: 100 };
++ function Input({ timeout = defaultTimeout })
+```
+
+📣 **Note:** As you give otherProps to the root element of you component.
+You should consider using the util method `filterProps` as it will make sure that you don't give unknown html attributes to your DOM elements.
+
+### CSS Selector construction
+
+-   BIO (BEM + ITCSS + OOCSS) as CSS convention (https://css-tricks.com/combining-the-powers-of-sem-and-bio-for-improving-css/).
+-   `className` is given to the root node.
+-   When CSS is conditional use the classnames library to help you build the class.
+-   If you need to customize a nested component style, you have to give it an additional className.
+    eg: `thc-c-list__dropdown` for a Dropdown component nested in a List component.
+
+Complex example:
+
+```jsx
+function List({ className, condensed = false, dropdownClassName: dropdownClassNameProp }) {
+    const rootClassName = clasnames("thc-c-list", { "thc-c-list--condensed": condensed });
+    const dropdownClassName = clasnames("thc-c-list__dropdown", dropdownClassNameProp);
+
+    return (
+        <div className={rootClassName}>
+            <Dropdown className={dropdownClassName} />
+        </div>
+    );
+}
+```
+
+📣 **Note:** Be carreful with the order you write the selectors depending on the priority. You need to help yourself using ITCSS & OOCSS rules for that.
+
+### CSS Definition
+
+In your CSS file associated to your component. You will need to scope your CSS variables with the following manner :
+
+1. `:root`: every CSS variable that isn't aware of theme (ie. not colors)
+2. `thc-theme--XXX`: every CSS variable that is aware of theme (ie. colors)
+3. `thc-c-component`: specificities to your components and variable override selections
+
+```css
+:root {
+    /* Spacing is always the same  */
+    --thc-card-border: var(--thc-borderSolid--S);
+}
+
+.thc-theme--light {
+    /* Color depends on the theme and can change depending on the component's state */
+    --thc-card-background-color: var(--thc-color--white-100);
+    --thc-card-background-color--hover: var(--thc-color--white-80);
+}
+
+.thc-theme--dark {
+    /* Same description but for dark theme */
+    --thc-card-background-color: var(--thc-color--black-100);
+    --thc-card-background-color--hover: var(--thc-color--black-80);
+}
+
+.thc-c-card {
+    /* Apply CSS variables */
+    border: var(--thc-card-border);
+    /* Apply the generic variant of the background variable */
+    background-color: var(--thc-card-background-color);
+}
+
+.thc-c-card:hover {
+    /* Override the generic --thc-card-background-color */
+    --thc-card-background-color: var(--thc-card-background-color--hover);
+}
+```
+
+📣 **Note:** In the hover case you need to overide the generic variant and not the background property directly.
+That is important to maintain one place where the CSS attributes are writen (the main class selector) and is more
+easy to customize where needed (due to CSS selectors priority).
+
+### CSS Rules
+
+⚠️ **Warning:** A component can never ever never space itself using margin as a default (but it can use padding internally).
+The goal is to make sure that a component can be used at diferrent places without needding overrides. If a spacing pattern
+is common, you can add a container for that component and it the container that will space components between one another.
+The same rule will apply to the container it cannot sapce itself by default from other stuff.
+
+```css
+:root {
+    --thc-component-spacing: var(--thc-spacing--M);
+}
+
+.thc-c-component-container .thc-c-component + .thc-c-component-container .thc-c-component {
+    margin-top: var(--thc-component-spacing);
+}
+```
+
+### Nested components
+
+Nested components inside a component have:
+
+-   Their own flattened properties when these are key to the top level component abstraction, for instance an `id` prop for the Input component.
+-   Their own `xxxProps` property for when developers need to tweak the nested component's props.
+-   Their own `xxxClassName` property for when developper need to add a className to the nested component.
+-   Sometimes their own `XxxComponent` property for performing component injection (mind the Pascal naming).
+-   Their own `xxxRef` property when you might need to perform imperative actions.
+
+### Property naming
+
+The name of a boolean property should be chossen based on the **default value**. For example, the `disabled` attribute on an input element,
+if supplied, defaults to `true`. This allows the shorthand notation:
+
+```diff
+- <Input enabled={false} />
++ <Input disabled />
+```
+
+If you need to manipulate the value of a property inside a component,
+you need to rename it during the spread with a `Prop` suffix (its name will be available inside the component).
+Eg: `value` -> `valueProp`.
+This way it is explicit from the component signature that the value might change in the component.
+
+```jsx
+function Input({ disabled = false, value: valueProp }) {
+    const value = !disabled && value;
+
+    return <input value={value} />;
+}
+```
+
+### Events
+
+When manipulating event handlers inside a component, if the event is named `onChange`, your handler will be named `handleChange`.
+This way in your custom handler you will be able to reference a potential `onChange` property given to your component.
+
+Utils function exists to help you manipulate events:
+
+-   wrapEvent: helper to handle easily preventDefault & disabled with events.
+-   wrapKeyUp: compose an event to be keyboard compatible for SPACE and ENTER keys.
+
+Moreover, accessibility rules dictate to add a role attribute and support keyboard to DOM elements having click capabilities (more on a11y documentation).
+
+```jsx
+function Input({ disabled = false, onChange }) {
+    const handleChange = wrapPrevent((event) => {
+        // Do your logic here
+
+        if (onChange) {
+            onChange(event);
+        }
+    }, diabled);
+
+    const handleKeyUp = wrapKeyUp(handleChange);
+
+    return <input onChange={handleChange} onKeyUp={handleKeyUp} />;
+}
+```
+
+### Inputs
+
+Special consideration must be given to the care of inputs.
+
+The change events for inputs needs to be compliant with Formik API.
+To accomplish that goal the helper method `patchFormEventValue` has been written.
+Its goal is to help you respect the minimum required attributes on your event Formik.
+
+```js
+export function patchFormEventValue(originalEvent, newTarget, newValue);
+```
+
+-   originalEvent: Original SyntheticEvent -> triggering event.
+-   newTarget: New target -> your input DOM component.
+-   newValue: New value -> override the value.
+
+A HOC component exist to transform your input components into fields :
+
+-   fieldHoc: hoc to transform an input into a field.
+
+It will take care of extracting logic for errors, labels, helpers etc. and give the rest to your input.
+
+### Customization: boolean vs enum
+
+There are two options to design the variations of a component: with a _boolean\*_ or with an _enum\*_.
+For example, let's take a button that has different types. Each option has its pros and cons:
+
+-   Option 1 _boolean_:
+
+```ts
+type Props = {
+    contained: boolean;
+    fab: boolean;
+};
+```
+
+This API enabled te shorthand notation: `<Button />`, `<Button contained />` or `<Button fab/>`.
+
+-   Otions 2 _enum_:
+
+```ts
+type Props = {
+    variant: "text" | "contained" | "fab";
+};
+```
+
+This API is more verbose: `<Button />` ("text" is the default), `<Button variant="condensed />` or `<Button variant="fab" />`.
+
+However it prevents an invalid combination from being used, bounds the number of properties exposed, and can easily support new values in the future.
+
+📣 **Note:** The design-system components use a combination of the two approaches according to the following rules:
+
+-   A boolean is used when **2** possible values are required, or if the variation is compatible with several other variants; eg: `condensed`.
+-   An enum is used when **> 2** possible values are required, or if there is the possibility that additional possible values may be required in the future.
+
+### Ref
+
+The `ref` is forwarded to the root element. This means that, without changing the rendered root element via the `component` prop,
+it is forwarded to the outermost DOM element which the component renders. If you pass a different component via the `component` prop,
+the ref will be attached to that component instead.
+
+## Base template
+
+```jsx
+// Libs
+import React from "react";
+import PropTypes from "prop-types";
+import classnames from "classnames";
+
+export function Component({ className }) {
+    const rootClassName = classnames("thc-c-component", className);
+
+    return <div className={rootClassName}></div>;
+}
+
+Component.propTypes = {
+    /**
+     * Additional className
+     */
+    className: PropTypes.string,
+};
+```
+
+```css
+:root {
+    --thc-component-xxx: xxx;
+}
+
+.thc-theme--light {
+    --thc-component-yyy: xxx;
+}
+
+.thc-theme--dark {
+    --thc-component-yyy: xxx;
+}
+
+.thc-c-component {
+    xxx: var(--thc-component-xxx)
+    yyy: var(--thc-component-yyy)
+}
+```

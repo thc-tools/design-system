@@ -1,0 +1,9 @@
+.thc-c-radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.thc-c-radio-group .thc-c-radio__label:not(:last-child),
+.thc-c-radio-group .thc-c-radio-card:not(:last-child) {
+    margin-bottom: var(--thc-spacing--XS);
+}

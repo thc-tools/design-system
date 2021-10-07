@@ -1,0 +1,106 @@
+.thc-theme--light {
+    --thc-switch-color: var(--thc-color--black-40);
+    --thc-switch-color--hover: var(--thc-color--black-20);
+    --thc-switch-color--disabled: var(--thc-color--black-20);
+
+    --thc-switch-color--checked: var(--thc-color--skyblue-100);
+    --thc-switch-color--checked-hover: var(--thc-color--skyblue-80);
+
+    --thc-switch-background-color: none;
+    --thc-switch-background-color--disabled: var(--thc-color--black-10);
+}
+
+.thc-theme--dark {
+    --thc-switch-color: var(--thc-color--white-40);
+    --thc-switch-color--hover: var(--thc-color--white-60);
+    --thc-switch-color--disabled: var(--thc-color--white-20);
+
+    --thc-switch-color--checked: var(--thc-colorDataviz--skyblue-80);
+    --thc-switch-color--checked-hover: var(--thc-colorDataviz--skyblue-100);
+
+    --thc-switch-background-color--disabled: var(--thc-color--white-10);
+}
+
+.thc-c-switch--error {
+    --thc-switch-color: var(--thc-color--red-40);
+    --thc-switch-color--hover: var(--thc-color--red-20);
+
+    --thc-switch-color--checked: var(--thc-color--red-100);
+    --thc-switch-color--checked-hover: var(--thc-color--red-80);
+}
+
+.thc-theme--dark .thc-c-switch--error {
+    --thc-switch-color: var(--thc-colorDataviz--red-40);
+    --thc-switch-color--hover: var(--thc-colorDataviz--red-60);
+
+    --thc-switch-color--checked: var(--thc-colorDataviz--red-80);
+    --thc-switch-color--checked-hover: var(--thc-colorDataviz--red-100);
+}
+
+.thc-c-switch {
+    --thc-switch-cursor: var(--thc-cursor--pointer);
+    --thc-switch-cursor--disabled: var(--thc-cursor--default);
+
+    position: relative;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-shrink: 0;
+    z-index: 0;
+
+    width: 50px;
+    height: 30px;
+
+    background-color: var(--thc-switch-background-color);
+    border: 5px solid var(--thc-switch-color);
+    border-radius: 18px;
+
+    cursor: var(--thc-switch-cursor);
+
+    --thc-text-color: var(--thc-switch-color);
+}
+
+.thc-c-switch--disabled-color-toggle:not([disabled]),
+.thc-c-switch--checked:not([disabled]) {
+    --thc-switch-color: var(--thc-switch-color--checked);
+    --thc-switch-color--hover: var(--thc-switch-color--checked-hover);
+}
+
+.thc-c-switch:hover:not([disabled]) {
+    --thc-switch-color: var(--thc-switch-color--hover);
+}
+
+.thc-c-switch[disabled] {
+    --thc-switch-color: var(--thc-switch-color--disabled);
+    --thc-switch-cursor: var(--thc-switch-cursor--disabled);
+    --thc-switch-background-color: var(--thc-switch-background-color--disabled);
+}
+
+.thc-c-switch__thumb {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+
+    background-color: currentColor;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+
+    transition: transform var(--thc-animationDuration--S);
+}
+
+.thc-c-switch--checked .thc-c-switch__thumb {
+    transform: translate(18px);
+}
+
+.thc-c-switch__input {
+    cursor: inherit;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}

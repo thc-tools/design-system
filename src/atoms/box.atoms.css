@@ -1,0 +1,25 @@
+:root {
+    --thc-o-box-border-radius: var(--thc-radius--S);
+}
+
+.thc-theme--light {
+    --thc-o-box-border: none;
+}
+
+.thc-theme--dark {
+    --thc-o-box-border: var(--thc-borderSolid--S);
+}
+
+.thc-o-box {
+    border: var(--thc-o-box-border);
+    border-radius: var(--thc-o-box-border-radius);
+    border-color: var(--thc-border-color);
+}
+
+.thc-o-box--outlined {
+    --thc-o-box-border: var(--thc-borderSolid--S);
+}
+
+.thc-o-box--rectangular {
+    border-radius: 0;
+}

@@ -1,0 +1,41 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+import { SepiaThemeDecorator } from "../../../.storybook/utils/Decorators";
+
+<Meta title="Design System/Atoms/Paper" decorators={[SepiaThemeDecorator]} />
+
+# Paper
+
+## TO RESUME
+
+The background of an application resembles the flat, opaque texture of a sheet of paper,
+and an application’s behavior mimics paper’s ability to be re-sized, shuffled, and bound together in multiple sheets.
+
+Apply the following CSS selector to your component to add actionable behaviors to it:
+
+-   `thc-o-paper`
+-   `thc-o-paper--shadow`
+
+<Canvas>
+    <Story name="Paper">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "10px" }}>
+            <div>
+                <h2>Standard</h2>
+                <div className="thc-o-paper" style={{ width: "120px", height: "120px", padding: "10px" }}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut augue rutrum, imperdiet nisi sed,
+                    dictum orci.
+                </div>
+            </div>
+            <div>
+                <h2>Elevated</h2>
+                <div
+                    className="thc-o-paper thc-o-paper--shadow"
+                    style={{ width: "120px", height: "120px", padding: "10px" }}
+                >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut augue rutrum, imperdiet nisi sed,
+                    dictum orci.
+                </div>
+            </div>
+        </div>
+    </Story>
+</Canvas>

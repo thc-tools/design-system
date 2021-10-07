@@ -1,0 +1,18 @@
+.thc-u-icon--XS {
+    width: var(--thc-iconSize--XS);
+    height: var(--thc-iconSize--XS);
+}
+.thc-u-icon--S {
+    width: var(--thc-iconSize--S);
+    height: var(--thc-iconSize--S);
+}
+
+.thc-u-icon--M {
+    width: var(--thc-iconSize--M);
+    height: var(--thc-iconSize--M);
+}
+
+.thc-u-icon--L {
+    width: var(--thc-iconSize--L);
+    height: var(--thc-iconSize--L);
+}

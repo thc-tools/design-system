@@ -1,0 +1,22 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Hooks/useModalHandler" />
+
+## useModalHandler
+
+```js
+import { useModalHandler } from "@thc-tools/design-system/core/hooks";
+```
+
+This hook is to help handle any modal pattern. It is based internally on the `useQueryString`.
+
+```js
+function useModalHandler(qsKey, closeCallback, initialValue) => [value, onSetValue];
+```
+
+-   qsKey `string|string[]`: The query string to handle (see useQueryString for more information)
+-   closeCallback `func`: Close handler for when the modal is closed
+-   initialValue: `string|{ [key: string]: string }`: Initial values for query string
+-   returns:
+    -   value `string|string|{ [key: string]: string }`: The current value(s) from the query string
+    -   onServalue `func`: Function to manipulate the query string value

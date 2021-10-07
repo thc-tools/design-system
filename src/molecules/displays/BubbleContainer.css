@@ -1,0 +1,4 @@
+.thc-c-bubble-container .thc-c-bubble-value + .thc-c-bubble-value,
+.thc-c-bubble-container .thc-c-bubble-percentage + .thc-c-bubble-percentage {
+    margin-left: var(--thc-spacing--S);
+}

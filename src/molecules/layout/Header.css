@@ -1,0 +1,36 @@
+:root {
+    --thc-header-height: 70px;
+}
+
+.thc-c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    width: 100%;
+    height: var(--thc-header-height);
+    box-sizing: border-box;
+
+    padding: 0 var(--thc-spacing--S);
+
+    border-bottom: var(--thc-borderSolid--S);
+}
+
+.thc-c-header__content {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thc-c-header__actions {
+    display: flex;
+    align-items: center;
+
+    margin-left: var(--thc-spacing--S);
+}
+
+.thc-c-header__actions .thc-c-button:not(:last-child) {
+    margin-right: var(--thc-spacing--S);
+}

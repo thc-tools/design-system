@@ -1,0 +1,37 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Formatters/Numbers" />
+
+# Number Formatters
+
+Every hook is available from the following path:
+
+```js
+import { yourLovelyCraftedFormatter } from "@thc-tools/design-system/core/formatters";
+```
+
+## formatNumber
+
+Format a number, it will display the unit with a B (billion) M (million) K (thousands) with a precision of one if value is big enough.
+Otherwise it will display it with the required precision.
+
+```js
+function formatNumber(num, precision = 2)
+```
+
+-   num `number | string`: The number to format
+-   precision `number`: Precision to use for formatting
+-   returns `string`: formated number
+
+### Examples
+
+| Value          | Formatted |
+| -------------- | --------- |
+| 1 000 000 000  | 1B        |
+| 10 200 000 000 | 10.2B     |
+| 1 000 000      | 1M        |
+| 13 600 000     | 13.6M     |
+| 1 000          | 1K        |
+| 41 900         | 41.9K     |
+| 10             | 10        |
+| 10,02          | 10.02     |

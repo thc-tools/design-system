@@ -1,0 +1,15 @@
+.thc-c-card__actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin: var(--thc-card-spacing);
+}
+
+.thc-c-card__actions-element {
+    margin-left: var(--thc-spacing--S);
+}
+
+.thc-c-card__actions--centered {
+    justify-content: center;
+}

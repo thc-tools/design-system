@@ -1,0 +1,20 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Hooks/useDebounce" />
+
+## useDebounce
+
+```js
+import { useDebounce } from "@thc-tools/design-system/core/hooks";
+```
+
+This hook is to propose a JS managed focus state.
+
+```js
+function useDebounce(callback, timeout = USE_DEBOUNCE_DEFAULT_TIMEOUT, options) => func;
+```
+
+-   callback `func`: function to debounce
+-   time `number`: debounce value
+-   options `object`: options
+-   returns `func`: debounced function

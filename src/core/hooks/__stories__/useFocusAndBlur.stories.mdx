@@ -1,0 +1,24 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Hooks/useFocusAndBlur" />
+
+## useFocusAndBlur
+
+```js
+import { useFocusAndBlur } from "@thc-tools/design-system/core/hooks";
+```
+
+This hook is to propose a JS managed focus & blur state.
+
+```js
+function useFocusAndBlur(disabled = false, onFocus, onBlur) => { focus, setFocus, _handleFocus, _handleBlur };
+```
+
+-   disabled `boolean`: If is disabled, will bypass focus state
+-   onFocus `func`: Additional custom focus handler
+-   onBlur `func`: Additional custom blur handler
+-   returns:
+    -   focus `boolean`: If is focused
+    -   setFocus `func`: Manually set focus state
+    -   \_handleFocus `func`: To give to the onFocus event of the component
+    -   \_handleBlur `func`: To give to the onBlur event of the component

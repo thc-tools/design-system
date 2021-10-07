@@ -1,0 +1,14 @@
+.thc-c-dropdown__content {
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    min-width: 16px;
+    min-height: 16px;
+    max-width: calc(100vw - 32px);
+    max-height: calc(100vh - 32px);
+
+    outline: none;
+
+    z-index: var(--thc-zIndex--6);
+}

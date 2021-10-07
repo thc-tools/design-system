@@ -1,0 +1,24 @@
+.thc-c-display-resource--full-width {
+    width: 100%;
+}
+
+.thc-c-display-resource .thc-c-icon-wrapper,
+.thc-c-display-resource__container {
+    min-width: 0;
+}
+
+.thc-c-display-resource__container--full-width {
+    width: 100%;
+}
+
+.thc-c-display-resource[disabled] {
+    --thc-text-color: var(--thc-textColor--secondary);
+}
+
+.thc-c-display-resource__helper {
+    --thc-text-color: var(--thc-status-color, var(--thc-textColor--secondary));
+}
+
+.thc-c-display-resource__label--full-width {
+    width: 100%;
+}

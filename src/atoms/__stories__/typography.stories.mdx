@@ -1,0 +1,43 @@
+import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Atoms/Typography" />
+
+# Typography
+
+## Use typography to present your design and content as clearly and efficiently as possible.
+
+The following styles exists :
+
+-   thc-u-typography--headline-1
+-   thc-u-typography--headline-2
+-   thc-u-typography--headline-3
+-   thc-u-typography--headline-4
+-   thc-u-typography--headline-5
+-   thc-u-typography--headline-6
+-   thc-u-typography--subtitle-1
+-   thc-u-typography--subtitle-2
+-   thc-u-typography--body-1
+-   thc-u-typography--body-2
+-   thc-u-typography--button
+-   thc-u-typography--caption
+-   thc-u-typography--overline
+
+<Canvas>
+    <Story name="Typography">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(1, 1fr)", gap: "30px" }}>
+            <div className="thc-u-typography--headline-1">headline-1</div>
+            <div className="thc-u-typography--headline-2">headline-2</div>
+            <div className="thc-u-typography--headline-3">headline-3</div>
+            <div className="thc-u-typography--headline-4">headline-4</div>
+            <div className="thc-u-typography--headline-5">headline-5</div>
+            <div className="thc-u-typography--headline-6">headline-6</div>
+            <div className="thc-u-typography--subtitle-1">subtitle-1</div>
+            <div className="thc-u-typography--subtitle-2">subtitle-2</div>
+            <div className="thc-u-typography--body-1">body-1</div>
+            <div className="thc-u-typography--body-2">body-2</div>
+            <div className="thc-u-typography--button">button</div>
+            <div className="thc-u-typography--caption">caption</div>
+            <div className="thc-u-typography--overline">overline</div>
+        </div>
+    </Story>
+</Canvas>

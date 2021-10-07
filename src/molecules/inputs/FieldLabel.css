@@ -1,0 +1,23 @@
+.thc-c-field-label {
+    --thc-text-color: var(--thc-textColor--accent);
+
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.thc-c-field-label--error:not([disabled]) {
+    --thc-text-color: var(--thc-status-color--error);
+}
+
+.thc-c-field-label[disabled] {
+    --thc-text-color: var(--thc-textColor--secondary);
+}
+
+.thc-c-field-label__required {
+    margin-left: var(--thc-spacing--XS);
+}
+
+.thc-c-field-label:not([disabled]) .thc-c-field-label__required {
+    --thc-text-color: var(--thc-color--red-100);
+}

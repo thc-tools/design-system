@@ -1,0 +1,22 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Hooks/useFocus" />
+
+## useFocus
+
+```js
+import { useFocus } from "@thc-tools/design-system/core/hooks";
+```
+
+This hook is to propose a JS managed focus state.
+
+```js
+function useFocus(disabled = false, onFocus) => { focus, setFocus, _handleFocus };
+```
+
+-   disabled `boolean`: If is disabled, will bypass focus state
+-   onFocus `func`: Additional custom focus handler
+-   returns:
+    -   focus `boolean`: If is focused
+    -   setFocus `func`: Manually set focus state
+    -   \_handleFocus `func`: To give to the onFocus event of the component

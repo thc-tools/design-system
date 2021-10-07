@@ -1,0 +1,33 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Quarks/Animation" />
+
+# Animation
+
+Three durations exists to animate your transitions :
+
+-   `--thc-animationDuration--S`: 300ms
+-   `--thc-animationDuration--M`: 500ms
+-   `--thc-animationDuration--L`: 700ms
+
+To animate a property you can use the CSS `transition` property.
+
+Reference: https://developer.mozilla.org/fr/docs/Web/CSS/transition
+
+⚠️ Do not forget to specify which property to apply a transition to.
+Otherwise, every property (even on nested elements) will have a transition,
+it is certainly not what you want.
+
+```CSS
+.thc-c-my_superb_class {
+    background-color: white;
+
+    transition: background-color var(--thc-animationDuration--S);
+}
+
+.thc-c-my_superb_class:hover {
+    background-color: pink;
+}
+```
+
+You can also read: https://material.io/design/motion/speed.html#easing

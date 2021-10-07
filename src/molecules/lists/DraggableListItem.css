@@ -1,0 +1,11 @@
+.thc-c-draggable-list-item--drag-handle {
+    position: relative;
+}
+
+.thc-c-draggable-list-item__handle {
+    --thc-icon-color: var(--thc-textColor--accent);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}

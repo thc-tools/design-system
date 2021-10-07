@@ -1,0 +1,22 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Hooks/useHover" />
+
+## useHover
+
+```js
+import { useHover } from "@thc-tools/design-system/core/hooks";
+```
+
+This hook is to propose a JS managed hover state.
+
+```js
+function useHover(disabled = false, onHover) => { hover, onMouseEnter, onMouseLeave };
+```
+
+-   disabled `bool`: If is disabled, will bypass hover state
+-   onHover `func`: Additional custom hover handler
+-   returns:
+    -   hover `boolean`: If is hovered
+    -   onMouseEnter `func`: To give to the onMouseEnter event of the component
+    -   onMouseLeave `func`: To give to the onMouseLeave event of the component

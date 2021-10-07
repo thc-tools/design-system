@@ -1,0 +1,38 @@
+:root {
+    --thc-chip-background-color: none;
+
+    --thc-chip-border: none;
+    --thc-chip-border-radius: var(--thc-radius--L);
+
+    --thc-chip-padding: var(--thc-spacing--XS) var(--thc-spacing--S);
+}
+
+.thc-c-chip {
+    background-color: var(--thc-chip-background-color);
+
+    padding: var(--thc-chip-padding);
+    width: max-content;
+
+    word-break: keep-all;
+
+    border: var(--thc-chip-border);
+    border-radius: var(--thc-chip-border-radius);
+    outline: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thc-c-chip--outlined {
+    --thc-chip-border: var(--thc-borderSolid--S);
+}
+
+.thc-c-chip span,
+.thc-c-chip.thc-o-actionable {
+    cursor: var(--thc-cursor--default);
+}
+
+.thc-c-chip.thc-o-actionable:not([disabled]) .thc-c-chip__icon {
+    cursor: var(--thc-actionable-cursor);
+}

@@ -1,0 +1,27 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Core/Hooks/index" />
+
+# Hooks
+
+Every hook is available from the following path:
+
+```js
+import { yourLovelyCraftedHook } from "@thc-tools/design-system/core/hooks";
+```
+
+List of hooks:
+
+-   `useDebounde`: propose a debounced function
+-   `useFocus`: propose a JS managed focus state
+-   `useFocusAndBlur`: propose a JS managed focus & blur state
+-   `useForkRef`: to fork a ref between several vars
+-   `useFormikAutoSave`: to get an autosave with formik
+-   `useHover`: propose a JS managed hover sate
+-   `useInterval`: declaratively set an interval
+-   `useIsMounted`: track if component is already mounted (no re-render)
+-   `useLibrary`: to handle library pattern
+-   `useModalHandler`: to handle any modal pattern
+-   `useQueryString`: synch between state & queryString a key (for tabs & "light" routing)
+-   `useResizeAware`: propose a mechanism to know size information of a component
+-   `useWidth`: detect max available width and give it to children

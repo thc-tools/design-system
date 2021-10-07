@@ -1,0 +1,40 @@
+:root {
+    --thc-list-item-v-padding: var(--thc-spacing--M);
+    --thc-list-item-h-padding: var(--thc-spacing--M);
+
+    --thc-list-item-v-padding--condensed: var(--thc-spacing--S);
+    --thc-list-item-h-padding--condensed: var(--thc-spacing--M);
+
+    --thc-list-item-spacing: var(--thc-spacing--S);
+}
+
+.thc-c-list-item {
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.thc-c-list-item--condensed {
+    --thc-list-item-v-padding: var(--thc-list-item-v-padding--condensed);
+    --thc-list-item-h-padding: var(--thc-list-item-h-padding--condensed);
+}
+
+.thc-c-list-item--fullWidth {
+    --thc-list-item-h-padding: 0;
+}
+
+.thc-c-list-item__container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: var(--thc-list-item-v-padding) var(--thc-list-item-h-padding);
+}
+
+.thc-c-list-item__container > [class*="thc-c-list-item-"]:not(:last-child) {
+    margin-right: var(--thc-list-item-spacing);
+}
