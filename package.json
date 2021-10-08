@@ -39,7 +39,7 @@
         "lodash": "4.17.20",
         "moment": "2.29.1",
         "prop-types": "15.7.2",
-        "qs": "6.9.4",
+        "qs": "6.10.1",
         "react-beautiful-dnd": "13.1.0",
         "react-dates": "21.8.0",
         "react-popper": "2.2.4",
