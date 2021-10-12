@@ -34,7 +34,7 @@
     "dependencies": {
         "@popperjs/core": "2.10.2",
         "classnames": "2.3.1",
-        "dom-helpers": "5.2.0",
+        "dom-helpers": "5.2.1",
         "formik": "2.2.9",
         "lodash": "4.17.21",
         "moment": "2.29.1",
