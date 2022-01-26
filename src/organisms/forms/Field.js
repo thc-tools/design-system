@@ -23,7 +23,7 @@ export const FIELD_TYPES = {
     MULTI_AUTOCOMPLETE: "multi-autocomplete",
     MULTI_SELECT: "multi-select",
     RADIO: "radio",
-    RADIO_GROUP: "radio-GROUP",
+    RADIO_GROUP: "radio-group",
     SELECT: "select",
     TEXT: "text",
     SWITCH: "switch",
