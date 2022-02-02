@@ -12,6 +12,12 @@ The CSS uses the following nomenclature
 
 > https://css-tricks.com/combining-the-powers-of-sem-and-bio-for-improving-css/
 
+## Before hand
+
+You will need to installs the deps at least once
+
+> `npm ci`
+
 ## Develop with storybook
 
 Execute the following command:
