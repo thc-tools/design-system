@@ -1,0 +1,11 @@
+:root {
+    --ds-base-dropdown-filter--dropdown-max-height: 275px;
+}
+
+.ds-c-base-dropdown-filter__dropdown {
+    --ds-dropdown--max-height: var(--ds-base-dropdown-filter--dropdown-max-height);
+}
+
+.ds-c-base-dropdown-filter__dropdown--spaced {
+    padding: var(--ds-spacing--L);
+}

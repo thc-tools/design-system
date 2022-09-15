@@ -1,21 +1,21 @@
-.thc-c-radio-card {
-    --thc-card-spacing: var(--thc-spacing--S);
+.ds-c-radio-card {
+    --ds-card-spacing: var(--ds-spacing--M);
 
     position: relative;
     box-sizing: border-box;
 }
 
-.thc-c-radio-card:not([disabled]) {
-    --thc-icon-color: var(--thc-status-color, var(--thc-textColor--accent));
+.ds-c-radio-card:not([disabled]) {
+    --ds-icon-color: var(--ds-status-color, var(--ds-textColor--accent));
 }
 
-.thc-c-radio-card--checked {
-    --thc-card-spacing: calc(var(--thc-spacing--S) - var(--thc-border-size--L));
+.ds-c-radio-card--checked {
+    --ds-card-spacing: calc(var(--ds-spacing--M) - var(--ds-border-size--L));
 
-    --thc-border-color: var(--thc-color--skyblue-80);
-    --thc-o-box-border: var(--thc-borderSolid--L);
+    --ds-border-color: var(--ds-color--blue-400);
+    --ds-o-box-border: var(--ds-borderSolid--L);
 }
 
-.thc-c-radio-card .thc-c-radio {
+.ds-c-radio-card .ds-c-radio {
     position: initial;
 }

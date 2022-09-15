@@ -1,9 +1,9 @@
-.thc-c-field__input,
-.thc-c-field__label,
-.thc-c-field__helper-text {
-    margin: var(--thc-spacing--XS) 0;
+.ds-c-field__input,
+.ds-c-field__label,
+.ds-c-field__helper-text {
+    margin: var(--ds-spacing--XS) 0;
 }
 
-.thc-c-field__helper-text {
+.ds-c-field__helper-text {
     text-align: right;
 }

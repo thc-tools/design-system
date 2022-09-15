@@ -1,0 +1,12 @@
+{
+    "DESIGN_SYSTEM_COMMON_TK.actions.cancel": "Cancel",
+    "DESIGN_SYSTEM_COMMON_TK.actions.next": "Next",
+    "DESIGN_SYSTEM_COMMON_TK.actions.previous": "Previous",
+    "DESIGN_SYSTEM_COMMON_TK.actions.validate": "Validate",
+
+    "DESIGN_SYSTEM_COMMON_TK.enums.StatusEnum.draft": "Draft",
+    "DESIGN_SYSTEM_COMMON_TK.enums.StatusEnum.inProgress": "In Progress",
+    "DESIGN_SYSTEM_COMMON_TK.enums.StatusEnum.paused": "Paused",
+    "DESIGN_SYSTEM_COMMON_TK.enums.StatusEnum.done": "Complete !",
+    "DESIGN_SYSTEM_COMMON_TK.enums.StatusEnum.failed": "Failed"
+}

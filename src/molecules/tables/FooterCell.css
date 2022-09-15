@@ -1,0 +1,22 @@
+.ds-c-footer-cell {
+    background-color: var(--ds-table-background-color);
+}
+
+.ds-c-footer-cell--spaced {
+    --ds-footer-cell-padding: var(--ds-spacing--M) var(--ds-spacing--L);
+}
+
+.ds-c-footer-cell__container {
+    padding: var(--ds-footer-cell-padding);
+
+    box-sizing: border-box;
+    height: var(--ds-cell-height);
+    min-width: var(--ds-cell-min-width);
+
+    display: flex;
+    align-items: center;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

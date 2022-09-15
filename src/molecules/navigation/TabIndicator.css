@@ -1,9 +1,9 @@
-.thc-c-tab-indicator {
+.ds-c-tab-indicator {
     position: absolute;
     height: 2px;
     bottom: 0;
     width: 100%;
-    transition: all var(--thc-animationDuration--S);
+    transition: all var(--ds-animationDuration--S);
 
-    background-color: var(--thc-textColor--accent);
+    background-color: var(--ds-textColor--accent);
 }

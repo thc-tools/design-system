@@ -1,18 +1,18 @@
-.thc-u-icon--XS {
-    width: var(--thc-iconSize--XS);
-    height: var(--thc-iconSize--XS);
+.ds-u-icon--XS {
+    width: var(--ds-iconSize--XS);
+    height: var(--ds-iconSize--XS);
 }
-.thc-u-icon--S {
-    width: var(--thc-iconSize--S);
-    height: var(--thc-iconSize--S);
-}
-
-.thc-u-icon--M {
-    width: var(--thc-iconSize--M);
-    height: var(--thc-iconSize--M);
+.ds-u-icon--S {
+    width: var(--ds-iconSize--S);
+    height: var(--ds-iconSize--S);
 }
 
-.thc-u-icon--L {
-    width: var(--thc-iconSize--L);
-    height: var(--thc-iconSize--L);
+.ds-u-icon--M {
+    width: var(--ds-iconSize--M);
+    height: var(--ds-iconSize--M);
+}
+
+.ds-u-icon--L {
+    width: var(--ds-iconSize--L);
+    height: var(--ds-iconSize--L);
 }

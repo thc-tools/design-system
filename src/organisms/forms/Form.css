@@ -1,7 +1,7 @@
 :root {
-    --thc-form-spacing: var(--thc-spacing--M);
+    --ds-form-spacing: var(--ds-spacing--XL);
 }
 
-.thc-c-form {
-    margin: var(--thc-form-spacing) 0;
+.ds-c-form {
+    margin: var(--ds-form-spacing) 0;
 }

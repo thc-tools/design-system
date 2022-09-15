@@ -6,21 +6,57 @@ import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
 
 ## TODO
 
-Shadows in thc have one defined quarks:
+Shadows in ds have one defined quarks:
 
--   `--thc-shadow--regular`:
+-   `--ds-shadow--S`:
+-   `--ds-shadow--M`:
+-   `--ds-shadow--L`:
+-   `--ds-shadow--XL`:
 
 ### Examples
 
 <Canvas>
-    <Story name="--thc-shadow--regular">
-        <div>---thc-shadow--regular</div>
+    <Story name="--ds-shadow--S">
+        <div>---ds-shadow--S</div>
+        <br />
         <div
             style={{
-                border: "1px solid black",
                 width: "70px",
                 height: "70px",
-                boxShadow: "var(--thc-shadow--regular)",
+                boxShadow: "var(--ds-shadow--S)",
+            }}
+        />
+    </Story>
+    <Story name="--ds-shadow--M">
+        <div>---ds-shadow--M</div>
+        <br />
+        <div
+            style={{
+                width: "70px",
+                height: "70px",
+                boxShadow: "var(--ds-shadow--M)",
+            }}
+        />
+    </Story>
+    <Story name="--ds-shadow--L">
+        <div>---ds-shadow--L</div>
+        <br />
+        <div
+            style={{
+                width: "70px",
+                height: "70px",
+                boxShadow: "var(--ds-shadow--L)",
+            }}
+        />
+    </Story>
+    <Story name="--ds-shadow--XL">
+        <div>---ds-shadow--XL</div>
+        <br />
+        <div
+            style={{
+                width: "70px",
+                height: "70px",
+                boxShadow: "var(--ds-shadow--XL)",
             }}
         />
     </Story>

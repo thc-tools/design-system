@@ -1,8 +1,8 @@
-.thc-c-dialog__card {
+.ds-c-dialog__card {
     min-width: 600px;
 }
 
-.thc-c-dialog__modal {
+.ds-c-dialog {
     display: flex;
     align-items: center;
     justify-content: center;

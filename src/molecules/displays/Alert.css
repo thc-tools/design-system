@@ -1,0 +1,56 @@
+.ds-c-alert--info {
+    --ds-alert-surface-color: var(--ds-color--primary-50);
+    --ds-alert-accent-color: var(--ds-color--primary-500);
+}
+
+.ds-c-alert--success {
+    --ds-alert-surface-color: var(--ds-color--success-50);
+    --ds-alert-accent-color: var(--ds-color--success-500);
+}
+
+.ds-c-alert--warning {
+    --ds-alert-surface-color: var(--ds-color--warning-50);
+    --ds-alert-accent-color: var(--ds-color--warning-500);
+}
+
+.ds-c-alert--error {
+    --ds-alert-surface-color: var(--ds-color--error-50);
+    --ds-alert-accent-color: var(--ds-color--error-500);
+}
+
+.ds-c-alert {
+    width: 100%;
+
+    background-color: var(--ds-alert-surface-color);
+    padding: var(--ds-spacing--S) var(--ds-spacing--L);
+    border-radius: var(--ds-radius--XS);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-spacing--S);
+}
+
+.ds-c-alert__container {
+    display: flex;
+    align-items: center;
+
+    gap: var(--ds-spacing--S);
+}
+
+.ds-c-alert__content {
+    flex: 1;
+}
+
+.ds-c-alert__close {
+    cursor: pointer;
+}
+
+.ds-c-alert__icon {
+    --ds-icon-color: var(--ds-alert-accent-color);
+}
+
+.ds-c-alert__more {
+    align-self: center;
+
+    --ds-button-text-color: var(--ds-color--grey-500);
+}

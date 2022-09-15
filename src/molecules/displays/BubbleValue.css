@@ -1,42 +1,42 @@
 :root {
-    --thc-bubble-value-size: 70px;
-    --thc-bubble-value-radius: var(--thc-radius--L);
+    --ds-bubble-value-size: 70px;
+    --ds-bubble-value-radius: var(--ds-radius--L);
 
-    --thc-bubble-value-color-gradient: linear-gradient(198.78deg, #57dafe 8.37%, #4dbfff 91.63%);
+    --ds-bubble-value-color-gradient: linear-gradient(198.78deg, #57dafe 8.37%, #4dbfff 91.63%);
 }
 
-.thc-theme--light .thc-c-bubble-value--primary {
-    --thc-bubble-value-text-color: var(--thc-color--white-100);
-    --thc-bubble-value-background-image: var(--thc-bubble-value-color-gradient);
-    --thc-bubble-value-border-color: var(--thc-color--white-40);
+.ds-theme--light .ds-c-bubble-value--primary {
+    --ds-bubble-value-text-color: var(--ds-color--white-100);
+    --ds-bubble-value-background-image: var(--ds-bubble-value-color-gradient);
+    --ds-bubble-value-border-color: var(--ds-color--white-40);
 }
 
-.thc-theme--dark .thc-c-bubble-value--primary {
-    --thc-bubble-value-text-color: var(--thc-color--white-100);
-    --thc-bubble-value-background-image: var(--thc-bubble-value-color-gradient);
-    --thc-bubble-value-border-color: var(--thc-color--black-40);
+.ds-theme--dark .ds-c-bubble-value--primary {
+    --ds-bubble-value-text-color: var(--ds-color--white-100);
+    --ds-bubble-value-background-image: var(--ds-bubble-value-color-gradient);
+    --ds-bubble-value-border-color: var(--ds-color--black-40);
 }
 
-.thc-theme--light .thc-c-bubble-value--secondary {
-    --thc-bubble-value-text-color: var(--thc-textColor--secondary);
-    --thc-bubble-value-border-color: var(--thc-color--black-10);
+.ds-theme--light .ds-c-bubble-value--secondary {
+    --ds-bubble-value-text-color: var(--ds-textColor--secondary);
+    --ds-bubble-value-border-color: var(--ds-color--black-10);
 }
 
-.thc-theme--dark .thc-c-bubble-value--secondary {
-    --thc-bubble-value-text-color: var(--thc-textColor--secondary);
-    --thc-bubble-value-border-color: var(--thc-color--white-10);
+.ds-theme--dark .ds-c-bubble-value--secondary {
+    --ds-bubble-value-text-color: var(--ds-textColor--secondary);
+    --ds-bubble-value-border-color: var(--ds-color--white-10);
 }
 
-.thc-c-bubble-value {
-    --thc-text-color: var(--thc-bubble-value-text-color);
+.ds-c-bubble-value {
+    --ds-text-color: var(--ds-bubble-value-text-color);
 
-    height: var(--thc-bubble-value-size);
-    width: var(--thc-bubble-value-size);
+    height: var(--ds-bubble-value-size);
+    width: var(--ds-bubble-value-size);
 
-    background-image: var(--thc-bubble-value-background-image);
+    background-image: var(--ds-bubble-value-background-image);
 
-    border-radius: var(--thc-bubble-value-radius);
-    border: 2px solid var(--thc-bubble-value-border-color);
+    border-radius: var(--ds-bubble-value-radius);
+    border: 2px solid var(--ds-bubble-value-border-color);
 
     display: flex;
     flex-direction: column;

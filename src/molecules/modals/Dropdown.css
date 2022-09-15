@@ -1,4 +1,8 @@
-.thc-c-dropdown__content {
+:root {
+    --ds-dropdown--max-height: calc(100vh - 32px);
+}
+
+.ds-c-dropdown__content {
     position: absolute;
     overflow-y: auto;
     overflow-x: hidden;
@@ -6,9 +10,11 @@
     min-width: 16px;
     min-height: 16px;
     max-width: calc(100vw - 32px);
-    max-height: calc(100vh - 32px);
+    max-height: var(--ds-dropdown--max-height);
+
+    margin-top: 2px;
 
     outline: none;
 
-    z-index: var(--thc-zIndex--6);
+    z-index: var(--ds-zIndex--6);
 }

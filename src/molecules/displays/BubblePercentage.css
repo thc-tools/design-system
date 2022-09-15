@@ -1,14 +1,14 @@
 :root {
-    --thc-bubble-percentage-size: 60px;
-    --thc-bubble-percentage-radius: var(--thc-radius--L);
+    --ds-bubble-percentage-size: 60px;
+    --ds-bubble-percentage-radius: var(--ds-radius--L);
 }
 
-.thc-c-bubble-percentage {
-    height: var(--thc-bubble-percentage-size);
-    width: var(--thc-bubble-percentage-size);
+.ds-c-bubble-percentage {
+    height: var(--ds-bubble-percentage-size);
+    width: var(--ds-bubble-percentage-size);
 
-    border-radius: var(--thc-bubble-percentage-radius);
-    border: 3px solid var(--thc-color--blue-100);
+    border-radius: var(--ds-bubble-percentage-radius);
+    border: 3px solid var(--ds-color--primary-500);
 
     display: flex;
     align-items: center;
@@ -18,18 +18,18 @@
     overflow: hidden;
 }
 
-.thc-c-bubble-percentage__percentage {
+.ds-c-bubble-percentage__percentage {
     z-index: 2;
 }
 
-.thc-c-bubble-percentage__mask {
+.ds-c-bubble-percentage__mask {
     position: absolute;
     bottom: 0;
     left: 0;
 
     width: 100%;
 
-    background-color: var(--thc-color--blue-100);
+    background-color: var(--ds-color--primary-500);
 
-    transition: height var(--thc-animationDuration--S);
+    transition: height var(--ds-animationDuration--S);
 }

@@ -1,25 +1,25 @@
 :root {
-    --thc-o-box-border-radius: var(--thc-radius--S);
+    --ds-o-box-border-radius: var(--ds-radius--S);
 }
 
-.thc-theme--light {
-    --thc-o-box-border: none;
+.ds-theme--light {
+    --ds-o-box-border: none;
 }
 
-.thc-theme--dark {
-    --thc-o-box-border: var(--thc-borderSolid--S);
+.ds-theme--dark {
+    --ds-o-box-border: var(--ds-borderSolid--S);
 }
 
-.thc-o-box {
-    border: var(--thc-o-box-border);
-    border-radius: var(--thc-o-box-border-radius);
-    border-color: var(--thc-border-color);
+.ds-o-box {
+    border: var(--ds-o-box-border);
+    border-radius: var(--ds-o-box-border-radius);
+    border-color: var(--ds-border-color);
 }
 
-.thc-o-box--outlined {
-    --thc-o-box-border: var(--thc-borderSolid--S);
+.ds-o-box--outlined {
+    --ds-o-box-border: var(--ds-borderSolid--S);
 }
 
-.thc-o-box--rectangular {
+.ds-o-box--rectangular {
     border-radius: 0;
 }

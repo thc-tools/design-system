@@ -1,6 +1,6 @@
-.thc-c-menu-separator {
+.ds-c-menu-separator {
     height: 0;
     margin: 0;
     border: none;
-    border-bottom: var(--thc-borderSolid--S);
+    border-bottom: var(--ds-borderSolid--S);
 }

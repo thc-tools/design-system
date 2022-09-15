@@ -1,19 +1,19 @@
-.thc-c-field-helper-text {
-    --thc-text-color: var(--thc-color--blue-100);
+.ds-c-field-helper-text {
+    --ds-text-color: var(--ds-color--primary-500);
 }
 
-.thc-c-field-helper-text--error:not([disabled]) {
-    --thc-text-color: var(--thc-status-color--error);
+.ds-c-field-helper-text--error:not([disabled]) {
+    --ds-text-color: var(--ds-status-color--error);
 }
 
-.thc-c-field-helper-text--success:not([disabled]) {
-    --thc-text-color: var(--thc-status-color--success);
+.ds-c-field-helper-text--success:not([disabled]) {
+    --ds-text-color: var(--ds-status-color--success);
 }
 
-.thc-c-field-helper-text--warning:not([disabled]) {
-    --thc-text-color: var(--thc-status-color--warning);
+.ds-c-field-helper-text--warning:not([disabled]) {
+    --ds-text-color: var(--ds-status-color--warning);
 }
 
-.thc-c-field-helper-text[disabled] {
-    --thc-text-color: var(--thc-textColor--secondary);
+.ds-c-field-helper-text[disabled] {
+    --ds-text-color: var(--ds-textColor--secondary);
 }

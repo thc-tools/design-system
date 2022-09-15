@@ -1,4 +1,4 @@
-.thc-c-breadcrumb-bar {
+.ds-c-breadcrumb-bar {
     display: flex;
     align-items: center;
 
@@ -6,10 +6,10 @@
     height: 100%;
 }
 
-.thc-theme--light .thc-c-breadcrumb-bar__separator {
-    --thc-icon-color: var(--thc-color--black-20);
+.ds-theme--light .ds-c-breadcrumb-bar__separator {
+    --ds-icon-color: var(--ds-color--black-20);
 }
 
-.thc-theme--dark .thc-c-breadcrumb-bar__separator {
-    --thc-icon-color: var(--thc-color--white-20);
+.ds-theme--dark .ds-c-breadcrumb-bar__separator {
+    --ds-icon-color: var(--ds-color--white-20);
 }

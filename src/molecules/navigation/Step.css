@@ -1,18 +1,18 @@
 :root {
-    --thc-step-icon-size: 20px;
+    --ds-step-icon-size: 20px;
 }
 
-.thc-c-step {
-    --thc-step-text-color: var(--thc-textColor--secondary);
-    --thc-step-text-color--active: var(--thc-textColor--primary);
-    --thc-step-text-color--completed: var(--thc-textColor--primary);
+.ds-c-step {
+    --ds-step-text-color: var(--ds-textColor--secondary);
+    --ds-step-text-color--active: var(--ds-textColor--primary);
+    --ds-step-text-color--completed: var(--ds-textColor--primary);
 
-    --thc-step-icon-color: var(--thc-textColor--secondary);
-    --thc-step-icon-color--active: var(--thc-color--skyblue-100);
-    --thc-step-icon-color--completed: var(--thc-color--skyblue-100);
+    --ds-step-icon-color: var(--ds-textColor--secondary);
+    --ds-step-icon-color--active: var(--ds-color--blue-500);
+    --ds-step-icon-color--completed: var(--ds-color--blue-500);
 
-    --thc-text-color: var(--thc-step-text-color);
-    --thc-icon-color: var(--thc-step-icon-color);
+    --ds-text-color: var(--ds-step-text-color);
+    --ds-icon-color: var(--ds-step-icon-color);
 
     flex: 1;
     position: relative;
@@ -23,16 +23,16 @@
     justify-content: center;
 }
 
-.thc-c-step--active {
-    --thc-step-text-color: var(--thc-step-text-color--active);
-    --thc-step-icon-color: var(--thc-step-icon-color--active);
+.ds-c-step--active {
+    --ds-step-text-color: var(--ds-step-text-color--active);
+    --ds-step-icon-color: var(--ds-step-icon-color--active);
 }
 
-.thc-c-step--completed {
-    --thc-step-text-color: var(--thc-step-text-color--completed);
-    --thc-step-icon-color: var(--thc-step-icon-color--completed);
+.ds-c-step--completed {
+    --ds-step-text-color: var(--ds-step-text-color--completed);
+    --ds-step-icon-color: var(--ds-step-icon-color--completed);
 }
 
-.thc-c-step__label {
-    margin-bottom: var(--thc-spacing--XS);
+.ds-c-step__label {
+    margin-bottom: var(--ds-spacing--XS);
 }

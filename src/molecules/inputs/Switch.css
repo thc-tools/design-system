@@ -1,45 +1,45 @@
-.thc-theme--light {
-    --thc-switch-color: var(--thc-color--black-40);
-    --thc-switch-color--hover: var(--thc-color--black-20);
-    --thc-switch-color--disabled: var(--thc-color--black-20);
+.ds-theme--light {
+    --ds-switch-color: var(--ds-color--black-40);
+    --ds-switch-color--hover: var(--ds-color--black-20);
+    --ds-switch-color--disabled: var(--ds-color--black-20);
 
-    --thc-switch-color--checked: var(--thc-color--skyblue-100);
-    --thc-switch-color--checked-hover: var(--thc-color--skyblue-80);
+    --ds-switch-color--checked: var(--ds-color--blue-500);
+    --ds-switch-color--checked-hover: var(--ds-color--blue-400);
 
-    --thc-switch-background-color: none;
-    --thc-switch-background-color--disabled: var(--thc-color--black-10);
+    --ds-switch-background-color: none;
+    --ds-switch-background-color--disabled: var(--ds-color--black-10);
 }
 
-.thc-theme--dark {
-    --thc-switch-color: var(--thc-color--white-40);
-    --thc-switch-color--hover: var(--thc-color--white-60);
-    --thc-switch-color--disabled: var(--thc-color--white-20);
+.ds-theme--dark {
+    --ds-switch-color: var(--ds-color--white-40);
+    --ds-switch-color--hover: var(--ds-color--white-60);
+    --ds-switch-color--disabled: var(--ds-color--white-20);
 
-    --thc-switch-color--checked: var(--thc-colorDataviz--skyblue-80);
-    --thc-switch-color--checked-hover: var(--thc-colorDataviz--skyblue-100);
+    --ds-switch-color--checked: var(--ds-colorDataviz--skyblue-80);
+    --ds-switch-color--checked-hover: var(--ds-colorDataviz--skyblue-100);
 
-    --thc-switch-background-color--disabled: var(--thc-color--white-10);
+    --ds-switch-background-color--disabled: var(--ds-color--white-10);
 }
 
-.thc-c-switch--error {
-    --thc-switch-color: var(--thc-color--red-40);
-    --thc-switch-color--hover: var(--thc-color--red-20);
+.ds-c-switch--error {
+    --ds-switch-color: var(--ds-color--error-200);
+    --ds-switch-color--hover: var(--ds-color--error-100);
 
-    --thc-switch-color--checked: var(--thc-color--red-100);
-    --thc-switch-color--checked-hover: var(--thc-color--red-80);
+    --ds-switch-color--checked: var(--ds-color--error-500);
+    --ds-switch-color--checked-hover: var(--ds-color--error-400);
 }
 
-.thc-theme--dark .thc-c-switch--error {
-    --thc-switch-color: var(--thc-colorDataviz--red-40);
-    --thc-switch-color--hover: var(--thc-colorDataviz--red-60);
+.ds-theme--dark .ds-c-switch--error {
+    --ds-switch-color: var(--ds-colorDataviz--red-40);
+    --ds-switch-color--hover: var(--ds-colorDataviz--red-60);
 
-    --thc-switch-color--checked: var(--thc-colorDataviz--red-80);
-    --thc-switch-color--checked-hover: var(--thc-colorDataviz--red-100);
+    --ds-switch-color--checked: var(--ds-colorDataviz--red-80);
+    --ds-switch-color--checked-hover: var(--ds-colorDataviz--red-100);
 }
 
-.thc-c-switch {
-    --thc-switch-cursor: var(--thc-cursor--pointer);
-    --thc-switch-cursor--disabled: var(--thc-cursor--default);
+.ds-c-switch {
+    --ds-switch-cursor: var(--ds-cursor--pointer);
+    --ds-switch-cursor--disabled: var(--ds-cursor--default);
 
     position: relative;
     box-sizing: border-box;
@@ -50,32 +50,32 @@
     width: 50px;
     height: 30px;
 
-    background-color: var(--thc-switch-background-color);
-    border: 5px solid var(--thc-switch-color);
+    background-color: var(--ds-switch-background-color);
+    border: 5px solid var(--ds-switch-color);
     border-radius: 18px;
 
-    cursor: var(--thc-switch-cursor);
+    cursor: var(--ds-switch-cursor);
 
-    --thc-text-color: var(--thc-switch-color);
+    --ds-text-color: var(--ds-switch-color);
 }
 
-.thc-c-switch--disabled-color-toggle:not([disabled]),
-.thc-c-switch--checked:not([disabled]) {
-    --thc-switch-color: var(--thc-switch-color--checked);
-    --thc-switch-color--hover: var(--thc-switch-color--checked-hover);
+.ds-c-switch--disabled-color-toggle:not([disabled]),
+.ds-c-switch--checked:not([disabled]) {
+    --ds-switch-color: var(--ds-switch-color--checked);
+    --ds-switch-color--hover: var(--ds-switch-color--checked-hover);
 }
 
-.thc-c-switch:hover:not([disabled]) {
-    --thc-switch-color: var(--thc-switch-color--hover);
+.ds-c-switch:hover:not([disabled]) {
+    --ds-switch-color: var(--ds-switch-color--hover);
 }
 
-.thc-c-switch[disabled] {
-    --thc-switch-color: var(--thc-switch-color--disabled);
-    --thc-switch-cursor: var(--thc-switch-cursor--disabled);
-    --thc-switch-background-color: var(--thc-switch-background-color--disabled);
+.ds-c-switch[disabled] {
+    --ds-switch-color: var(--ds-switch-color--disabled);
+    --ds-switch-cursor: var(--ds-switch-cursor--disabled);
+    --ds-switch-background-color: var(--ds-switch-background-color--disabled);
 }
 
-.thc-c-switch__thumb {
+.ds-c-switch__thumb {
     position: absolute;
     top: 3px;
     left: 4px;
@@ -85,14 +85,14 @@
     height: 14px;
     border-radius: 50%;
 
-    transition: transform var(--thc-animationDuration--S);
+    transition: transform var(--ds-animationDuration--S);
 }
 
-.thc-c-switch--checked .thc-c-switch__thumb {
+.ds-c-switch--checked .ds-c-switch__thumb {
     transform: translate(18px);
 }
 
-.thc-c-switch__input {
+.ds-c-switch__input {
     cursor: inherit;
     position: absolute;
     opacity: 0;

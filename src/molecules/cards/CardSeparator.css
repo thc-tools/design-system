@@ -1,20 +1,20 @@
-.thc-theme--light {
-    --thc-card-separator-color: var(--thc-color--black-20);
+.ds-theme--light {
+    --ds-card-separator-color: var(--ds-color--black-20);
 }
 
-.thc-theme--dark {
-    --thc-card-separator-color: var(--thc-color--white-20);
+.ds-theme--dark {
+    --ds-card-separator-color: var(--ds-color--white-20);
 }
 
-.thc-c-card__separator {
-    margin: var(--thc-card-spacing);
+.ds-c-card__separator {
+    margin: var(--ds-card-spacing);
 
     box-sizing: border-box;
 
-    border-bottom: var(--thc-borderSolid--S);
-    border-color: var(--thc-card-separator-color);
+    border-bottom: var(--ds-borderSolid--S);
+    border-color: var(--ds-card-separator-color);
 }
 
-.thc-c-card__separator--full-width {
-    margin: var(--thc-card-spacing) 0;
+.ds-c-card__separator--full-width {
+    margin: var(--ds-card-spacing) 0;
 }

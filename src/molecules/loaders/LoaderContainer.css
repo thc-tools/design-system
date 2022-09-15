@@ -1,16 +1,16 @@
-.thc-c-loader-container {
+.ds-c-loader-container {
     display: flex;
     align-items: center;
 
-    margin: var(--thc-spacing--S) 0;
+    margin: var(--ds-spacing--M) 0;
 }
 
-.thc-c-loader-container .thc-c-loader-progression,
-.thc-c-loader-container .thc-c-loader-spinner {
+.ds-c-loader-container .ds-c-loader-progression,
+.ds-c-loader-container .ds-c-loader-spinner {
     flex: 1;
 }
 
-.thc-c-loader-container .thc-c-loader-progression:not(:last-child),
-.thc-c-loader-container .thc-c-loader-spinner:not(:last-child) {
-    margin-right: var(--thc-spacing--S);
+.ds-c-loader-container .ds-c-loader-progression:not(:last-child),
+.ds-c-loader-container .ds-c-loader-spinner:not(:last-child) {
+    margin-right: var(--ds-spacing--M);
 }

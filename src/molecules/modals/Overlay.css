@@ -1,7 +1,7 @@
-.thc-c-overlay {
-    --thc-overlay-color: var(--thc-color--black-50);
+.ds-c-overlay {
+    --ds-overlay-color: var(--ds-color--black-50);
 
-    z-index: var(--thc-zIndex--neg);
+    z-index: var(--ds-zIndex--neg);
 
     position: fixed;
     top: 0;
@@ -9,11 +9,11 @@
     bottom: 0;
     left: 0;
 
-    background-color: var(--thc-overlay-color);
+    background-color: var(--ds-overlay-color);
 
-    transition: background-color var(--thc-animationDuration--M);
+    transition: background-color var(--ds-animationDuration--M);
 }
 
-.thc-c-overlay--invisible {
-    --thc-overlay-color: transparent;
+.ds-c-overlay--invisible {
+    --ds-overlay-color: transparent;
 }

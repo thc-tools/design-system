@@ -1,5 +1,5 @@
-.thc-c-icon__path {
-    --thc-text-color: var(--thc-icon-color, --thc-text-color);
+.ds-c-icon__path {
+    --ds-text-color: var(--ds-icon-color, --ds-text-color);
 
-    transition: color var(--thc-animationDuration--S);
+    transition: color var(--ds-animationDuration--S);
 }

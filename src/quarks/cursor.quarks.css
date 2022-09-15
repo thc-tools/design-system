@@ -1,6 +1,6 @@
 :root {
-    --thc-cursor--pointer: pointer;
-    --thc-cursor--notAllowed: not-allowed;
-    --thc-cursor--default: default;
-    --thc-cursor--text: text;
+    --ds-cursor--pointer: pointer;
+    --ds-cursor--notAllowed: not-allowed;
+    --ds-cursor--default: default;
+    --ds-cursor--text: text;
 }

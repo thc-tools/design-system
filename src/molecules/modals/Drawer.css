@@ -1,26 +1,26 @@
-.thc-c-drawer__paper {
+.ds-c-drawer__paper {
     overflow-y: auto;
 
     position: fixed;
     top: 0;
 
     height: 100vh;
-    z-index: var(--thc-zIndex--3);
+    z-index: var(--ds-zIndex--3);
 
     outline: none;
 }
 
-.thc-c-drawer__paper--left {
+.ds-c-drawer__paper--left {
     left: 0;
     right: auto;
 }
 
-.thc-c-drawer__paper--right {
+.ds-c-drawer__paper--right {
     left: auto;
     right: 0;
 }
 
-.thc-c-drawer__paper--top {
+.ds-c-drawer__paper--top {
     top: 0;
     left: 0;
     bottom: auto;
@@ -29,7 +29,7 @@
     max-height: 100%;
 }
 
-.thc-c-drawer__paper--bottom {
+.ds-c-drawer__paper--bottom {
     top: auto;
     left: 0;
     bottom: 0;
@@ -38,26 +38,26 @@
     max-height: 100%;
 }
 
-.thc-c-drawer__paper--XL {
+.ds-c-drawer__paper--XL {
     width: clamp(1100px, 90vw, 1400px);
 }
 
-.thc-c-drawer__paper--L {
+.ds-c-drawer__paper--L {
     width: clamp(700px, 70vw, 1050px);
 }
 
-.thc-c-drawer__paper--M {
+.ds-c-drawer__paper--M {
     width: clamp(550px, 50vw, 650px);
 }
 
-.thc-c-drawer__paper--S {
+.ds-c-drawer__paper--S {
     width: clamp(450px, 40vw, 550px);
 }
 
-.thc-c-drawer--docked .thc-c-drawer__paper--left {
-    border-right: var(--thc-borderSolid--S);
+.ds-c-drawer--docked .ds-c-drawer__paper--left {
+    border-right: var(--ds-borderSolid--S);
 }
 
-.thc-c-drawer--docked .thc-c-drawer__paper--right {
-    border-left: var(--thc-borderSolid--S);
+.ds-c-drawer--docked .ds-c-drawer__paper--right {
+    border-left: var(--ds-borderSolid--S);
 }

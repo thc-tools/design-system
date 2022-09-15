@@ -13,8 +13,8 @@ Thanks to Tech & Design teams, we established the following conventions:
 
 | Elements | Definition                                                                                                                                                                       | Developer Translation                 | Examples                |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | ----------------------- |
-| Quark    | An undividable element, it's the smallest element we have.                                                                                                                       | A CSS variable                        | --thc-color-blue        |
-| Atom     | A logic group of Quarks used by several molecules as is. Often object (-o) layer in ITCSS                                                                                        | A CSS Classname                       | .thc-o-paper            |
+| Quark    | An undividable element, it's the smallest element we have.                                                                                                                       | A CSS variable                        | --ds-color-blue        |
+| Atom     | A logic group of Quarks used by several molecules as is. Often object (-o) layer in ITCSS                                                                                        | A CSS Classname                       | .ds-o-paper            |
 | Molecule | A reusable component with optional variants via props (hover, active, focus, disabled...).<br /><br /> ⚠️ Caution<br /> Every components must have a light and a dark CSS theme. | A React component                     | Card                    |
 | Organism | An group of components which act in a functional unit and/or a declinable pattern.                                                                                               | A React component of React components | CardInfos, CardList ... |
 
@@ -26,7 +26,7 @@ Then our pages ("containers" in the codebase) add data and content to these basi
 
 1. An added element must match with the `Elements Scale definitions`.
 2. Every design system elements must be reusable and unique.
-3. Our elements must follow the thc-tools Graphic Guidelines.
+3. Our elements must follow the ds-tools Graphic Guidelines.
 4. The addition of an element must be motivated by a design/functional need and not be only motivated by a graphic desire.
 5. Thanks to this system, no specific CSS will be accepted for a feature development (exceptions : feature/evol testing,
    fast tracks, and if specified in Github)

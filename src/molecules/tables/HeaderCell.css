@@ -1,37 +1,70 @@
 :root {
-    --thc-header-cell-height: 50px;
-    --thc-header-cell-min-width: var(--thc-cell-min-width);
+    --ds-header-cell-height: 40px;
+    --ds-header-cell-min-width: var(--ds-cell-min-width);
+
+    --ds-header-cell-icon-color: transparent;
+    --ds-header-cell-icon-color--hover: var(--ds-color--grey-100);
+    --ds-header-cell-icon-color--sorted: var(--ds-color--grey-300);
 }
 
-.thc-theme--light,
-.thc-theme--dark {
-    --thc-header-cell-box-shadow--hover: var(--thc-color--skyblue-80);
-    --thc-header-cell-box-shadow--active: var(--thc-color--skyblue-100);
+.ds-c-header-cell {
+    background-color: var(--ds-table-background-color);
 }
 
-.thc-c-header-cell {
+.ds-c-header-cell__container {
+    --ds-actionable-box-shadow-color--hover: transparent;
+    --ds-actionable-box-shadow-color--active: transparent;
+
+    --ds-text-color: var(--ds-color--grey-300);
+
     box-sizing: border-box;
-    height: var(--thc-header-cell-height);
-    min-width: var(--thc-header-cell-min-width);
-    width: fit-content;
-    padding: 0 var(--thc-spacing--S);
-    border-bottom: var(--thc-borderSolid--S);
-    border-right: var(--thc-borderSolid--S);
+
+    height: var(--ds-header-cell-height);
+    min-width: var(--ds-header-cell-min-width);
+
+    padding: var(--ds-spacing--M) var(--ds-spacing--L);
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    background-color: var(--thc-paper-background-color);
-
-    --thc-icon-color: var(--thc-textColor--secondary);
-
-    --thc-actionable-box-shadow-color--hover: var(--thc-header-cell-box-shadow--hover);
-    --thc-actionable-box-shadow-color--active: var(--thc-header-cell-box-shadow--active);
 }
 
-.thc-c-header-cell__content {
+.ds-c-header-cell--left .ds-c-header-cell__container {
+    justify-content: flex-start;
+}
+
+.ds-c-header-cell--center .ds-c-header-cell__container {
+    justify-content: center;
+}
+
+.ds-c-header-cell--right .ds-c-header-cell__container {
+    justify-content: flex-end;
+}
+
+.ds-c-header-cell:hover {
+    --ds-header-cell-icon-color: var(--ds-header-cell-icon-color--hover);
+}
+
+.ds-c-header-cell--sorted,
+.ds-c-header-cell--sorted:hover {
+    --ds-header-cell-icon-color: var(--ds-header-cell-icon-color--sorted);
+}
+
+.ds-c-header-cell__content {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.ds-c-header-cell__icon {
+    --ds-icon-color: var(--ds-header-cell-icon-color);
+
+    transition: transform var(--ds-animationDuration--S);
+}
+
+.ds-c-header-cell__icon--asc {
+    transform: rotate(0deg);
+}
+
+.ds-c-header-cell__icon--desc {
+    transform: rotate(-180deg);
 }

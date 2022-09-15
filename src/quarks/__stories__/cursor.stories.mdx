@@ -6,41 +6,41 @@ import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
 
 ## TODO
 
-Cursor in thc have four defined quarks:
+Cursor in ds have four defined quarks:
 
--   `--thc-cursor--pointer`: is used when an element have a click interaction
--   `--thc-cursor--notAllowed`: is used when an element is disabled
--   `--thc-cursor--text`: if the element is editable
--   `--thc-cursor--default`: to reset to the default cursor if nested in another
+-   `--ds-cursor--pointer`: is used when an element have a click interaction
+-   `--ds-cursor--notAllowed`: is used when an element is disabled
+-   `--ds-cursor--text`: if the element is editable
+-   `--ds-cursor--default`: to reset to the default cursor if nested in another
 
 ### Examples
 
 <Canvas>
-    <Story name="--thc-cursor--pointer">
-        <div>--thc-cursor--pointer</div>
+    <Story name="--ds-cursor--pointer">
+        <div>--ds-cursor--pointer</div>
         <div
-            style={{ border: "1px solid black", cursor: "var(--thc-cursor--pointer)", width: "70px", height: "70px" }}
+            style={{ border: "1px solid black", cursor: "var(--ds-cursor--pointer)", width: "70px", height: "70px" }}
         />
     </Story>
-    <Story name="--thc-cursor--notAllowed">
-        <div>--thc-cursor--notAllowed</div>
+    <Story name="--ds-cursor--notAllowed">
+        <div>--ds-cursor--notAllowed</div>
         <div
             style={{
                 border: "1px solid black",
-                cursor: "var(--thc-cursor--notAllowed)",
+                cursor: "var(--ds-cursor--notAllowed)",
                 width: "70px",
                 height: "70px",
             }}
         />
     </Story>
-    <Story name="--thc-cursor--text">
-        <div>--thc-cursor--text</div>
-        <div style={{ border: "1px solid black", cursor: "var(--thc-cursor--text)", width: "70px", height: "70px" }} />
+    <Story name="--ds-cursor--text">
+        <div>--ds-cursor--text</div>
+        <div style={{ border: "1px solid black", cursor: "var(--ds-cursor--text)", width: "70px", height: "70px" }} />
     </Story>
-    <Story name="--thc-cursor--default">
-        <div>--thc-cursor--default</div>
+    <Story name="--ds-cursor--default">
+        <div>--ds-cursor--default</div>
         <div
-            style={{ border: "1px solid black", cursor: "var(--thc-cursor--default)", width: "70px", height: "70px" }}
+            style={{ border: "1px solid black", cursor: "var(--ds-cursor--default)", width: "70px", height: "70px" }}
         />
     </Story>
 </Canvas>

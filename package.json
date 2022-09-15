@@ -18,7 +18,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint --fix src",
         "lint:ci": "eslint src",
-        "storybook": "start-storybook -p 6006 -s public",
+        "storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 3003 -s public",
         "build-storybook": "build-storybook"
     },
     "repository": "git://github.com/thc-tools/design-system.git",
@@ -41,7 +41,7 @@
         "prop-types": "15.7.2",
         "qs": "6.11.0",
         "react-beautiful-dnd": "13.1.1",
-        "react-dates": "21.8.0",
+        "react-date-range": "^1.4.0",
         "react-popper": "2.2.5",
         "react-resize-aware": "3.1.1",
         "react-router-dom": "5.3.4",
@@ -49,7 +49,7 @@
         "react-transition-group": "4.4.5",
         "react-use-clipboard": "1.0.7",
         "react-virtualized": "9.22.3",
-        "use-debounce": "6.0.1",
+        "use-debounce": "9.0.3",
         "yup": "0.32.11"
     },
     "devDependencies": {
@@ -71,6 +71,13 @@
         "@storybook/node-logger": "6.5.10",
         "@storybook/react": "6.5.10",
         "@testing-library/react-hooks": "3.7.0",
+        "@types/react-beautiful-dnd": "^13.1.4",
+        "@types/react-dom": "^18.2.7",
+        "@types/react-router-dom": "^5.3.3",
+        "@types/react-transition-group": "^4.4.6",
+        "@types/react-virtualized": "^9.21.22",
+        "@typescript-eslint/eslint-plugin": "6.4.0",
+        "@typescript-eslint/parser": "6.4.0",
         "babel-eslint": "10.1.0",
         "babel-loader": "8.2.5",
         "babel-plugin-lodash": "3.3.4",
@@ -89,7 +96,8 @@
         "react-dom": "16.14.0",
         "react-test-renderer": "16.14.0",
         "regenerator-runtime": "0.13.9",
-        "svg-parser": "2.0.4"
+        "svg-parser": "2.0.4",
+        "typescript": "^4.1.2"
     },
     "peerDependencies": {
         "react": ">=16.14.0",

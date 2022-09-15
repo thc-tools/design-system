@@ -1,0 +1,29 @@
+.ds-c-table-pagination {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: var(--ds-spacing--S);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--ds-spacing--L);
+
+    background-color: var(--ds-table-background-color);
+
+    border: var(--ds-table-outer-border);
+    border-top: var(--ds-borderSolid--S);
+    border-bottom: var(--ds-borderSolid--S);
+    border-color: var(--ds-table-border-color);
+    border-radius: 0 0 var(--ds-table-border-radius) var(--ds-table-border-radius);
+}
+
+.ds-c-table-pagination__limit {
+    display: flex;
+    align-items: center;
+    gap: var(--ds-spacing--S);
+}
+
+.ds-c-table-pagination__pagination-button {
+    --ds-button-text-color: var(--ds-color--grey-500);
+}

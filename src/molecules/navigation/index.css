@@ -4,6 +4,7 @@
 @import "./MenuItem.css";
 @import "./MenuList.css";
 @import "./MenuSeparator.css";
+@import "./PillTabs.css";
 @import "./Step.css";
 @import "./StepConnector.css";
 @import "./Stepper.css";
@@ -11,3 +12,4 @@
 @import "./TabIndicator.css";
 @import "./TabPanel.css";
 @import "./Tabs.css";
+@import "./TabView.css";

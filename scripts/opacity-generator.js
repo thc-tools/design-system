@@ -49,7 +49,7 @@ function printSectionHeader(name, theme) {
     console.log("/**");
     console.log(` * ${name}`);
     console.log(" */");
-    console.log(`${theme === "light" ? ":root, " : ""}.thc-theme--${theme} {`);
+    console.log(`${theme === "light" ? ":root, " : ""}.ds-theme--${theme} {`);
 }
 
 function printSectionFooter() {
@@ -97,20 +97,20 @@ console.log("/* Colors generated with scripts/opacity-generator.js */");
 console.log("");
 
 printSectionHeader("Colors (light)", "light");
-printSectionPalette(colors, "--thc-color--");
+printSectionPalette(colors, "--ds-color--");
 printSectionFooter();
 console.log("");
 
 printSectionHeader("Colors (dark)", "dark");
-printSectionPalette(colors, "--thc-color--", dark);
+printSectionPalette(colors, "--ds-color--", dark);
 printSectionFooter();
 console.log("");
 
 printSectionHeader("Colors Opacity", "light");
-printSectionOpacity(colorsOpacity, "--thc-color--");
+printSectionOpacity(colorsOpacity, "--ds-color--");
 printSectionFooter();
 console.log("");
 
 printSectionHeader("Colors Dataviz", "light");
-printSectionPalette(colorsDataviz, "--thc-colorDataviz--");
+printSectionPalette(colorsDataviz, "--ds-colorDataviz--");
 printSectionFooter();

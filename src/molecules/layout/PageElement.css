@@ -1,0 +1,7 @@
+.ds-c-page-element {
+    padding: 0 var(--ds-spacing--M);
+}
+
+.ds-c-page-element--top-element {
+    padding-top: var(--ds-spacing--M);
+}

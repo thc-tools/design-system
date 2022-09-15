@@ -1,0 +1,11 @@
+.ds-c-table__row--focused {
+    --ds-table-background-color: var(--ds-table-focused-color);
+}
+
+.ds-c-table__body .ds-c-table__row:hover .ds-c-cell {
+    --ds-table-background-color: var(--ds-table-hover-color);
+}
+
+.ds-c-table__row--actionnable {
+    cursor: var(--ds-cursor--pointer);
+}

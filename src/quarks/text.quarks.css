@@ -1,36 +1,39 @@
 :root {
-    --thc-fontFamily--montserrat: Montserrat;
-    --thc-fontFamily--muli: Muli;
+    --ds-fontFamily--roboto: "Roboto";
 }
 
 :root {
-    --thc-fontSize--S: 10px;
-    --thc-fontSize--M: 12px;
-    --thc-fontSize--L: 14px;
-    --thc-fontSize--XL: 24px;
+    --ds-fontSize--XS: 11px;
+    --ds-fontSize--S: 13px;
+    --ds-fontSize--M: 16px;
+    --ds-fontSize--L: 23px;
+    --ds-fontSize--XL: 33px;
 }
 
 :root {
-    --thc-fontWeight--regular: 400;
-    --thc-fontWeight--extrabold: 800;
+    --ds-fontWeight--regular: 400;
+    --ds-fontWeight--medium: 500;
+    --ds-fontWeight--semi-bold: 600;
+    --ds-fontWeight--bold: 700;
 }
 
 :root {
-    --thc-lineHeight--S: 12px;
-    --thc-lineHeight--M: 15px;
-    --thc-lineHeight--L: 23px;
-    --thc-lineHeight--XL: 29px;
+    --ds-lineHeight--XS: 15.4px;
+    --ds-lineHeight--S: 18.2px;
+    --ds-lineHeight--M: 22.4px;
+    --ds-lineHeight--L: 32.2px;
+    --ds-lineHeight--XL: 46.2px;
 }
 
-.thc-theme--light {
-    --thc-textColor--primary: var(--thc-color--black-100);
-    --thc-textColor--accent: var(--thc-color--blue-100);
-    --thc-textColor--secondary: var(--thc-color--black-40);
+.ds-theme--light {
+    --ds-textColor--primary: var(--ds-color--black-100);
+    --ds-textColor--accent: var(--ds-color--primary-500);
+    --ds-textColor--secondary: var(--ds-color--black-40);
 }
 
-.thc-theme--dark,
-.thc-theme--color {
-    --thc-textColor--primary: var(--thc-color--white-100);
-    --thc-textColor--accent: var(--thc-color--white-100);
-    --thc-textColor--secondary: var(--thc-color--white-40);
+.ds-theme--dark,
+.ds-theme--color {
+    --ds-textColor--primary: var(--ds-color--white-100);
+    --ds-textColor--accent: var(--ds-color--white-100);
+    --ds-textColor--secondary: var(--ds-color--white-40);
 }

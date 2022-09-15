@@ -1,11 +1,11 @@
 :root {
-    --thc-menu-width: 64px;
+    --ds-menu-width: 64px;
 }
 
-.thc-c-menu {
+.ds-c-menu {
     border-radius: 0;
 
-    width: var(--thc-menu-width);
+    width: var(--ds-menu-width);
     height: 100%;
     box-sizing: border-box;
 
@@ -15,5 +15,5 @@
 
     justify-content: space-between;
 
-    border: var(--thc-borderSolid--S);
+    border: var(--ds-borderSolid--S);
 }

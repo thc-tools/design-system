@@ -1,18 +1,18 @@
-.thc-c-card__title-title {
+.ds-c-card__title-title {
     display: flex;
     align-items: center;
 }
 
-.thc-c-card__title {
-    margin: var(--thc-card-spacing);
+.ds-c-card__title {
+    margin: var(--ds-card-spacing);
 }
 
-.thc-c-card__title-helper {
-    --thc-icon-color: var(--thc-textColor--secondary);
+.ds-c-card__title-helper {
+    --ds-icon-color: var(--ds-textColor--secondary);
 
-    margin-left: var(--thc-spacing--S);
+    margin-left: var(--ds-spacing--M);
 }
 
-.thc-c-card__title-subtitle {
-    --thc-text-color: var(--thc-textColor--secondary);
+.ds-c-card__title-subtitle {
+    --ds-text-color: var(--ds-textColor--secondary);
 }

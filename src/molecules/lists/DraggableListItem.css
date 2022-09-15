@@ -1,9 +1,9 @@
-.thc-c-draggable-list-item--drag-handle {
+.ds-c-draggable-list-item--drag-handle {
     position: relative;
 }
 
-.thc-c-draggable-list-item__handle {
-    --thc-icon-color: var(--thc-textColor--accent);
+.ds-c-draggable-list-item__handle {
+    --ds-icon-color: var(--ds-textColor--accent);
 
     position: absolute;
     top: 0;

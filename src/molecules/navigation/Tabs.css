@@ -1,12 +1,12 @@
-.thc-c-tabs {
+.ds-c-tabs {
     overflow-y: auto;
 
     display: flex;
 
-    border-bottom: var(--thc-borderSolid--S);
+    background-color: transparent;
 }
 
-.thc-c-tabs__container {
+.ds-c-tabs__container {
     position: relative;
 
     display: inline-block;
@@ -14,6 +14,6 @@
     white-space: nowrap;
 }
 
-.thc-c-tabs__list-container {
+.ds-c-tabs__list-container {
     display: flex;
 }

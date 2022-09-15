@@ -1,70 +1,66 @@
-.thc-c-loader-icon {
+.ds-c-loader-icon {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
-    width: 110px;
-    height: 70px;
+    width: 26px;
+    height: 29px;
 }
 
-.thc-c-loader-icon__ball {
-    flex: 1;
+.ds-c-loader-icon__ball {
+    width: 23%;
 
     border-radius: 15px;
 }
 
-.thc-c-loader-icon__ball:not(:last-child) {
-    margin-right: 7%;
+.ds-c-loader-icon__a {
+    animation: ds-kf-loader-icon-ball-a 0.7s ease-out 0s infinite alternate;
 }
 
-.thc-c-loader-icon__a {
-    animation: thc-kf-loader-icon-ball-a 0.7s ease-out 0s infinite alternate;
+.ds-c-loader-icon__b {
+    animation: ds-kf-loader-icon-ball-b 0.7s ease-out 0.2s infinite alternate;
 }
 
-.thc-c-loader-icon__b {
-    animation: thc-kf-loader-icon-ball-b 0.7s ease-out 0.2s infinite alternate;
-}
-
-.thc-c-loader-icon__c {
-    animation: thc-kf-loader-icon-ball-c 0.7s ease-out 0.4s infinite alternate;
+.ds-c-loader-icon__c {
+    animation: ds-kf-loader-icon-ball-c 0.7s ease-out 0.4s infinite alternate;
 }
 
 /*ANIMATION STORAGE*/
-@keyframes thc-kf-loader-icon-ball-a {
+@keyframes ds-kf-loader-icon-ball-a {
     from {
         height: 30%;
         opacity: 0.3;
-        background: var(--thc-color--white-100);
+        background: var(--ds-color--white-100);
     }
     to {
         height: 100%;
         opacity: 1;
-        background: var(--thc-color--green-100);
+        background: var(--ds-color--primary-300);
     }
 }
 
-@keyframes thc-kf-loader-icon-ball-b {
+@keyframes ds-kf-loader-icon-ball-b {
     from {
         height: 30%;
         opacity: 0.3;
-        background: var(--thc-color--white-100);
+        background: var(--ds-color--white-100);
     }
     to {
         height: 90%;
         opacity: 1;
-        background: var(--thc-color--blue-100);
+        background: var(--ds-color--primary-500);
     }
 }
 
-@keyframes thc-kf-loader-icon-ball-c {
+@keyframes ds-kf-loader-icon-ball-c {
     from {
         height: 30%;
         opacity: 0.3;
-        background: var(--thc-color--white-100);
+        background: var(--ds-color--white-100);
     }
     to {
         height: 80%;
         opacity: 1;
-        background: var(--thc-color--red-100);
+        background: var(--ds-color--primary-700);
     }
 }

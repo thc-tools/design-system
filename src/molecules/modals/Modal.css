@@ -1,5 +1,5 @@
-.thc-c-modal {
-    z-index: var(--thc-zIndex--6);
+.ds-c-modal {
+    z-index: var(--ds-zIndex--6);
 
     position: fixed;
     top: 0;
@@ -8,6 +8,6 @@
     left: 0;
 }
 
-.thc-c-modal--hidden {
+.ds-c-modal--hidden {
     visibility: hidden;
 }
