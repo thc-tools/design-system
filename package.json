@@ -18,7 +18,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint --fix src",
         "lint:ci": "eslint src",
-        "storybook": "start-storybook -p 6006 -s public",
+        "storybook": "start-storybook -p 3003 -s public",
         "build-storybook": "build-storybook"
     },
     "repository": "git://github.com/thc-tools/design-system.git",
