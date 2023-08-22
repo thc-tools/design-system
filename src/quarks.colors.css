@@ -106,17 +106,16 @@
     --thc-color--success-90: #55b355;
     --thc-color--success-100: #59c159;
 
-    --thc-color--orange-0: #333333;
-    --thc-color--orange-10: #473e35;
-    --thc-color--orange-20: #5b4a37;
-    --thc-color--orange-30: #6f5539;
-    --thc-color--orange-40: #83613b;
-    --thc-color--orange-50: #976c3d;
-    --thc-color--orange-60: #aa773e;
-    --thc-color--orange-70: #be8340;
-    --thc-color--orange-80: #d28e42;
-    --thc-color--orange-90: #e69a44;
-    --thc-color--orange-100: #faa546;
+    --thc-color--warning-50: #fdf0e6;
+    --thc-color--warning-100: #f9d2b1;
+    --thc-color--warning-200: #f7bc8b;
+    --thc-color--warning-300: #f39d56;
+    --thc-color--warning-400: #f18a35;
+    --thc-color--warning-500: #ed6d03;
+    --thc-color--warning-600: #d86303;
+    --thc-color--warning-700: #a84d02;
+    --thc-color--warning-800: #823c02;
+    --thc-color--warning-900: #642e01;
 
     --thc-color--red-0: #333333;
     --thc-color--red-10: #443636;

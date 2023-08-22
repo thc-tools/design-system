@@ -30,7 +30,7 @@
 }
 
 .thc-c-toast.Toastify__toast--warning {
-    background-color: var(--thc-color--orange-100);
+    background-color: var(--thc-color--warning-500);
 }
 
 .thc-c-toast.Toastify__toast--error {

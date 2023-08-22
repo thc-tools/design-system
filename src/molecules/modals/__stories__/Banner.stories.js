@@ -41,7 +41,7 @@ Primary.args = {
 
 export const Complex = Template.bind({});
 Complex.args = {
-    color: "--thc-color--orange-100",
+    color: "--thc-color--warning-500",
     children: [
         <Icon>key</Icon>,
         "Your session will expire in 3 minutes, you should refresh now",
