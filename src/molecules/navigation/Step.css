@@ -8,8 +8,8 @@
     --thc-step-text-color--completed: var(--thc-textColor--primary);
 
     --thc-step-icon-color: var(--thc-textColor--secondary);
-    --thc-step-icon-color--active: var(--thc-color--skyblue-100);
-    --thc-step-icon-color--completed: var(--thc-color--skyblue-100);
+    --thc-step-icon-color--active: var(--thc-color--blue-500);
+    --thc-step-icon-color--completed: var(--thc-color--blue-500);
 
     --thc-text-color: var(--thc-step-text-color);
     --thc-icon-color: var(--thc-step-icon-color);

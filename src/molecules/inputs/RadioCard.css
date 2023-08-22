@@ -12,7 +12,7 @@
 .thc-c-radio-card--checked {
     --thc-card-spacing: calc(var(--thc-spacing--S) - var(--thc-border-size--L));
 
-    --thc-border-color: var(--thc-color--skyblue-80);
+    --thc-border-color: var(--thc-color--blue-400);
     --thc-o-box-border: var(--thc-borderSolid--L);
 }
 

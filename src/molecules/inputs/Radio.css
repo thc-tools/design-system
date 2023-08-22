@@ -10,8 +10,8 @@
 }
 
 .thc-c-radio--checked:not([disabled]) {
-    --thc-radio-primary-color: var(--thc-color--skyblue-100);
-    --thc-radio-primary-color--hover: var(--thc-color--skyblue-80);
+    --thc-radio-primary-color: var(--thc-color--blue-500);
+    --thc-radio-primary-color--hover: var(--thc-color--blue-400);
 }
 
 .thc-c-radio--error:not([disabled]) {
@@ -36,8 +36,8 @@
 }
 
 .thc-theme--dark .thc-c-radio--checked:not([disabled]) {
-    --thc-radio-primary-color: var(--thc-color--skyblue-80);
-    --thc-radio-primary-color--hover: var(--thc-color--skyblue-100);
+    --thc-radio-primary-color: var(--thc-color--blue-400);
+    --thc-radio-primary-color--hover: var(--thc-color--blue-500);
 }
 
 .thc-theme--dark .thc-c-radio--error:not([disabled]) {

@@ -18,12 +18,12 @@
     --thc-chip-background-color: var(--thc-primary--blue-50);
 
     --thc-actionable-box-shadow-color--hover: var(--thc-color--primary-100);
-    --thc-actionable-box-shadow-color--active: var(--thc-color--primary-300);
+    --thc-actionable-box-shadow-color--active: var(--thc-color--primary-200);
 }
 
 .thc-theme--dark .thc-c-chip--action:not([disabled]) {
     --thc-chip-background-color: var(--thc-color--primary-100);
 
-    --thc-actionable-box-shadow-color--hover: var(--thc-color--primary-200);
-    --thc-actionable-box-shadow-color--active: var(--thc-color--primary-50);
+    --thc-actionable-box-shadow-color--hover: var(--thc-color--primary-100);
+    --thc-actionable-box-shadow-color--active: var(--thc-color--primary-200);
 }

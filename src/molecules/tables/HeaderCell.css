@@ -5,8 +5,8 @@
 
 .thc-theme--light,
 .thc-theme--dark {
-    --thc-header-cell-box-shadow--hover: var(--thc-color--skyblue-80);
-    --thc-header-cell-box-shadow--active: var(--thc-color--skyblue-100);
+    --thc-header-cell-box-shadow--hover: var(--thc-color--blue-400);
+    --thc-header-cell-box-shadow--active: var(--thc-color--blue-500);
 }
 
 .thc-c-header-cell {

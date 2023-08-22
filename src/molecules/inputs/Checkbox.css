@@ -13,8 +13,8 @@
 
 .thc-c-checkbox--checked:not([disabled]),
 .thc-c-checkbox--indeterminate:not([disabled]) {
-    --thc-checkbox-primary-color: var(--thc-color--skyblue-100);
-    --thc-checkbox-primary-color--hover: var(--thc-color--skyblue-80);
+    --thc-checkbox-primary-color: var(--thc-color--blue-500);
+    --thc-checkbox-primary-color--hover: var(--thc-color--blue-400);
 }
 
 .thc-c-checkbox--error:not([disabled]) {
@@ -43,8 +43,8 @@
 
 .thc-theme--dark .thc-c-checkbox--checked:not([disabled]),
 .thc-theme--dark .thc-c-checkbox--indeterminate:not([disabled]) {
-    --thc-checkbox-primary-color: var(--thc-color--skyblue-80);
-    --thc-checkbox-primary-color--hover: var(--thc-color--skyblue-100);
+    --thc-checkbox-primary-color: var(--thc-color--blue-400);
+    --thc-checkbox-primary-color--hover: var(--thc-color--blue-500);
 }
 
 .thc-theme--dark .thc-c-checkbox--error:not([disabled]) {

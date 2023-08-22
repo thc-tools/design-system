@@ -3,8 +3,8 @@
     --thc-switch-color--hover: var(--thc-color--black-20);
     --thc-switch-color--disabled: var(--thc-color--black-20);
 
-    --thc-switch-color--checked: var(--thc-color--skyblue-100);
-    --thc-switch-color--checked-hover: var(--thc-color--skyblue-80);
+    --thc-switch-color--checked: var(--thc-color--blue-500);
+    --thc-switch-color--checked-hover: var(--thc-color--blue-400);
 
     --thc-switch-background-color: none;
     --thc-switch-background-color--disabled: var(--thc-color--black-10);

@@ -35,7 +35,7 @@
 /* Primary & Caution type variations */
 
 .thc-c-button--primary:not([disabled]) {
-    --thc-button-background-color: var(--thc-color--skyblue-100);
+    --thc-button-background-color: var(--thc-color--blue-500);
 }
 
 .thc-c-button--caution:not([disabled]) {
