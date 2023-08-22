@@ -1,6 +1,6 @@
 :root {
     --thc-loader-progression-background-color: var(--thc-colorDataviz--grey-50);
-    --thc-loader-progression-background-color--accent: var(--thc-color--green-100);
+    --thc-loader-progression-background-color--accent: var(--thc-color--success-500);
     --thc-loader-progression-background-color--accent-error: var(--thc-color--red-100);
     --thc-loader-progression-background-color--accent-warning: var(--thc-color--orange-100);
 

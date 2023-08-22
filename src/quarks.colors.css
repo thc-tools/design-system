@@ -6,7 +6,8 @@
 /**
  * Colors (light)
  */
-:root, .thc-theme--light {
+:root,
+.thc-theme--light {
     --thc-color--primary-50: #ebdeff;
     --thc-color--primary-100: #c2cefe;
     --thc-color--primary-200: #a4aefe;
@@ -29,17 +30,16 @@
     --thc-color--blue-800: #125386;
     --thc-color--blue-900: #0e3f66;
 
-    --thc-color--green-0: #ffffff;
-    --thc-color--green-10: #eef9ee;
-    --thc-color--green-20: #def3de;
-    --thc-color--green-30: #cdeccd;
-    --thc-color--green-40: #bde6bd;
-    --thc-color--green-50: #ace0ac;
-    --thc-color--green-60: #9bda9b;
-    --thc-color--green-70: #8bd48b;
-    --thc-color--green-80: #7acd7a;
-    --thc-color--green-90: #6ac76a;
-    --thc-color--green-100: #59c159;
+    --thc-color--success-50: #eaf8f6;
+    --thc-color--success-100: #bde9e4;
+    --thc-color--success-200: #9dded7;
+    --thc-color--success-300: #70cfc4;
+    --thc-color--success-400: #54c5b9;
+    --thc-color--success-500: #29b7a7;
+    --thc-color--success-600: #25a798;
+    --thc-color--success-700: #1d8277;
+    --thc-color--success-800: #17655c;
+    --thc-color--success-900: #114d46;
 
     --thc-color--orange-0: #ffffff;
     --thc-color--orange-10: #fff6ed;
@@ -94,17 +94,17 @@
     --thc-color--skyblue-90: #34cce0;
     --thc-color--skyblue-100: #34ddf3;
 
-    --thc-color--green-0: #333333;
-    --thc-color--green-10: #374137;
-    --thc-color--green-20: #3b4f3b;
-    --thc-color--green-30: #3e5e3e;
-    --thc-color--green-40: #426c42;
-    --thc-color--green-50: #467a46;
-    --thc-color--green-60: #4a884a;
-    --thc-color--green-70: #4e964e;
-    --thc-color--green-80: #51a551;
-    --thc-color--green-90: #55b355;
-    --thc-color--green-100: #59c159;
+    --thc-color--success-0: #333333;
+    --thc-color--success-10: #374137;
+    --thc-color--success-20: #3b4f3b;
+    --thc-color--success-30: #3e5e3e;
+    --thc-color--success-40: #426c42;
+    --thc-color--success-50: #467a46;
+    --thc-color--success-60: #4a884a;
+    --thc-color--success-70: #4e964e;
+    --thc-color--success-80: #51a551;
+    --thc-color--success-90: #55b355;
+    --thc-color--success-100: #59c159;
 
     --thc-color--orange-0: #333333;
     --thc-color--orange-10: #473e35;
@@ -134,36 +134,38 @@
 /**
  * Colors Opacity
  */
-:root, .thc-theme--light {
+:root,
+.thc-theme--light {
     --thc-color--white-0: #ffffff00;
     --thc-color--white-10: #ffffff19;
     --thc-color--white-20: #ffffff33;
-    --thc-color--white-30: #ffffff4C;
+    --thc-color--white-30: #ffffff4c;
     --thc-color--white-40: #ffffff66;
-    --thc-color--white-50: #ffffff7F;
+    --thc-color--white-50: #ffffff7f;
     --thc-color--white-60: #ffffff99;
-    --thc-color--white-70: #ffffffB2;
-    --thc-color--white-80: #ffffffCC;
-    --thc-color--white-90: #ffffffE5;
-    --thc-color--white-100: #ffffffFF;
+    --thc-color--white-70: #ffffffb2;
+    --thc-color--white-80: #ffffffcc;
+    --thc-color--white-90: #ffffffe5;
+    --thc-color--white-100: #ffffffff;
 
     --thc-color--black-0: #33333300;
     --thc-color--black-10: #33333319;
     --thc-color--black-20: #33333333;
-    --thc-color--black-30: #3333334C;
+    --thc-color--black-30: #3333334c;
     --thc-color--black-40: #33333366;
-    --thc-color--black-50: #3333337F;
+    --thc-color--black-50: #3333337f;
     --thc-color--black-60: #33333399;
-    --thc-color--black-70: #333333B2;
-    --thc-color--black-80: #333333CC;
-    --thc-color--black-90: #333333E5;
-    --thc-color--black-100: #333333FF;
+    --thc-color--black-70: #333333b2;
+    --thc-color--black-80: #333333cc;
+    --thc-color--black-90: #333333e5;
+    --thc-color--black-100: #333333ff;
 }
 
 /**
  * Colors Dataviz
  */
-:root, .thc-theme--light {
+:root,
+.thc-theme--light {
     --thc-colorDataviz--blue-0: #ffffff;
     --thc-colorDataviz--blue-10: #ebf6fe;
     --thc-colorDataviz--blue-20: #d6ecfd;

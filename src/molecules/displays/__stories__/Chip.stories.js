@@ -61,7 +61,7 @@ export function Types() {
                 <Chip label="Label" />
                 <Chip
                     label="Label"
-                    color="--thc-color--green-100"
+                    color="--thc-color--success-500"
                     onClick={() => {}}
                     icon="close"
                     iconPosition="right"
@@ -81,7 +81,7 @@ export function Types() {
                     disabled
                     label="Label"
                     onClick={() => {}}
-                    color="--thc-color--green-100"
+                    color="--thc-color--success-500"
                     icon="close"
                     iconPosition="right"
                 />

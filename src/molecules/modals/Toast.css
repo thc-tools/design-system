@@ -26,7 +26,7 @@
 }
 
 .thc-c-toast.Toastify__toast--success {
-    background-color: var(--thc-color--green-100);
+    background-color: var(--thc-color--success-500);
 }
 
 .thc-c-toast.Toastify__toast--warning {

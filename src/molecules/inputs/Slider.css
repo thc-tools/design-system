@@ -28,9 +28,9 @@
 }
 
 .thc-c-slider--success {
-    --thc-slider-color--progress: var(--thc-color--green-70);
-    --thc-slider-color--progress--hover: var(--thc-color--green-50);
-    --thc-slider-color--progress--focus: var(--thc-color--green-100);
+    --thc-slider-color--progress: var(--thc-color--success-400);
+    --thc-slider-color--progress--hover: var(--thc-color--success-200);
+    --thc-slider-color--progress--focus: var(--thc-color--success-500);
 }
 
 .thc-theme--light .thc-c-slider[disabled] {

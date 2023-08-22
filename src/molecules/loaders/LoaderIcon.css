@@ -39,7 +39,7 @@
     to {
         height: 100%;
         opacity: 1;
-        background: var(--thc-color--green-100);
+        background: var(--thc-color--success-500);
     }
 }
 
