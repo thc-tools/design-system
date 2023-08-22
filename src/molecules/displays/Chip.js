@@ -21,7 +21,7 @@ export const CHIP_TYPES = {
 export function Chip({
     children,
     className,
-    color: colorProp = "--thc-color--blue-100",
+    color: colorProp = "--thc-color--primary-900",
     disabled = false,
     helperText,
     helperProps,

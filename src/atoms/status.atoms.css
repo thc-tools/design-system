@@ -1,6 +1,6 @@
 :root {
     --thc-status-color--error: var(--thc-color--red-100);
-    --thc-status-color--info: var(--thc-color--blue-100);
+    --thc-status-color--info: var(--thc-color--primary-900);
     --thc-status-color--success: var(--thc-color--green-100);
     --thc-status-color--warning: var(--thc-color--orange-100);
 }

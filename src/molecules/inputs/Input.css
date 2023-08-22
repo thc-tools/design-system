@@ -4,8 +4,8 @@
 
 .thc-theme--light {
     --thc-input-border-color: var(--thc-color--black-10);
-    --thc-input-border-color--hover: var(--thc-color--blue-40);
-    --thc-input-border-color--focus: var(--thc-color--blue-100);
+    --thc-input-border-color--hover: var(--thc-color--primary-300);
+    --thc-input-border-color--focus: var(--thc-color--primary-900);
     --thc-input-border-color--disabled: var(--thc-color--black-10);
 
     --thc-input-background-color: var(--thc-color--white-100);

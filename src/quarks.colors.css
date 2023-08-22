@@ -7,17 +7,16 @@
  * Colors (light)
  */
 :root, .thc-theme--light {
-    --thc-color--blue-0: #ffffff;
-    --thc-color--blue-10: #ecf6fd;
-    --thc-color--blue-20: #d8ecfb;
-    --thc-color--blue-30: #c5e3f9;
-    --thc-color--blue-40: #b1d9f7;
-    --thc-color--blue-50: #9ed0f5;
-    --thc-color--blue-60: #8bc7f2;
-    --thc-color--blue-70: #77bdf0;
-    --thc-color--blue-80: #64b4ee;
-    --thc-color--blue-90: #50aaec;
-    --thc-color--blue-100: #3da1ea;
+    --thc-color--primary-50: #ebdeff;
+    --thc-color--primary-100: #c2cefe;
+    --thc-color--primary-200: #a4aefe;
+    --thc-color--primary-300: #7a89fe;
+    --thc-color--primary-400: #6172fd;
+    --thc-color--primary-500: #394dff;
+    --thc-color--primary-600: #3448e6;
+    --thc-color--primary-700: #2838b4;
+    --thc-color--primary-800: #1f2b8b;
+    --thc-color--primary-900: #18216a;
 
     --thc-color--skyblue-0: #ffffff;
     --thc-color--skyblue-10: #ebfcfe;

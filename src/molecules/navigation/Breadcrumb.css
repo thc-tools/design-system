@@ -1,6 +1,6 @@
 .thc-c-breadcrumb {
-    --thc-actionable-box-shadow-color--hover: var(--thc-color--blue-20);
-    --thc-actionable-box-shadow-color--active: var(--thc-color--blue-40);
+    --thc-actionable-box-shadow-color--hover: var(--thc-color--primary-100);
+    --thc-actionable-box-shadow-color--active: var(--thc-color--primary-300);
 
     --thc-breadcrumb-color: var(--thc-textColor--accent);
     --thc-breadcrumb-color--active: var(--thc-textColor--primary);

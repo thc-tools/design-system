@@ -1,7 +1,7 @@
 .thc-theme--light,
 .thc-theme--dark {
     --thc-menu-item-background-color: none;
-    --thc-menu-item-background-color--active: var(--thc-color--blue-100);
+    --thc-menu-item-background-color--active: var(--thc-color--primary-900);
 }
 
 /* Common */

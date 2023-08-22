@@ -4,7 +4,7 @@
     --thc-chip-padding: var(--thc-spacing--S) var(--thc-spacing--S);
 
     --thc-chip-action-border: var(--thc-borderSolid--S);
-    --thc-chip-action-border-color: var(--thc-color--blue-80);
+    --thc-chip-action-border-color: var(--thc-color--primary-800);
 
     border: var(--thc-chip-action-border);
     border-color: var(--thc-chip-action-border-color);
@@ -15,15 +15,15 @@
 }
 
 .thc-c-chip--action:not([disabled]) {
-    --thc-chip-background-color: var(--thc-color--blue-10);
+    --thc-chip-background-color: var(--thc-primary--blue-50);
 
-    --thc-actionable-box-shadow-color--hover: var(--thc-color--blue-20);
-    --thc-actionable-box-shadow-color--active: var(--thc-color--blue-40);
+    --thc-actionable-box-shadow-color--hover: var(--thc-color--primary-100);
+    --thc-actionable-box-shadow-color--active: var(--thc-color--primary-300);
 }
 
 .thc-theme--dark .thc-c-chip--action:not([disabled]) {
-    --thc-chip-background-color: var(--thc-color--blue-20);
+    --thc-chip-background-color: var(--thc-color--primary-100);
 
-    --thc-actionable-box-shadow-color--hover: var(--thc-color--blue-30);
-    --thc-actionable-box-shadow-color--active: var(--thc-color--blue-50);
+    --thc-actionable-box-shadow-color--hover: var(--thc-color--primary-200);
+    --thc-actionable-box-shadow-color--active: var(--thc-color--primary-50);
 }

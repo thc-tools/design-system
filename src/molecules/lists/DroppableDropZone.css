@@ -1,7 +1,7 @@
 .thc-c-droppable-drop-zone {
     --thc-o-box-border: var(--thc-borderDashed--S);
-    --thc-border-color: var(--thc-color--blue-100);
-    --thc-text-color: var(--thc-color--blue-100);
+    --thc-border-color: var(--thc-color--primary-900);
+    --thc-text-color: var(--thc-color--primary-900);
     min-width: 170px;
     min-height: 50px;
 }

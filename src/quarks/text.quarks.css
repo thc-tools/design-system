@@ -24,7 +24,7 @@
 
 .thc-theme--light {
     --thc-textColor--primary: var(--thc-color--black-100);
-    --thc-textColor--accent: var(--thc-color--blue-100);
+    --thc-textColor--accent: var(--thc-color--primary-900);
     --thc-textColor--secondary: var(--thc-color--black-40);
 }
 

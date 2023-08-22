@@ -14,7 +14,7 @@ import { Modal } from "./Modal";
 export function Banner({
     children,
     className,
-    color: colorProp = "--thc-color--blue-100",
+    color: colorProp = "--thc-color--primary-900",
     modalClassName: modalClassNameProp,
     modalProps,
     onClose,

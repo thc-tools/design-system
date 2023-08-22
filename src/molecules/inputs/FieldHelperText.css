@@ -1,5 +1,5 @@
 .thc-c-field-helper-text {
-    --thc-text-color: var(--thc-color--blue-100);
+    --thc-text-color: var(--thc-color--primary-900);
 }
 
 .thc-c-field-helper-text--error:not([disabled]) {

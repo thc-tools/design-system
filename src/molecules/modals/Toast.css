@@ -22,7 +22,7 @@
 }
 
 .thc-c-toast.Toastify__toast--info {
-    background-color: var(--thc-color--blue-100);
+    background-color: var(--thc-color--primary-900);
 }
 
 .thc-c-toast.Toastify__toast--success {

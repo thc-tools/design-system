@@ -52,7 +52,7 @@
     to {
         height: 90%;
         opacity: 1;
-        background: var(--thc-color--blue-100);
+        background: var(--thc-color--primary-900);
     }
 }
 
