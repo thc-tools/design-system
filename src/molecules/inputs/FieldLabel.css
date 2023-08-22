@@ -19,5 +19,5 @@
 }
 
 .thc-c-field-label:not([disabled]) .thc-c-field-label__required {
-    --thc-text-color: var(--thc-color--red-100);
+    --thc-text-color: var(--thc-color--error-500);
 }

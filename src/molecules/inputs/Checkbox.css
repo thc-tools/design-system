@@ -18,14 +18,14 @@
 }
 
 .thc-c-checkbox--error:not([disabled]) {
-    --thc-checkbox-primary-color: var(--thc-color--red-60);
-    --thc-checkbox-primary-color--hover: var(--thc-color--red-40);
+    --thc-checkbox-primary-color: var(--thc-color--error-300);
+    --thc-checkbox-primary-color--hover: var(--thc-color--error-200);
 }
 
 .thc-c-checkbox--error.thc-c-checkbox--checked:not([disabled]),
 .thc-c-checkbox--error.thc-c-checkbox--indeterminate:not([disabled]) {
-    --thc-checkbox-primary-color: var(--thc-color--red-100);
-    --thc-checkbox-primary-color--hover: var(--thc-color--red-80);
+    --thc-checkbox-primary-color: var(--thc-color--error-500);
+    --thc-checkbox-primary-color--hover: var(--thc-color--error-400);
 }
 
 .thc-theme--dark {
@@ -48,14 +48,14 @@
 }
 
 .thc-theme--dark .thc-c-checkbox--error:not([disabled]) {
-    --thc-checkbox-primary-color: var(--thc-color--red-40);
-    --thc-checkbox-primary-color--hover: var(--thc-color--red-60);
+    --thc-checkbox-primary-color: var(--thc-color--error-200);
+    --thc-checkbox-primary-color--hover: var(--thc-color--error-300);
 }
 
 .thc-theme--dark .thc-c-checkbox--error.thc-c-checkbox--checked:not([disabled]),
 .thc-theme--dark .thc-c-checkbox--error.thc-c-checkbox--indeterminate:not([disabled]) {
-    --thc-checkbox-primary-color: var(--thc-color--red-80);
-    --thc-checkbox-primary-color--hover: var(--thc-color--red-100);
+    --thc-checkbox-primary-color: var(--thc-color--error-400);
+    --thc-checkbox-primary-color--hover: var(--thc-color--error-500);
 }
 
 .thc-c-checkbox {

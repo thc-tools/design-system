@@ -1,5 +1,5 @@
 :root {
-    --thc-status-color--error: var(--thc-color--red-100);
+    --thc-status-color--error: var(--thc-color--error-500);
     --thc-status-color--info: var(--thc-color--primary-500);
     --thc-status-color--success: var(--thc-color--success-500);
     --thc-status-color--warning: var(--thc-color--warning-500);

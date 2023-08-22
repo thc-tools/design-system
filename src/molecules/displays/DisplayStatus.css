@@ -20,5 +20,5 @@
 }
 
 .thc-c-display-status--failed {
-    --thc-icon-color: var(--thc-color--red-100);
+    --thc-icon-color: var(--thc-color--error-500);
 }

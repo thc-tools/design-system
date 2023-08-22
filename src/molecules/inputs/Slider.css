@@ -22,9 +22,9 @@
 }
 
 .thc-c-slider--error {
-    --thc-slider-color--progress: var(--thc-color--red-70);
-    --thc-slider-color--progress--hover: var(--thc-color--red-50);
-    --thc-slider-color--progress--focus: var(--thc-color--red-100);
+    --thc-slider-color--progress: var(--thc-color--error-400);
+    --thc-slider-color--progress--hover: var(--thc-color--error-300);
+    --thc-slider-color--progress--focus: var(--thc-color--error-500);
 }
 
 .thc-c-slider--success {

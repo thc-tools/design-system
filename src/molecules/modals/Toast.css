@@ -34,5 +34,5 @@
 }
 
 .thc-c-toast.Toastify__toast--error {
-    background-color: var(--thc-color--red-100);
+    background-color: var(--thc-color--error-500);
 }

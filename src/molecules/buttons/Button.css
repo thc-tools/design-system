@@ -39,7 +39,7 @@
 }
 
 .thc-c-button--caution:not([disabled]) {
-    --thc-button-background-color: var(--thc-color--red-100);
+    --thc-button-background-color: var(--thc-color--error-500);
 }
 
 /* Secondary type variation */

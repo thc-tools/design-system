@@ -65,6 +65,6 @@
     to {
         height: 80%;
         opacity: 1;
-        background: var(--thc-color--red-100);
+        background: var(--thc-color--error-500);
     }
 }

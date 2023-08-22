@@ -27,13 +27,13 @@
 }
 
 .thc-c-input--error {
-    --thc-input-border-color: var(--thc-color--red-20);
-    --thc-input-border-color--hover: var(--thc-color--red-50);
-    --thc-input-border-color--focus: var(--thc-color--red-100);
+    --thc-input-border-color: var(--thc-color--error-100);
+    --thc-input-border-color--hover: var(--thc-color--error-200);
+    --thc-input-border-color--focus: var(--thc-color--error-500);
 
-    --thc-input-background-color: var(--thc-color--red-10);
-    --thc-input-background-color--hover: var(--thc-color--red-10);
-    --thc-input-background-color--focus: var(--thc-color--red-10);
+    --thc-input-background-color: var(--thc-color--error-50);
+    --thc-input-background-color--hover: var(--thc-color--error-50);
+    --thc-input-background-color--focus: var(--thc-color--error-50);
 }
 
 .thc-c-input__container {

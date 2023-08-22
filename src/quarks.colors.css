@@ -17,7 +17,7 @@
     --thc-color--primary-600: #3448e6;
     --thc-color--primary-700: #2838b4;
     --thc-color--primary-800: #1f2b8b;
-    --thc-color--primary-500: #18216a;
+    --thc-color--primary-900: #18216a;
 
     --thc-color--blue-50: #e9f5fe;
     --thc-color--blue-100: #badefb;
@@ -117,17 +117,16 @@
     --thc-color--warning-800: #823c02;
     --thc-color--warning-900: #642e01;
 
-    --thc-color--red-0: #333333;
-    --thc-color--red-10: #443636;
-    --thc-color--red-20: #553939;
-    --thc-color--red-30: #663c3c;
-    --thc-color--red-40: #773f3f;
-    --thc-color--red-50: #884242;
-    --thc-color--red-60: #994444;
-    --thc-color--red-70: #aa4747;
-    --thc-color--red-80: #bb4a4a;
-    --thc-color--red-90: #cc4d4d;
-    --thc-color--red-100: #dd5050;
+    --thc-color--error-50: #feeceb;
+    --thc-color--error-100: #fcc5c1;
+    --thc-color--error-200: #faa9a3;
+    --thc-color--error-300: #f88178;
+    --thc-color--error-400: #f6695e;
+    --thc-color--error-500: #f44336;
+    --thc-color--error-600: #de3d31;
+    --thc-color--error-700: #ad3026;
+    --thc-color--error-800: #86251e;
+    --thc-color--error-900: #661c17;
 }
 
 /**
