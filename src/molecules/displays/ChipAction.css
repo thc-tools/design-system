@@ -4,7 +4,7 @@
     --thc-chip-padding: var(--thc-spacing--S) var(--thc-spacing--S);
 
     --thc-chip-action-border: var(--thc-borderSolid--S);
-    --thc-chip-action-border-color: var(--thc-color--primary-800);
+    --thc-chip-action-border-color: var(--thc-color--primary-400);
 
     border: var(--thc-chip-action-border);
     border-color: var(--thc-chip-action-border-color);
