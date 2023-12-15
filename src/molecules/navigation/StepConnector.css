@@ -1,14 +1,14 @@
-.thc-c-step-connector {
+.ds-c-step-connector {
     flex: 1 1 auto;
 
     position: absolute;
-    bottom: calc(var(--thc-iconSize--M) / 2);
-    left: calc(-50% + var(--thc-iconSize--M));
-    right: calc(50% + var(--thc-iconSize--M));
+    bottom: calc(var(--ds-iconSize--M) / 2);
+    left: calc(-50% + var(--ds-iconSize--M));
+    right: calc(50% + var(--ds-iconSize--M));
 }
 
-.thc-c-step-connector__line {
+.ds-c-step-connector__line {
     display: block;
 
-    border-top: var(--thc-borderSolid--S);
+    border-top: var(--ds-borderSolid--S);
 }

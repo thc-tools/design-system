@@ -1,89 +1,111 @@
-:root {
-    --thc-tooltip-max-width: 250px;
-}
-
 /* Theme styling */
 
-.thc-theme--light .thc-c-tooltip__tooltip {
-    --thc-tooltip-background-color: var(--thc-color--black-100);
-    --thc-tooltip-text-color: var(--thc-color--white-100);
+:root {
+    --ds-tooltip-size--XXS: 160px;
+    --ds-tooltip-size--XS: 240px;
+    --ds-tooltip-size--S: 360px;
+    --ds-tooltip-size--M: 480px;
+    --ds-tooltip-size--L: 600px;
+
+    --ds-tooltip-spacing: var(--ds-spacing--M);
 }
 
-.thc-theme--dark .thc-c-tooltip__tooltip {
-    --thc-tooltip-background-color: var(--thc-color--white-100);
-    --thc-tooltip-text-color: var(--thc-color--black-100);
+.ds-theme--light {
+    --ds-tooltip-background-color: var(--ds-color--white-100);
+    --ds-tooltip-text-color: var(--ds-color--black-100);
+    --ds-tooltip-border-color: var(--ds-color--grey-100);
+}
+
+.ds-theme--dark {
+    --ds-tooltip-background-color: var(--ds-color--black-100);
+    --ds-tooltip-text-color: var(--ds-color--white-100);
+    --ds-tooltip-border-color: var(--ds-color--grey-100);
 }
 
 /* Main */
 
-.thc-c-tooltip {
-    width: fit-content;
-    max-width: 100%;
+.ds-c-tooltip {
+    display: none;
 }
 
-.thc-c-tooltip__tooltip {
-    --thc-text-color: var(--thc-tooltip-text-color);
+.ds-c-tooltip[data-show="true"] {
+    display: block;
+}
 
-    background-color: var(--thc-tooltip-background-color);
-    border-radius: var(--thc-o-box-border-radius);
+.ds-c-tooltip {
+    --ds-text-color: var(--ds-tooltip-text-color);
 
-    padding: var(--thc-spacing--S);
+    background-color: var(--ds-tooltip-background-color);
+    box-shadow: var(--ds-shadow--M);
 
-    visibility: hidden;
-    pointer-events: none;
+    border: var(--ds-borderSolid--S);
+    border-color: var(--ds-tooltip-border-color);
+    border-radius: var(--ds-o-box-border-radius);
 
-    max-width: var(--thc-tooltip-max-width);
+    padding: var(--ds-spacing--L);
 
     z-index: 9999;
 }
 
-.thc-c-tooltip__content--ellipsis {
+.ds-c-tooltip__child--ellipsis {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 
-.thc-c-tooltip__tooltip-title {
-    margin-bottom: var(--thc-spacing--XS);
+.ds-c-tooltip--L {
+    max-width: var(--ds-tooltip-size--L);
 }
 
-.thc-c-tooltip:hover .thc-c-tooltip__tooltip {
-    visibility: visible;
+.ds-c-tooltip--M {
+    max-width: var(--ds-tooltip-size--M);
 }
 
-.thc-c-tooltip__tooltip ul {
+.ds-c-tooltip--S {
+    max-width: var(--ds-tooltip-size--S);
+}
+
+.ds-c-tooltip--XS {
+    max-width: var(--ds-tooltip-size--XS);
+}
+
+.ds-c-tooltip--XXS {
+    max-width: var(--ds-tooltip-size--XXS);
+}
+
+.ds-c-tooltip--fit-content {
+    width: fit-content;
+}
+
+.ds-c-tooltip__title,
+.ds-c-tooltip__subtitle,
+.ds-c-tooltip__content {
+    margin: var(--ds-tooltip-spacing) 0;
+}
+
+.ds-c-tooltip__title:first-child,
+.ds-c-tooltip__subtitle:first-child,
+.ds-c-tooltip__content:first-child {
+    margin-top: 0;
+}
+
+.ds-c-tooltip__title:last-child,
+.ds-c-tooltip__subtitle:last-child,
+.ds-c-tooltip__content:last-child {
+    margin-bottom: 0;
+}
+
+.ds-c-tooltip ul {
     padding-left: 15px;
     list-style: circle;
 }
 
-/* Arrow styling */
+.ds-c-tooltip__divider {
+    border-top: var(--ds-borderSolid--S);
+    border-color: var(--ds-color--surface-400);
 
-.thc-c-tooltip__arrow,
-.thc-c-tooltip__arrow::before {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    z-index: -1;
-}
+    width: 100%;
 
-.thc-c-tooltip__arrow::before {
-    content: "";
-    transform: rotate(45deg);
-    background: var(--thc-tooltip-background-color);
-}
-
-.thc-c-tooltip__tooltip[data-popper-placement^="top"] > .thc-c-tooltip__arrow {
-    bottom: -4px;
-}
-
-.thc-c-tooltip__tooltip[data-popper-placement^="bottom"] > .thc-c-tooltip__arrow {
-    top: -4px;
-}
-
-.thc-c-tooltip__tooltip[data-popper-placement^="left"] > .thc-c-tooltip__arrow {
-    right: -4px;
-}
-
-.thc-c-tooltip__tooltip[data-popper-placement^="right"] > .thc-c-tooltip__arrow {
-    left: -4px;
+    margin-top: calc(0px - calc(var(--ds-tooltip-spacing) / 2));
+    margin-bottom: var(--ds-tooltip-spacing);
 }

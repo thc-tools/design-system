@@ -13,7 +13,11 @@ function extractTraces(fileName) {
     const iconParsed = parse(iconContent.toString());
 
     // => svg/path[d]
-    const traces = iconParsed.children[0].children.map((path) => path.properties.d);
+    const traces = iconParsed.children[0].children.map((path) => [
+        path.properties.d,
+        path.properties["fill-rule"],
+        path.properties["clip-rule"],
+    ]);
 
     return traces;
 }

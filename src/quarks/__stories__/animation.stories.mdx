@@ -6,9 +6,9 @@ import { Meta } from "@storybook/addon-docs/blocks";
 
 Three durations exists to animate your transitions :
 
--   `--thc-animationDuration--S`: 300ms
--   `--thc-animationDuration--M`: 500ms
--   `--thc-animationDuration--L`: 700ms
+-   `--ds-animationDuration--S`: 300ms
+-   `--ds-animationDuration--M`: 500ms
+-   `--ds-animationDuration--L`: 700ms
 
 To animate a property you can use the CSS `transition` property.
 
@@ -19,13 +19,13 @@ Otherwise, every property (even on nested elements) will have a transition,
 it is certainly not what you want.
 
 ```CSS
-.thc-c-my_superb_class {
+.ds-c-my_superb_class {
     background-color: white;
 
-    transition: background-color var(--thc-animationDuration--S);
+    transition: background-color var(--ds-animationDuration--S);
 }
 
-.thc-c-my_superb_class:hover {
+.ds-c-my_superb_class:hover {
     background-color: pink;
 }
 ```

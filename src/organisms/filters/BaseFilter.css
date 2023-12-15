@@ -1,0 +1,36 @@
+.ds-c-filter .ds-c-input__container {
+    --ds-input-cursor: var(--ds-cursor--pointer);
+
+    --ds-input-border-radius: var(--ds-radius--3XL);
+
+    --ds-input-border-color: var(--ds-color--grey-50);
+    --ds-input-border-color--hover: var(--ds-color--grey-50);
+    --ds-input-border-color--focus: var(--ds-color--grey-50);
+    --ds-input-border-color--disabled: var(--ds-color--grey-50);
+
+    --ds-input-background-color: var(--ds-color--surface-0);
+    --ds-input-background-color--hover: var(--ds-color--surface-100);
+    --ds-input-background-color--focus: var(--ds-color--primary-50);
+    --ds-input-background-color--disabled: var(--ds-color--surface-0);
+
+    --ds-icon-color: var(--ds-color--grey-500);
+
+    --ds-input-padding: var(--ds-spacing--S) var(--ds-spacing--S) var(--ds-spacing--S) var(--ds-spacing--L);
+
+    --ds-input-min-width: 0;
+
+    width: fit-content;
+    height: 40px;
+}
+
+.ds-c-filter .ds-c-input-adornment {
+    --ds-icon-color: var(--ds-color--grey-500);
+
+    --ds-input-adornment--spacing: var(--ds-spacing--S);
+}
+
+.ds-c-filter .ds-c-input__input {
+    width: inherit;
+
+    white-space: nowrap;
+}

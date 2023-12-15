@@ -1,0 +1,43 @@
+.ds-c-pill-tabs.ds-c-tabs {
+    --ds-border-color: var(--ds-color--neutral-100);
+
+    width: fit-content;
+    padding: var(--ds-spacing--XS);
+
+    border-bottom: none;
+    border: var(--ds-borderSolid--S);
+    border-radius: var(--ds-radius--2XL);
+
+    background-color: var(--ds-paper-background-color);
+}
+
+.ds-c-pill-tabs .ds-c-tab {
+    --ds-button-border-radius: var(--ds-radius--XL);
+
+    --ds-button-padding: var(--ds-chip-padding);
+
+    --ds-tab-min-height: 28px;
+
+    z-index: 1;
+}
+
+.ds-c-pill-tabs .ds-c-tabs__list-container {
+    gap: var(--ds-spacing--S);
+}
+
+.ds-c-pill-tabs .ds-c-tab-indicator {
+    height: 100%;
+    top: 0px;
+
+    border: var(--ds-borderSolid--S);
+    border-color: var(--ds-color--primary-100);
+    border-radius: var(--ds-radius--XL);
+    background-color: var(--ds-color--primary-50);
+
+    box-sizing: border-box;
+}
+
+.ds-c-pill-tabs .ds-c-tab--selected {
+    --ds-actionable-box-shadow-color--hover: transparent;
+    --ds-text-color: var(--ds-textColor--accent);
+}

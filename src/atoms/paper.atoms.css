@@ -1,22 +1,22 @@
 :root {
-    --thc-paper-shadow: var(--thc-shadow--transparent);
-    --thc-paper-shadow--shadow: var(--thc-shadow--regular);
+    --ds-paper-shadow: var(--ds-shadow--transparent);
+    --ds-paper-shadow--shadow: var(--ds-shadow--M);
 }
 
-.thc-theme--light {
-    --thc-paper-background-color: var(--thc-color--white-100);
+.ds-theme--light {
+    --ds-paper-background-color: var(--ds-color--white-100);
 }
 
-.thc-theme--dark {
-    --thc-paper-background-color: var(--thc-color--black-100);
+.ds-theme--dark {
+    --ds-paper-background-color: var(--ds-color--black-100);
 }
 
-.thc-o-paper {
-    background-color: var(--thc-paper-background-color);
+.ds-o-paper {
+    background-color: var(--ds-paper-background-color);
     overflow: auto;
-    box-shadow: var(--thc-paper-shadow);
+    box-shadow: var(--ds-paper-shadow);
 }
 
-.thc-o-paper--shadow {
-    --thc-paper-shadow: var(--thc-paper-shadow--shadow);
+.ds-o-paper--shadow {
+    --ds-paper-shadow: var(--ds-paper-shadow--shadow);
 }

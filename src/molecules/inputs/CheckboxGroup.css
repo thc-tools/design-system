@@ -1,8 +1,8 @@
-.thc-c-checkbox-group {
+.ds-c-checkbox-group {
     display: flex;
     flex-direction: column;
 }
 
-.thc-c-checkbox-group .thc-c-control-label + .thc-c-control-label {
-    margin-top: var(--thc-spacing--XS);
+.ds-c-checkbox-group .ds-c-control-label + .ds-c-control-label {
+    margin-top: var(--ds-spacing--M);
 }

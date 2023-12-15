@@ -53,7 +53,7 @@ The component only expects a formik instance:
 
 ```jsx
 // Components
-import { Form } from "@thc-tools/organisms/forms";
+import { Form } from "@ds-tools/organisms/forms";
 
 function MyForm() {
     const formik = useFormik(/* config */);
@@ -72,7 +72,7 @@ So that your user can interact with the form you will now nedd to add Fields to 
 
 ```jsx
 // Components
-import { Field } from "@thc-tools/organisms/forms";
+import { Field } from "@ds-tools/organisms/forms";
 
 <Field label="First name" name="firstName" />;
 ```
@@ -115,8 +115,8 @@ You can put a `FormActions` to that end and use the `Button` component:
 
 ```jsx
 // Components
-import { Button, BUTTON_TYPES } from "@thc-tools/molecules/buttons";
-import { FormActions } from "@thc-tools/organisms/forms";
+import { Button, BUTTON_TYPES } from "@ds-tools/molecules/buttons";
+import { FormActions } from "@ds-tools/organisms/forms";
 
 <FormActions>
     <Button type={BUTTON_TYPES.SECONDARY} onClick={onCancel}>
@@ -150,11 +150,11 @@ import { useFomik } from "formik";
 import * as Yup from "yup";
 
 // Utils
-import { useTranslation } from "@thc-tools/core";
+import { useTranslation } from "@ds-tools/core";
 
 // Components
-import { Button, BUTTON_TYPES } from "@thc-tools/molecules/buttons";
-import { Form, FormActions } from "@thc-tools/organisms/forms";
+import { Button, BUTTON_TYPES } from "@ds-tools/molecules/buttons";
+import { Form, FormActions } from "@ds-tools/organisms/forms";
 
 const AccountSchema = Yup.object().shape({
     firstName: Yup.string().required("Required"),
@@ -233,13 +233,13 @@ You can then wrap your input like component using the FieldHoc:
 ```jsx
 // Libs
 import React from "react";
-import classnames from "classnames";
+import clsx from "clsx";
 
 // Utils
-import { FieldHoc } from "@thc-tools/molecules/inputs";
+import { FieldHoc } from "@ds-tools/molecules/inputs";
 
 function InputLike({ hasError = false, id, name, onChange, value }) {
-    const className = classnames({ "thc-u-status--error": hasError });
+    const className = clsx({ "ds-u-status--error": hasError });
 
     return <input className={className} id={id} name={name} onChange={onChange} type="text" value={value} />;
 }
@@ -295,11 +295,11 @@ import React from "react";
 import { useFomik, FieldArray } from "formik";
 
 // Utils
-import { useTranslation } from "@thc-tools/core";
+import { useTranslation } from "@ds-tools/core";
 
 // Components
-import { Button, BUTTON_TYPES } from "@thc-tools/molecules/buttons";
-import { Form, FormActions } from "@thc-tools/organisms/forms";
+import { Button, BUTTON_TYPES } from "@ds-tools/molecules/buttons";
+import { Form, FormActions } from "@ds-tools/organisms/forms";
 
 const DEFAULT_EMPTY_ADDRESS = { street: "", city: ""}
 
@@ -323,7 +323,7 @@ function Form({ onCancel }) {
                 {(arrayHelpers) => (
                     <>
                         {formik.values.addresses.map((_, i) => (
-                            <div className="thc-o-flex">
+                            <div className="ds-o-flex">
                                 <Field label={`Adress ${i + 1}`} name={`adresses[${i}]`} />
                                 <Button onClick={() => arrayHelpers.remove(i)}>
                                     remove this address

@@ -1,3 +1,4 @@
+@import "./Alert.css";
 @import "./BubbleContainer.css";
 @import "./BubblePercentage.css";
 @import "./BubbleValue.css";
@@ -7,4 +8,5 @@
 @import "./Display.css";
 @import "./DisplayContainer.css";
 @import "./DisplayResource.css";
-@import "./DisplayStatus.css";
+@import "./Tag.css";
+@import "./TagContainer.css";

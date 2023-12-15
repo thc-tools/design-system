@@ -1,0 +1,3 @@
+.ds-c-button-drop-down--item-list:hover {
+    --ds-list-item-icon-color: var(--ds-color--primary-500);
+}

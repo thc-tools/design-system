@@ -1,28 +1,28 @@
 :root {
-    --thc-status-color--error: var(--thc-color--red-100);
-    --thc-status-color--info: var(--thc-color--blue-100);
-    --thc-status-color--success: var(--thc-color--green-100);
-    --thc-status-color--warning: var(--thc-color--orange-100);
+    --ds-status-color--error: var(--ds-color--error-500);
+    --ds-status-color--info: var(--ds-color--primary-500);
+    --ds-status-color--success: var(--ds-color--success-500);
+    --ds-status-color--warning: var(--ds-color--warning-500);
 }
 
-.thc-u-status--error {
-    --thc-status-color: var(--thc-status-color--error);
+.ds-u-status--error {
+    --ds-status-color: var(--ds-status-color--error);
 }
 
-.thc-u-status--info {
-    --thc-status-color: var(--thc-status-color--info);
+.ds-u-status--info {
+    --ds-status-color: var(--ds-status-color--info);
 }
 
-.thc-u-status--success {
-    --thc-status-color: var(--thc-status-color--success);
+.ds-u-status--success {
+    --ds-status-color: var(--ds-status-color--success);
 }
 
-.thc-u-status--warning {
-    --thc-status-color: var(--thc-status-color--warning);
+.ds-u-status--warning {
+    --ds-status-color: var(--ds-status-color--warning);
 }
 
-[class*="thc-u-status--"] {
-    --thc-border-color: var(--thc-status-color);
-    --thc-text-color: var(--thc-status-color);
-    --thc-icon-color: var(--thc-status-color);
+[class*="ds-u-status--"] {
+    --ds-border-color: var(--ds-status-color);
+    --ds-text-color: var(--ds-status-color);
+    --ds-icon-color: var(--ds-status-color);
 }

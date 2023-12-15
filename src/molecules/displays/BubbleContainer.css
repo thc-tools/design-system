@@ -1,4 +1,4 @@
-.thc-c-bubble-container .thc-c-bubble-value + .thc-c-bubble-value,
-.thc-c-bubble-container .thc-c-bubble-percentage + .thc-c-bubble-percentage {
-    margin-left: var(--thc-spacing--S);
+.ds-c-bubble-container .ds-c-bubble-value + .ds-c-bubble-value,
+.ds-c-bubble-container .ds-c-bubble-percentage + .ds-c-bubble-percentage {
+    margin-left: var(--ds-spacing--M);
 }

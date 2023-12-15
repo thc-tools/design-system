@@ -1,0 +1,9 @@
+.ds-c-tab-view {
+    padding-top: var(--ds-spacing--L);
+    flex: 1;
+}
+
+.ds-c-tab-view--flex {
+    display: flex;
+    flex-direction: column;
+}

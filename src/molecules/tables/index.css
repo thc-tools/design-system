@@ -1,3 +1,7 @@
 @import "./Cell.css";
+@import "./FooterCell.css";
 @import "./HeaderCell.css";
 @import "./Table.virtualized.css";
+@import "./Table.css";
+@import "./TablePagination.css";
+@import "./TableRow.css";

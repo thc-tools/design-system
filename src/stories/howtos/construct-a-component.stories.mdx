@@ -57,14 +57,14 @@ You should consider using the util method `filterProps` as it will make sure tha
 -   `className` is given to the root node.
 -   When CSS is conditional use the classnames library to help you build the class.
 -   If you need to customize a nested component style, you have to give it an additional className.
-    eg: `thc-c-list__dropdown` for a Dropdown component nested in a List component.
+    eg: `ds-c-list__dropdown` for a Dropdown component nested in a List component.
 
 Complex example:
 
 ```jsx
 function List({ className, condensed = false, dropdownClassName: dropdownClassNameProp }) {
-    const rootClassName = clasnames("thc-c-list", { "thc-c-list--condensed": condensed });
-    const dropdownClassName = clasnames("thc-c-list__dropdown", dropdownClassNameProp);
+    const rootClassName = clasnames("ds-c-list", { "ds-c-list--condensed": condensed });
+    const dropdownClassName = clasnames("ds-c-list__dropdown", dropdownClassNameProp);
 
     return (
         <div className={rootClassName}>
@@ -81,37 +81,37 @@ function List({ className, condensed = false, dropdownClassName: dropdownClassNa
 In your CSS file associated to your component. You will need to scope your CSS variables with the following manner :
 
 1. `:root`: every CSS variable that isn't aware of theme (ie. not colors)
-2. `thc-theme--XXX`: every CSS variable that is aware of theme (ie. colors)
-3. `thc-c-component`: specificities to your components and variable override selections
+2. `ds-theme--XXX`: every CSS variable that is aware of theme (ie. colors)
+3. `ds-c-component`: specificities to your components and variable override selections
 
 ```css
 :root {
     /* Spacing is always the same  */
-    --thc-card-border: var(--thc-borderSolid--S);
+    --ds-card-border: var(--ds-borderSolid--S);
 }
 
-.thc-theme--light {
+.ds-theme--light {
     /* Color depends on the theme and can change depending on the component's state */
-    --thc-card-background-color: var(--thc-color--white-100);
-    --thc-card-background-color--hover: var(--thc-color--white-80);
+    --ds-card-background-color: var(--ds-color--white-100);
+    --ds-card-background-color--hover: var(--ds-color--white-80);
 }
 
-.thc-theme--dark {
+.ds-theme--dark {
     /* Same description but for dark theme */
-    --thc-card-background-color: var(--thc-color--black-100);
-    --thc-card-background-color--hover: var(--thc-color--black-80);
+    --ds-card-background-color: var(--ds-color--black-100);
+    --ds-card-background-color--hover: var(--ds-color--black-80);
 }
 
-.thc-c-card {
+.ds-c-card {
     /* Apply CSS variables */
-    border: var(--thc-card-border);
+    border: var(--ds-card-border);
     /* Apply the generic variant of the background variable */
-    background-color: var(--thc-card-background-color);
+    background-color: var(--ds-card-background-color);
 }
 
-.thc-c-card:hover {
-    /* Override the generic --thc-card-background-color */
-    --thc-card-background-color: var(--thc-card-background-color--hover);
+.ds-c-card:hover {
+    /* Override the generic --ds-card-background-color */
+    --ds-card-background-color: var(--ds-card-background-color--hover);
 }
 ```
 
@@ -128,11 +128,11 @@ The same rule will apply to the container it cannot sapce itself by default from
 
 ```css
 :root {
-    --thc-component-spacing: var(--thc-spacing--M);
+    --ds-component-spacing: var(--ds-spacing--XL);
 }
 
-.thc-c-component-container .thc-c-component + .thc-c-component-container .thc-c-component {
-    margin-top: var(--thc-component-spacing);
+.ds-c-component-container .ds-c-component + .ds-c-component-container .ds-c-component {
+    margin-top: var(--ds-component-spacing);
 }
 ```
 
@@ -264,10 +264,10 @@ the ref will be attached to that component instead.
 // Libs
 import React from "react";
 import PropTypes from "prop-types";
-import classnames from "classnames";
+import clsx from "clsx";
 
 export function Component({ className }) {
-    const rootClassName = classnames("thc-c-component", className);
+    const rootClassName = clsx("ds-c-component", className);
 
     return <div className={rootClassName}></div>;
 }
@@ -282,19 +282,19 @@ Component.propTypes = {
 
 ```css
 :root {
-    --thc-component-xxx: xxx;
+    --ds-component-xxx: xxx;
 }
 
-.thc-theme--light {
-    --thc-component-yyy: xxx;
+.ds-theme--light {
+    --ds-component-yyy: xxx;
 }
 
-.thc-theme--dark {
-    --thc-component-yyy: xxx;
+.ds-theme--dark {
+    --ds-component-yyy: xxx;
 }
 
-.thc-c-component {
-    xxx: var(--thc-component-xxx)
-    yyy: var(--thc-component-yyy)
+.ds-c-component {
+    xxx: var(--ds-component-xxx)
+    yyy: var(--ds-component-yyy)
 }
 ```

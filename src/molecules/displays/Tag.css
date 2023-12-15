@@ -1,0 +1,58 @@
+.ds-c-tag {
+    --ds-icon-color: var(--ds-color--primary-500);
+
+    border: var(--ds-borderSolid--S);
+    border-radius: var(--ds-radius--XS);
+    border-color: var(--ds-color--grey-50);
+
+    padding: var(--ds-spacing--XS) var(--ds-spacing--S);
+
+    width: fit-content;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    white-space: nowrap;
+
+    background-color: var(--ds-paper-background-color);
+}
+
+.ds-c-tag .ds-c-icon-wrapper {
+    gap: var(--ds-spacing--XS);
+}
+
+.ds-c-tag--voucher {
+    border-right: 0;
+}
+
+.ds-c-tag__voucher-caret {
+    position: absolute;
+    top: 3px;
+
+    transform: rotate(45deg);
+
+    border-top: var(--ds-borderSolid--S);
+    border-right: var(--ds-borderSolid--S);
+    border-radius: 1px var(--ds-radius--XS) 1px 24px;
+    border-color: var(--ds-color--grey-50);
+
+    background-color: var(--ds-paper-background-color);
+}
+
+.ds-c-tag__voucher-circle {
+    position: absolute;
+    box-sizing: border-box;
+
+    right: -1px;
+    top: calc(50% - 2px);
+
+    width: 4px;
+    height: 4px;
+
+    border-radius: 100%;
+    border: var(--ds-borderSolid--S);
+    border-color: var(--ds-color--grey-50);
+}

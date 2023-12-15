@@ -1,29 +1,34 @@
 :root {
-    --thc-border-size--S: 1px;
-    --thc-border-size--L: 3px;
+    --ds-border-size--S: 1px;
+    --ds-border-size--M: 2px;
+    --ds-border-size--L: 3px;
 }
 
-.thc-theme--light {
-    --thc-border-color: var(--thc-color--black-20);
+.ds-theme--light {
+    --ds-border-color: var(--ds-color--grey-100);
 }
 
-.thc-theme--dark {
-    --thc-border-color: var(--thc-color--white-20);
+.ds-theme--dark {
+    --ds-border-color: var(--ds-color--white-20);
 }
 
-.thc-theme--light,
-.thc-theme--dark {
-    --thc-borderSolid--S: var(--thc-border-size--S) solid var(--thc-border-color);
-    --thc-borderSolid--L: var(--thc-border-size--L) solid var(--thc-border-color);
-    --thc-borderDashed--S: var(--thc-border-size--S) dashed var(--thc-border-color);
-    --thc-borderDashed--L: var(--thc-border-size--L) dashed var(--thc-border-color);
+.ds-theme--light,
+.ds-theme--dark {
+    --ds-borderSolid--S: var(--ds-border-size--S) solid var(--ds-border-color);
+    --ds-borderSolid--M: var(--ds-border-size--M) solid var(--ds-border-color);
+    --ds-borderSolid--L: var(--ds-border-size--L) solid var(--ds-border-color);
+    --ds-borderDashed--S: var(--ds-border-size--S) dashed var(--ds-border-color);
+    --ds-borderDashed--M: var(--ds-border-size--M) dashed var(--ds-border-color);
+    --ds-borderDashed--L: var(--ds-border-size--L) dashed var(--ds-border-color);
 }
 
-.thc-theme--color {
-    --thc-border-color: var(--thc-Color--white-100);
+.ds-theme--color {
+    --ds-border-color: var(--ds-Color--white-100);
 
-    --thc-borderSolid--S: var(--thc-border-size--S) solid var(--thc-border-color);
-    --thc-borderSolid--L: var(--thc-border-size--L) solid var(--thc-border-color);
-    --thc-borderDashed--S: var(--thc-border-size--S) dashed var(--thc-border-color);
-    --thc-borderDashed--L: var(--thc-border-size--L) dashed var(--thc-border-color);
+    --ds-borderSolid--S: var(--ds-border-size--S) solid var(--ds-border-color);
+    --ds-borderSolid--M: var(--ds-border-size--M) solid var(--ds-border-color);
+    --ds-borderSolid--L: var(--ds-border-size--L) solid var(--ds-border-color);
+    --ds-borderDashed--S: var(--ds-border-size--S) dashed var(--ds-border-color);
+    --ds-borderDashed--M: var(--ds-border-size--M) dashed var(--ds-border-color);
+    --ds-borderDashed--L: var(--ds-border-size--L) dashed var(--ds-border-color);
 }

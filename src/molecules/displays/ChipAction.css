@@ -1,29 +1,29 @@
-.thc-c-chip--action {
-    --thc-chip-border-radius: var(--thc-radius--M);
+.ds-c-chip--action {
+    --ds-chip-border-radius: var(--ds-radius--M);
 
-    --thc-chip-padding: var(--thc-spacing--S) var(--thc-spacing--S);
+    --ds-chip-padding: var(--ds-spacing--M) var(--ds-spacing--M);
 
-    --thc-chip-action-border: var(--thc-borderSolid--S);
-    --thc-chip-action-border-color: var(--thc-color--blue-80);
+    --ds-chip-action-border: var(--ds-borderSolid--S);
+    --ds-chip-action-border-color: var(--ds-color--primary-400);
 
-    border: var(--thc-chip-action-border);
-    border-color: var(--thc-chip-action-border-color);
+    border: var(--ds-chip-action-border);
+    border-color: var(--ds-chip-action-border-color);
 }
 
-.thc-c-chip--action[disabled] {
-    --thc-chip-action-border: none;
+.ds-c-chip--action[disabled] {
+    --ds-chip-action-border: none;
 }
 
-.thc-c-chip--action:not([disabled]) {
-    --thc-chip-background-color: var(--thc-color--blue-10);
+.ds-c-chip--action:not([disabled]) {
+    --ds-chip-background-color: var(--ds-primary--blue-50);
 
-    --thc-actionable-box-shadow-color--hover: var(--thc-color--blue-20);
-    --thc-actionable-box-shadow-color--active: var(--thc-color--blue-40);
+    --ds-actionable-box-shadow-color--hover: var(--ds-color--primary-100);
+    --ds-actionable-box-shadow-color--active: var(--ds-color--primary-200);
 }
 
-.thc-theme--dark .thc-c-chip--action:not([disabled]) {
-    --thc-chip-background-color: var(--thc-color--blue-20);
+.ds-theme--dark .ds-c-chip--action:not([disabled]) {
+    --ds-chip-background-color: var(--ds-color--primary-100);
 
-    --thc-actionable-box-shadow-color--hover: var(--thc-color--blue-30);
-    --thc-actionable-box-shadow-color--active: var(--thc-color--blue-50);
+    --ds-actionable-box-shadow-color--hover: var(--ds-color--primary-100);
+    --ds-actionable-box-shadow-color--active: var(--ds-color--primary-200);
 }

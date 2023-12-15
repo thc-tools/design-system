@@ -1,7 +1,7 @@
-.thc-c-table__header--virtualized {
+.ds-c-table__header--virtualized {
     width: 100%;
     overflow: hidden !important;
 }
 
-.thc-c-table__body--virtualized {
+.ds-c-table__body--virtualized {
 }

@@ -1,51 +1,54 @@
 :root {
-    --thc-input-min-width: 300px;
+    --ds-input-size--S: 160px;
+    --ds-input-size--M: 240px;
+    --ds-input-size--L: 320px;
+
+    --ds-input-min-width: var(--ds-input-size--S);
+    --ds-input-width: var(--ds-input-size--S);
+
+    --ds-input-cursor: var(--ds-cursor--text);
+    --ds-input-cursor--disabled: var(--ds-cursor--default);
 }
 
-.thc-theme--light {
-    --thc-input-border-color: var(--thc-color--black-10);
-    --thc-input-border-color--hover: var(--thc-color--blue-40);
-    --thc-input-border-color--focus: var(--thc-color--blue-100);
-    --thc-input-border-color--disabled: var(--thc-color--black-10);
+.ds-theme--light {
+    --ds-input-border-color: var(--ds-color--grey-500);
+    --ds-input-border-color--hover: var(--ds-color--grey-200);
+    --ds-input-border-color--focus: var(--ds-color--primary-500);
+    --ds-input-border-color--disabled: var(--ds-color--black-10);
 
-    --thc-input-background-color: var(--thc-color--white-100);
-    --thc-input-background-color--hover: var(--thc-color--white-100);
-    --thc-input-background-color--focus: var(--thc-color--white-100);
-    --thc-input-background-color--disabled: var(--thc-color--black-10);
+    --ds-input-background-color: var(--ds-color--surface-0);
+    --ds-input-background-color--hover: var(--ds-color--surface-0);
+    --ds-input-background-color--focus: var(--ds-color--surface-0);
+    --ds-input-background-color--disabled: var(--ds-color--surface-0);
 }
 
-.thc-theme--dark {
-    --thc-input-border-color: var(--thc-color--white-20);
-    --thc-input-border-color--hover: var(--thc-color--white-50);
-    --thc-input-border-color--focus: var(--thc-color--white-100);
-    --thc-input-border-color--disabled: var(--thc-color--white-20);
+.ds-theme--dark {
+    --ds-input-border-color: var(--ds-color--white-20);
+    --ds-input-border-color--hover: var(--ds-color--white-50);
+    --ds-input-border-color--focus: var(--ds-color--white-100);
+    --ds-input-border-color--disabled: var(--ds-color--white-20);
 
-    --thc-input-background-color: var(--thc-color--black-100);
-    --thc-input-background-color--hover: var(--thc-color--black-100);
-    --thc-input-background-color--focus: var(--thc-color--black-100);
-    --thc-input-background-color--disabled: var(--thc-color--white-10);
+    --ds-input-background-color: var(--ds-color--black-100);
+    --ds-input-background-color--hover: var(--ds-color--black-100);
+    --ds-input-background-color--focus: var(--ds-color--black-100);
+    --ds-input-background-color--disabled: var(--ds-color--black-100);
 }
 
-.thc-c-input--error {
-    --thc-input-border-color: var(--thc-color--red-20);
-    --thc-input-border-color--hover: var(--thc-color--red-50);
-    --thc-input-border-color--focus: var(--thc-color--red-100);
-
-    --thc-input-background-color: var(--thc-color--red-10);
-    --thc-input-background-color--hover: var(--thc-color--red-10);
-    --thc-input-background-color--focus: var(--thc-color--red-10);
+.ds-c-input--error {
+    --ds-input-border-color: var(--ds-color--error-100);
+    --ds-input-border-color--hover: var(--ds-color--error-200);
+    --ds-input-border-color--focus: var(--ds-color--error-500);
 }
 
-.thc-c-input__container {
-    --thc-input-cursor: var(--thc-cursor--text);
-    --thc-input-cursor--disabled: var(--thc-cursor--default);
+.ds-c-input__container {
+    --ds-input-border: var(--ds-borderSolid--S);
+    --ds-input-border-radius: var(--ds-radius--XS);
 
-    --thc-input-border: var(--thc-borderSolid--S);
-    --thc-input-border-radius: var(--thc-radius--M);
+    --ds-input-text-color--disabled: var(--ds-textColor--secondary);
 
-    --thc-input-text-color--disabled: var(--thc-textColor--secondary);
+    --ds-input-padding: var(--ds-spacing--M);
 
-    --thc-input-padding: var(--thc-spacing--S);
+    --ds-icon-color: var(--ds-input-border-color);
 
     position: relative;
 
@@ -53,62 +56,93 @@
     align-items: center;
 
     box-sizing: border-box;
-    padding: var(--thc-input-padding);
-    min-width: var(--thc-input-min-width);
+    padding: var(--ds-input-padding);
+    min-width: var(--ds-input-min-width);
+    width: var(--ds-input-width);
 
-    cursor: var(--thc-input-cursor);
+    cursor: var(--ds-input-cursor);
 
-    border: var(--thc-input-border);
-    border-color: var(--thc-input-border-color);
-    border-radius: var(--thc-input-border-radius);
-    background-color: var(--thc-input-background-color);
+    border: var(--ds-input-border);
+    border-color: var(--ds-input-border-color);
+    border-radius: var(--ds-input-border-radius);
+    background-color: var(--ds-input-background-color);
 
-    transition: border-color var(--thc-animationDuration--S), background-color var(--thc-animationDuration--S);
+    transition: border-color var(--ds-animationDuration--S), background-color var(--ds-animationDuration--S);
 }
 
-.thc-c-input--full-width {
-    width: 100%;
+.ds-c-input__container--no-background {
+    --ds-input-background-color: transparent;
 }
 
-.thc-c-input__container[disabled] {
-    --thc-text-color: var(--thc-input-text-color--disabled);
-
-    --thc-input-border-color: var(--thc-input-border-color--disabled);
-    --thc-input-background-color: var(--thc-input-background-color--disabled);
-
-    --thc-input-cursor: var(--thc-input-cursor--disabled);
+.ds-c-input__container--S {
+    --ds-input-width: var(--ds-input-size--S);
+}
+.ds-c-input__container--M {
+    --ds-input-width: var(--ds-input-size--M);
+}
+.ds-c-input__container--L {
+    --ds-input-width: var(--ds-input-size--L);
 }
 
-.thc-c-input__container:not([disabled]):hover {
-    --thc-input-border-color: var(--thc-input-border-color--hover);
-    --thc-input-background-color: var(--thc-input-background-color--hover);
+.ds-c-input__container--with-label {
+    margin-top: var(--ds-spacing--M);
 }
 
-.thc-c-input__container.thc-c-input--focus:not([disabled]) {
-    --thc-input-border-color: var(--thc-input-border-color--focus);
-    --thc-input-background-color: var(--thc-input-background-color--focus);
+.ds-c-input--full-width {
+    --ds-input-width: 100%;
 }
 
-.thc-c-input__number-buttons {
+.ds-c-input__container[disabled] {
+    --ds-text-color: var(--ds-input-text-color--disabled);
+
+    --ds-input-border-color: var(--ds-input-border-color--disabled);
+    --ds-input-background-color: var(--ds-input-background-color--disabled);
+
+    --ds-input-cursor: var(--ds-input-cursor--disabled);
+}
+
+.ds-c-input__container:not([disabled]):hover {
+    --ds-input-border-color: var(--ds-input-border-color--hover);
+    --ds-input-background-color: var(--ds-input-background-color--hover);
+}
+
+.ds-c-input__container.ds-c-input--focus:not([disabled]) {
+    --ds-input-border-color: var(--ds-input-border-color--focus);
+    --ds-input-background-color: var(--ds-input-background-color--focus);
+}
+
+.ds-c-input__label {
+    --ds-text-color: var(--ds-input-border-color);
+
+    position: absolute;
+
+    left: var(--ds-spacing--M);
+    top: calc(0px - calc(var(--ds-lineHeight--XS) / 1.5));
+
+    padding-left: var(--ds-spacing--XS);
+    padding-right: var(--ds-spacing--XS);
+
+    background-color: var(--ds-input-background-color);
+}
+
+.ds-c-input__number-buttons {
     display: flex;
     flex-direction: column;
-
-    --thc-icon-color: var(--thc-textColor--primary);
 }
 
-.thc-c-input__number-buttons .thc-c-icon {
+.ds-c-input__number-buttons .ds-c-icon {
     outline: none;
 }
 
-.thc-c-input__min-max {
+.ds-c-input__min-max {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    --thc-text-color: var(--thc-textColor--secondary);
+    --ds-text-color: var(--ds-textColor--secondary);
 }
 
-.thc-c-input__input {
+.ds-c-input__input {
     box-sizing: content-box;
     display: block;
 
@@ -122,31 +156,31 @@
     width: 100%; /* IE11 issue */
 }
 
-.thc-c-input__input::placeholder {
-    color: var(--thc-placeholder-color);
+.ds-c-input__input::placeholder {
+    color: var(--ds-placeholder-color);
 
-    font-family: var(--thc-text-fontFamily);
-    font-size: var(--thc-text-fontSize);
-    line-height: var(--thc-text-lineHeight);
-    font-weight: var(--thc-text-fontWeight);
-    text-transform: var(--thc-text-transform);
+    font-family: var(--ds-text-fontFamily);
+    font-size: var(--ds-text-fontSize);
+    line-height: var(--ds-text-lineHeight);
+    font-weight: var(--ds-text-fontWeight);
+    text-transform: var(--ds-text-transform);
 }
 
-.thc-c-input__input:focus {
+.ds-c-input__input:focus {
     outline: 0;
 }
 
-.thc-c-input__input[disabled] {
+.ds-c-input__input[disabled] {
     pointer-events: none;
 }
 
-.thc-c-input__input[type="number"] {
+.ds-c-input__input[type="number"] {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield;
 }
 
-.thc-c-input__input[type="number"]::-webkit-inner-spin-button,
-.thc-c-input__input[type="number"]::-webkit-outer-spin-button {
+.ds-c-input__input[type="number"]::-webkit-inner-spin-button,
+.ds-c-input__input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }

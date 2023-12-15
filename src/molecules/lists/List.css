@@ -1,9 +1,9 @@
-.thc-c-list {
+.ds-c-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.thc-c-list--separator > .thc-c-list-item:not(:last-child) {
-    border-bottom: var(--thc-borderSolid--S);
+.ds-c-list--separator > .ds-c-list-item:not(:last-child) {
+    border-bottom: var(--ds-borderSolid--S);
 }

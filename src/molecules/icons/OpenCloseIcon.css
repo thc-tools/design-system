@@ -1,14 +1,14 @@
-.thc-c-open-close-icon {
-    transition: transform var(--thc-animationDuration--S);
+.ds-c-open-close-icon {
+    transition: transform var(--ds-animationDuration--S);
 
-    padding: var(--thc-spacing--XS);
-    border-radius: var(--thc-radius--L);
+    padding: var(--ds-spacing--XS);
+    border-radius: var(--ds-radius--L);
 }
 
-.thc-c-open-close-icon--close {
+.ds-c-open-close-icon--close {
     transform: rotate(0deg);
 }
 
-.thc-c-open-close-icon--open {
+.ds-c-open-close-icon--open {
     transform: rotate(-180deg);
 }

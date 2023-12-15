@@ -1,10 +1,10 @@
-.thc-c-list-item-actions {
+.ds-c-list-item-actions {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.thc-c-list-item-actions > .thc-c-button:not(:last-child),
-.thc-c-list-item-actions > .thc-c-tooltip:not(:last-child) {
-    margin-right: var(--thc-list-item-spacing);
+.ds-c-list-item-actions > .ds-c-button:not(:last-child),
+.ds-c-list-item-actions > .ds-c-tooltip:not(:last-child) {
+    margin-right: var(--ds-list-item-spacing);
 }

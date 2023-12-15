@@ -1,10 +1,10 @@
-.thc-c-list-item-text {
+.ds-c-list-item-text {
     flex: 1;
     min-width: 0;
 }
 
-.thc-c-list-item-text__secondary {
-    --thc-text-color: var(--thc-textColor--secondary);
+.ds-c-list-item-text__secondary {
+    --ds-text-color: var(--ds-textColor--secondary);
 
-    margin-top: var(--thc-spacing--XS);
+    margin-top: var(--ds-spacing--XS);
 }

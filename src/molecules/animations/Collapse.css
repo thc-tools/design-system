@@ -1,24 +1,24 @@
-.thc-c-collapse {
+.ds-c-collapse {
     height: 0;
     overflow: hidden;
 
-    transition: height var(--thc-animationDuration--S);
+    transition: height var(--ds-animationDuration--S);
 }
 
-.thc-c-collapse--entered {
+.ds-c-collapse--entered {
     height: auto;
     overflow: visible;
 }
 
-.thc-c-collapse--hidden {
+.ds-c-collapse--hidden {
     visibility: hidden;
 }
 
-.thc-c-collapse__wrapper {
+.ds-c-collapse__wrapper {
     display: flex;
     width: 100%;
 }
 
-.thc-c-collapse__wrapper-inner {
+.ds-c-collapse__wrapper-inner {
     width: 100%;
 }

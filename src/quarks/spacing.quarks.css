@@ -1,7 +1,13 @@
 :root {
-    --thc-spacing--XS: 5px;
-    --thc-spacing--S: 10px;
-    --thc-spacing--M: 20px;
-    --thc-spacing--L: 30px;
-    --thc-spacing--XL: 50px;
+    --ds-spacing--XXS: 2px;
+    --ds-spacing--XS: 4px;
+    --ds-spacing--S: 8px;
+    --ds-spacing--M: 12px;
+    --ds-spacing--L: 16px;
+    --ds-spacing--XL: 24px;
+    --ds-spacing--XXL: 32px;
+    --ds-spacing--3XL: 40px;
+    --ds-spacing--4XL: 48px;
+    --ds-spacing--5XL: 56px;
+    --ds-spacing--6XL: 64px;
 }

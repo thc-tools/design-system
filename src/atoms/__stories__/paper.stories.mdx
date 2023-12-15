@@ -13,15 +13,15 @@ and an application’s behavior mimics paper’s ability to be re-sized, shuffle
 
 Apply the following CSS selector to your component to add actionable behaviors to it:
 
--   `thc-o-paper`
--   `thc-o-paper--shadow`
+-   `ds-o-paper`
+-   `ds-o-paper--shadow`
 
 <Canvas>
     <Story name="Paper">
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "10px" }}>
             <div>
                 <h2>Standard</h2>
-                <div className="thc-o-paper" style={{ width: "120px", height: "120px", padding: "10px" }}>
+                <div className="ds-o-paper" style={{ width: "120px", height: "120px", padding: "10px" }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut augue rutrum, imperdiet nisi sed,
                     dictum orci.
                 </div>
@@ -29,7 +29,7 @@ Apply the following CSS selector to your component to add actionable behaviors t
             <div>
                 <h2>Elevated</h2>
                 <div
-                    className="thc-o-paper thc-o-paper--shadow"
+                    className="ds-o-paper ds-o-paper--shadow"
                     style={{ width: "120px", height: "120px", padding: "10px" }}
                 >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut augue rutrum, imperdiet nisi sed,

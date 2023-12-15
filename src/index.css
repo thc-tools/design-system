@@ -1,11 +1,11 @@
 /* Libs */
-@import "~react-toastify/dist/ReactToastify.css";
-@import "~react-dates/lib/css/_datepicker.css";
+@import "~react-date-range/dist/styles.css";
+@import "~react-date-range/dist/theme/default.css";
 
 /* Resets */
 
-.thc-theme--light form,
-.thc-theme--dark form {
+.ds-theme--light form,
+.ds-theme--dark form {
     margin: 0;
     padding: 0;
 }
@@ -47,7 +47,8 @@
 /* Organisms */
 @import "./organisms/filters/index.css";
 @import "./organisms/forms/index.css";
-@import "./organisms/modals/index.css";
+@import "./organisms/buttons/index.css";
+@import "./organisms/table/index.css";
 
 /* Atoms - Utils */
 @import "./atoms/icon.atoms.css";

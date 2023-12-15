@@ -1,9 +1,9 @@
-.thc-c-radio-group {
+.ds-c-radio-group {
     display: flex;
     flex-direction: column;
 }
 
-.thc-c-radio-group .thc-c-radio__label:not(:last-child),
-.thc-c-radio-group .thc-c-radio-card:not(:last-child) {
-    margin-bottom: var(--thc-spacing--XS);
+.ds-c-radio-group .ds-c-radio__label:not(:last-child),
+.ds-c-radio-group .ds-c-radio-card:not(:last-child) {
+    margin-bottom: var(--ds-spacing--XS);
 }

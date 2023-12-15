@@ -1,35 +1,35 @@
 :root {
-    --thc-loader-progression-background-color: var(--thc-colorDataviz--grey-50);
-    --thc-loader-progression-background-color--accent: var(--thc-color--green-100);
-    --thc-loader-progression-background-color--accent-error: var(--thc-color--red-100);
-    --thc-loader-progression-background-color--accent-warning: var(--thc-color--orange-100);
+    --ds-loader-progression-background-color: var(--ds-colorDataviz--grey-50);
+    --ds-loader-progression-background-color--accent: var(--ds-color--success-500);
+    --ds-loader-progression-background-color--accent-error: var(--ds-color--error-500);
+    --ds-loader-progression-background-color--accent-warning: var(--ds-color--warning-500);
 
-    --thc-loader-progression-border-radius: var(--thc-radius--S);
+    --ds-loader-progression-border-radius: var(--ds-radius--S);
 
-    --thc-loader-progression-height: 10px;
+    --ds-loader-progression-height: 10px;
 }
 
-.thc-c-loader-progression {
-    height: var(--thc-loader-progression-height);
+.ds-c-loader-progression {
+    height: var(--ds-loader-progression-height);
     width: 100%;
 
-    border-radius: var(--thc-loader-progression-border-radius);
-    background: var(--thc-loader-progression-background-color);
+    border-radius: var(--ds-loader-progression-border-radius);
+    background: var(--ds-loader-progression-background-color);
 }
 
-.thc-c-loader-progression--error {
-    --thc-loader-progression-background-color--accent: var(--thc-loader-progression-background-color--accent-error);
+.ds-c-loader-progression--error {
+    --ds-loader-progression-background-color--accent: var(--ds-loader-progression-background-color--accent-error);
 }
 
-.thc-c-loader-progression--warning {
-    --thc-loader-progression-background-color--accent: var(--thc-loader-progression-background-color--accent-warning);
+.ds-c-loader-progression--warning {
+    --ds-loader-progression-background-color--accent: var(--ds-loader-progression-background-color--accent-warning);
 }
 
-.thc-c-loader-progression__progress-bar {
+.ds-c-loader-progression__progress-bar {
     height: 100%;
 
-    transition: width var(--thc-animationDuration--S);
+    transition: width var(--ds-animationDuration--S);
 
-    border-radius: var(--thc-loader-progression-border-radius);
-    background-color: var(--thc-loader-progression-background-color--accent);
+    border-radius: var(--ds-loader-progression-border-radius);
+    background-color: var(--ds-loader-progression-background-color--accent);
 }

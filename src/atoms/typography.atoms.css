@@ -1,141 +1,136 @@
 :root {
-    --thc-fontFamily--montserrat: Montserrat;
-    --thc-fontFamily--muli: Muli;
+    --ds-fontFamily--roboto: "Roboto";
 }
 
 :root {
-    --thc-fontSize--S: 10px;
-    --thc-fontSize--M: 12px;
-    --thc-fontSize--L: 14px;
-    --thc-fontSize--XL: 24px;
+    --ds-fontSize--XS: 11px;
+    --ds-fontSize--S: 13px;
+    --ds-fontSize--M: 16px;
+    --ds-fontSize--L: 23px;
+    --ds-fontSize--XL: 33px;
 }
 
 :root {
-    --thc-fontWeight--light: 100;
-    --thc-fontWeight--regular: 400;
-    --thc-fontWeight--medium: 600;
-    --thc-fontWeight--extrabold: 800;
+    --ds-fontWeight--regular: 400;
+    --ds-fontWeight--medium: 500;
+    --ds-fontWeight--semi-bold: 600;
+    --ds-fontWeight--bold: 700;
 }
 
 :root {
-    --thc-lineHeight--S: 12px;
-    --thc-lineHeight--M: 15px;
-    --thc-lineHeight--L: 23px;
-    --thc-lineHeight--XL: 29px;
+    --ds-lineHeight--XS: 15.4px;
+    --ds-lineHeight--S: 18.2px;
+    --ds-lineHeight--M: 22.4px;
+    --ds-lineHeight--L: 32.2px;
+    --ds-lineHeight--XL: 46.2px;
 }
 
-.thc-u-typography--headline-1 {
-    font-family: var(--thc-fontFamily--montserrat);
-    font-weight: var(--thc-fontWeight--light);
-    font-size: 80px;
-    line-height: 129px;
-    letter-spacing: -1.5px;
-    text-transform: none;
+.ds-u-typography--headline-1 {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--regular);
+    --ds-text-fontSize: var(--ds-fontSize--XL);
+    --ds-text-lineHeight: var(--ds-lineHeight-XL);
 }
 
-.thc-u-typography--headline-2 {
-    font-family: var(--thc-fontFamily--montserrat);
-    font-weight: var(--thc-fontWeight--light);
-    font-size: 50px;
-    line-height: 80px;
-    letter-spacing: -0.5px;
-    text-transform: none;
+.ds-u-typography--headline-1-semi-bold {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--semi-bold);
+    --ds-text-fontSize: var(--ds-fontSize--XL);
+    --ds-text-lineHeight: var(--ds-lineHeight-XL);
+    --ds-text-transform: none;
 }
 
-.thc-u-typography--headline-3 {
-    font-family: var(--thc-fontFamily--montserrat);
-    font-weight: var(--thc-fontWeight--regular);
-    font-size: 39px;
-    line-height: 63px;
-    letter-spacing: 0px;
-    text-transform: none;
+.ds-u-typography--headline-1-bold {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--semi-bold);
+    --ds-text-fontSize: var(--ds-fontSize--XL);
+    --ds-text-lineHeight: var(--ds-lineHeight-XL);
+    --ds-text-transform: none;
 }
 
-.thc-u-typography--headline-4 {
-    font-family: var(--thc-fontFamily--montserrat);
-    font-weight: var(--thc-fontWeight--regular);
-    font-size: 28px;
-    line-height: 45px;
-    letter-spacing: 0.25px;
-    text-transform: none;
+.ds-u-typography--headline-2 {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--regular);
+    --ds-text-fontSize: var(--ds-fontSize--L);
+    --ds-text-lineHeight: var(----ds-lineHeight-L);
 }
 
-.thc-u-typography--headline-5 {
-    font-family: var(--thc-fontFamily--montserrat);
-    font-weight: var(--thc-fontWeight--regular);
-    font-size: 20px;
-    line-height: 32px;
-    letter-spacing: 0px;
-    text-transform: none;
+.ds-u-typography--headline-2-medium {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--medium);
+    --ds-text-fontSize: var(--ds-fontSize--L);
+    --ds-text-lineHeight: var(----ds-lineHeight-L);
 }
 
-.thc-u-typography--headline-6 {
-    font-family: var(--thc-fontFamily--montserrat);
-    font-weight: var(--thc-fontWeight--medium);
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.15px;
-    text-transform: none;
+.ds-u-typography--headline-2-semi-bold {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--semi-bold);
+    --ds-text-fontSize: var(--ds-fontSize--L);
+    --ds-text-lineHeight: var(----ds-lineHeight-L);
+    --ds-text-transform: none;
 }
 
-.thc-u-typography--subtitle-1 {
-    font-family: var(--thc-fontFamily--montserrat);
-    font-weight: var(--thc-fontWeight--regular);
-    font-size: 13px;
-    line-height: 21px;
-    letter-spacing: 0.15px;
-    text-transform: none;
+.ds-u-typography--headline-2-bold {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--bold);
+    --ds-text-fontSize: var(--ds-fontSize--L);
+    --ds-text-lineHeight: var(----ds-lineHeight-L);
+    --ds-text-transform: none;
 }
 
-.thc-u-typography--subtitle-2 {
-    font-family: var(--thc-fontFamily--montserrat);
-    font-weight: var(--thc-fontWeight--medium);
-    font-size: 11px;
-    line-height: 18px;
-    letter-spacing: 0.1px;
+.ds-u-typography--headline-2-medium {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--medium);
+    --ds-text-fontSize: var(--ds-fontSize--L);
+    --ds-text-lineHeight: var(----ds-lineHeight-L);
+    --ds-text-transform: none;
 }
 
-.thc-u-typography--body-1 {
-    font-family: var(--thc-fontFamily--muli);
-    font-weight: var(--thc-fontWeight--regular);
-    font-size: 14px;
-    line-height: 23px;
-    letter-spacing: 0.5px;
-    text-transform: none;
+.ds-u-typography--subtitle {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--regular);
+    --ds-text-fontSize: var(--ds-fontSize--M);
+    --ds-text-lineHeight: var(--ds-lineHeight--M);
 }
 
-.thc-u-typography--body-2 {
-    font-family: var(--thc-fontFamily--muli);
-    font-weight: var(--thc-fontWeight--regular);
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    text-transform: none;
+.ds-u-typography--subtitle-medium {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--medium);
+    --ds-text-fontSize: var(--ds-fontSize--M);
+    --ds-text-lineHeight: var(--ds-lineHeight--M);
 }
 
-.thc-u-typography--button {
-    font-family: var(--thc-fontFamily--muli);
-    font-weight: var(--thc-fontWeight--medium);
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
+.ds-u-typography--body {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--regular);
+    --ds-text-fontSize: var(--ds-fontSize--XS);
+    --ds-text-lineHeight: var(--ds-lineHeight--XS);
 }
 
-.thc-u-typography--caption {
-    font-family: var(--thc-fontFamily--muli);
-    font-weight: var(--thc-fontWeight--regular);
-    font-size: 11px;
-    line-height: 18px;
-    letter-spacing: 0.4px;
-    text-transform: none;
+.ds-u-typography--body-medium {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--medium);
+    --ds-text-fontSize: var(--ds-fontSize--XS);
+    --ds-text-lineHeight: var(--ds-lineHeight--XS);
 }
 
-.thc-u-typography--overline {
-    font-family: var(--thc-fontFamily--muli);
-    font-weight: var(--thc-fontWeight--regular);
-    font-size: 8px;
-    line-height: 13px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+.ds-u-typography--button {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--medium);
+    --ds-text-fontSize: var(--ds-fontSize--S);
+    --ds-text-lineHeight: var(--ds-lineHeight--S);
+}
+
+.ds-u-typography--caption {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--regular);
+    --ds-text-fontSize: var(--ds-fontSize--XXS);
+    --ds-text-lineHeight: var(--ds-lineHeight--XXS);
+}
+
+.ds-u-typography--caption-medium {
+    --ds-text-fontFamily: var(--ds-fontFamily--roboto);
+    --ds-text-fontWeight: var(--ds-fontWeight--medium);
+    --ds-text-fontSize: var(--ds-fontSize--XXS);
+    --ds-text-lineHeight: var(--ds-lineHeight--XXS);
 }

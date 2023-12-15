@@ -1,0 +1,12 @@
+{
+    "DESIGN_SYSTEM_COMMON_TK.actions.cancel": "Annuler",
+    "DESIGN_SYSTEM_COMMON_TK.actions.next": "Suivant",
+    "DESIGN_SYSTEM_COMMON_TK.actions.previous": "Précédent",
+    "DESIGN_SYSTEM_COMMON_TK.actions.validate": "Valider",
+
+    "DESIGN_SYSTEM_COMMON_TK.enums.StatusEnum.draft": "Brouillong",
+    "DESIGN_SYSTEM_COMMON_TK.enums.StatusEnum.inProgress": "En cours",
+    "DESIGN_SYSTEM_COMMON_TK.enums.StatusEnum.paused": "Pause",
+    "DESIGN_SYSTEM_COMMON_TK.enums.StatusEnum.done": "Fini !",
+    "DESIGN_SYSTEM_COMMON_TK.enums.StatusEnum.failed": "Échec"
+}

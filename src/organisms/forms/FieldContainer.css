@@ -1,34 +1,34 @@
-.thc-c-field-container {
+.ds-c-field-container {
     display: flex;
 }
 
-.thc-c-field-container--horizontal {
+.ds-c-field-container--horizontal {
     flex-direction: row;
 }
 
-.thc-c-field-container--horizontal > .thc-c-field + .thc-c-field,
-.thc-c-field-container--horizontal > .thc-c-field + .thc-c-field-container,
-.thc-c-field-container--horizontal > .thc-c-field-container + .thc-c-field,
-.thc-c-field-container--horizontal > .thc-c-field-container + .thc-c-field-container {
-    margin-left: var(--thc-form-spacing);
+.ds-c-field-container--horizontal > .ds-c-field + .ds-c-field,
+.ds-c-field-container--horizontal > .ds-c-field + .ds-c-field-container,
+.ds-c-field-container--horizontal > .ds-c-field-container + .ds-c-field,
+.ds-c-field-container--horizontal > .ds-c-field-container + .ds-c-field-container {
+    margin-left: var(--ds-form-spacing);
 }
 
-.thc-c-field-container--vertical {
+.ds-c-field-container--vertical {
     flex-direction: column;
 }
 
-.thc-c-field-container--vertical > .thc-c-field + .thc-c-field,
-.thc-c-field-container--vertical > .thc-c-field + .thc-c-field-container,
-.thc-c-field-container--vertical > .thc-c-field + .thc-c-form-actions,
-.thc-c-field-container--vertical > .thc-c-field-container + .thc-c-field,
-.thc-c-field-container--vertical > .thc-c-field-container + .thc-c-field-container,
-.thc-c-field-container--vertical > .thc-c-field-container + .thc-c-form-actions,
-.thc-c-field-container--vertical > .thc-c-form-actions + .thc-c-field,
-.thc-c-field-container--vertical > .thc-c-form-actions + .thc-c-field-container,
-.thc-c-field-container--vertical > .thc-c-form-actions + .thc-c-form-actions {
-    margin-top: var(--thc-form-spacing);
+.ds-c-field-container--vertical > .ds-c-field + .ds-c-field,
+.ds-c-field-container--vertical > .ds-c-field + .ds-c-field-container,
+.ds-c-field-container--vertical > .ds-c-field + .ds-c-form-actions,
+.ds-c-field-container--vertical > .ds-c-field-container + .ds-c-field,
+.ds-c-field-container--vertical > .ds-c-field-container + .ds-c-field-container,
+.ds-c-field-container--vertical > .ds-c-field-container + .ds-c-form-actions,
+.ds-c-field-container--vertical > .ds-c-form-actions + .ds-c-field,
+.ds-c-field-container--vertical > .ds-c-form-actions + .ds-c-field-container,
+.ds-c-field-container--vertical > .ds-c-form-actions + .ds-c-form-actions {
+    margin-top: var(--ds-form-spacing);
 }
 
-.thc-c-field-container--centered {
+.ds-c-field-container--centered {
     justify-content: center;
 }

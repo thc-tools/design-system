@@ -1,9 +1,9 @@
-.thc-c-form-actions {
+.ds-c-form-actions {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.thc-c-form-actions > .thc-c-button:not(:last-child) {
-    margin-right: var(--thc-spacing--S);
+.ds-c-form-actions > .ds-c-button:not(:last-child) {
+    margin-right: var(--ds-spacing--M);
 }

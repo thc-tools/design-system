@@ -1,0 +1,11 @@
+.ds-c-tag-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: var(--ds-spacing--XS);
+}
+
+.ds-c-tag-container--no-wrap {
+    flex-wrap: nowrap;
+}

@@ -1,17 +1,17 @@
-.thc-c-chip-container {
+.ds-c-chip-container {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.thc-c-chip-container .thc-c-chip {
-    margin: var(--thc-spacing--XS) 0;
+.ds-c-chip-container .ds-c-chip {
+    margin: var(--ds-spacing--XS) 0;
 }
 
-.thc-c-chip-container__condensed .thc-c-chip {
+.ds-c-chip-container__condensed .ds-c-chip {
     margin: 0;
 }
 
-.thc-c-chip-container .thc-c-chip:not(:last-child) {
-    margin-right: var(--thc-spacing--XS);
+.ds-c-chip-container .ds-c-chip:not(:last-child) {
+    margin-right: var(--ds-spacing--XS);
 }

@@ -1,62 +1,62 @@
-.thc-theme--light,
-.thc-theme--dark {
-    --thc-menu-item-background-color: none;
-    --thc-menu-item-background-color--active: var(--thc-color--blue-100);
+.ds-theme--light,
+.ds-theme--dark {
+    --ds-menu-item-background-color: none;
+    --ds-menu-item-background-color--active: var(--ds-color--primary-500);
 }
 
 /* Common */
 
-.thc-c-menu-item {
-    --thc-text-color: var(--thc-textColor--secondary);
-    --thc-menu-item-background-color: none;
+.ds-c-menu-item {
+    --ds-text-color: var(--ds-textColor--secondary);
+    --ds-menu-item-background-color: none;
 
-    transition: color var(--thc-animationDuration--S);
+    transition: color var(--ds-animationDuration--S);
 }
 
-.thc-c-menu-item:hover {
-    --thc-text-color: var(--thc-textColor--primary);
+.ds-c-menu-item:hover {
+    --ds-text-color: var(--ds-textColor--primary);
 }
 
-.thc-c-menu-item--active {
-    --thc-menu-item-background-color: var(--thc-menu-item-background-color--active);
+.ds-c-menu-item--active {
+    --ds-menu-item-background-color: var(--ds-menu-item-background-color--active);
 }
 
-.thc-c-menu-item__link {
+.ds-c-menu-item__link {
     text-decoration: none;
     outline: none;
 }
 
 /* Icon & Text */
 
-.thc-c-menu-item-icon-label {
+.ds-c-menu-item-icon-label {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    background-color: var(--thc-menu-item-background-color);
+    background-color: var(--ds-menu-item-background-color);
 
-    padding: var(--thc-spacing--S) 0;
+    padding: var(--ds-spacing--M) 0;
 }
 
-.thc-c-menu-item-icon-label__icon {
-    padding-bottom: var(--thc-spacing--XS);
+.ds-c-menu-item-icon-label__icon {
+    padding-bottom: var(--ds-spacing--XS);
 }
 
-.thc-c-menu-item-icon-label__label {
+.ds-c-menu-item-icon-label__label {
     text-transform: uppercase;
     text-align: center;
 }
 
 /* Icon */
 
-.thc-c-menu-item-icon {
-    margin: var(--thc-spacing--S) auto;
-    padding: var(--thc-spacing--S);
+.ds-c-menu-item-icon {
+    margin: var(--ds-spacing--M) auto;
+    padding: var(--ds-spacing--M);
 
-    border: var(--thc-borderSolid--S);
-    border-radius: var(--thc-radius--L);
+    border: var(--ds-borderSolid--S);
+    border-radius: var(--ds-radius--L);
 
-    background-color: var(--thc-menu-item-background-color);
+    background-color: var(--ds-menu-item-background-color);
 
     display: flex;
     justify-content: center;
@@ -64,6 +64,6 @@
     width: max-content;
 }
 
-.thc-c-menu-item-icon__tooltip {
+.ds-c-menu-item-icon__tooltip {
     margin: 0 auto;
 }
